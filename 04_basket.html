@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Cool Image</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif&amp;subset=cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.11.4.spinner/jquery-ui.css" />
+        <link rel="stylesheet" href="js/slick/slick.css" />
+
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/jquery-ui-1.11.4.spinner/jquery-ui.min.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- top -->
+                <div class="top">
+                    <div class="top-inner">
+                        <a href="#" class="top-cabinet-link">Личный кабинет</a>
+
+                        <a href="#" class="top-compare-link">Список сравнения <em></em> <span>0</span></a>
+                        <a href="#" class="top-favorite-link">Избранное</a>
+
+                        <div class="top-city">
+                            <div class="top-city-select">
+                                <div class="top-city-value"><span>Санкт-Петербург</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- top END -->
+
+                <header>
+                    <div class="header-phone">
+                        <div class="header-phone-value">+7 (495) <span>502-42-68</span></div>
+                        <div class="header-phone-text">Время работы: круглосуточно</div>
+                    </div>
+
+                    <div class="header-cart">
+                        <div class="header-cart-value">
+                            <div class="header-cart-count">0 товаров</div>
+                            <div class="header-cart-price">на сумму <strong>0 ₽</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="logo"><a href="#">Cool Image</a></div>
+                </header>
+
+                <!-- nav -->
+                <div class="nav">
+                    <div class="nav-icon"></div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Бренды</a></li>
+                            <li><a href="#">Нижнее белье<span></span></a></li>
+                            <li><a href="#">Косметика</a></li>
+                            <li><a href="#">Бижутерия</a></li>
+                            <li><a href="#">Аксессуары<span></span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <form action="#" method="post">
+                            <div class="form-input"><input type="text" name="search" value="" class="required" /></div>
+                            <div class="form-submit"><input type="submit" value="" /></div>
+                        </form>
+                    </div>
+                </div>
+                <!-- nav END -->
+
+                <div class="breadcrumbs"><a href="#">Каталог</a><span></span>Корзина</div>
+
+                <!-- container -->
+                <div class="container">
+
+                    <!-- content -->
+                    <div class="content">
+                        <div class="content-wrap">
+
+                            <!-- checkout -->
+                            <div class="checkout">
+
+                                <!-- checkout cart -->
+                                <div class="checkout-cart">
+                                    <div class="checkout-header">
+                                        <h2>Моя корзина</h2>
+                                    </div>
+
+                                    <form action="#" method="post">
+
+                                        <!-- basket row -->
+                                        <div class="basket-row">
+                                            <div class="basket-photo"><a href="#"><img src="files/basket-1.jpg" alt="" /></a></div>
+                                            <div class="basket-text">
+                                                <div class="basket-title"><a href="#">Бюстгалтеры любых размеров</a></div>
+                                                <div class="basket-art">SE12261b</div>
+                                            </div>
+                                            <div class="basket-row-count">
+                                                <div class="form-input"><input type="number" name="count[]" value="1" step="1" min="1" /></div>
+                                            </div>
+                                            <div class="basket-row-price"><span>5 200</span> <i>₽</i></div>
+                                            <div class="basket-delete"><a href="#"></a></div>
+                                        </div>
+                                        <!-- basket row END -->
+
+                                        <!-- basket row -->
+                                        <div class="basket-row">
+                                            <div class="basket-photo"><a href="#"><img src="files/basket-2.jpg" alt="" /></a></div>
+                                            <div class="basket-text">
+                                                <div class="basket-title"><a href="#">Копмлект белья от&nbsp;Calvin Klein</a></div>
+                                                <div class="basket-art">SE12261b</div>
+                                            </div>
+                                            <div class="basket-row-count">
+                                                <div class="form-input"><input type="number" name="count[]" value="1" step="1" min="1" /></div>
+                                            </div>
+                                            <div class="basket-row-price"><span>15 200</span> <i>₽</i></div>
+                                            <div class="basket-delete"><a href="#"></a></div>
+                                        </div>
+                                        <!-- basket row END -->
+
+                                        <!-- basket coupon -->
+                                        <div class="basket-coupon">
+                                            <div class="basket-coupon-title">Ваш подарок
+                                                <div class="info-block">
+                                                    <div class="info-link"></div>
+                                                </div>
+                                            </div>
+                                            <div class="basket-coupon-text">Если у вас есть промокод, введите его ниже и узнайте свою скидку</div>
+                                            <div class="form-input"><input type="text" name="coupon" value="" /></div>
+                                        </div>
+                                        <!-- basket coupon END -->
+
+                                        <!-- basket results -->
+                                        <div class="basket-results">
+                                            <div class="basket-gift">
+                                                <div class="basket-gift-title">Ваш подарок
+                                                    <div class="info-block">
+                                                        <div class="info-link"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="basket-gift-value">Серьги длинные со снегирями</div>
+                                            </div>
+
+                                            <div class="basket-info">
+                                                <div class="basket-info-row">
+                                                    <div class="basket-info-title">Стоимость товаров</div>
+                                                    <div class="basket-info-discount"></div>
+                                                    <div class="basket-info-value">20 200 ₽</div>
+                                                </div>
+                                                <div class="basket-info-row">
+                                                    <div class="basket-info-title">Доставка</div>
+                                                    <div class="basket-info-discount"></div>
+                                                    <div class="basket-info-value">500 ₽</div>
+                                                </div>
+                                                <div class="basket-info-row">
+                                                    <div class="basket-info-title">Скидка</div>
+                                                    <div class="basket-info-discount">10%</div>
+                                                    <div class="basket-info-value">-2 020 ₽</div>
+                                                </div>
+                                                <div class="basket-info-row">
+                                                    <div class="basket-info-title">Скидка по купону</div>
+                                                    <div class="basket-info-discount">7%</div>
+                                                    <div class="basket-info-value">-1 540 ₽</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="basket-summ">
+                                                <div class="basket-summ-title">К оплате</div>
+                                                <div class="basket-summ-value">17 140 <i>₽</i></div>
+                                            </div>
+                                        </div>
+                                        <!-- basket results END -->
+
+                                    </form>
+
+                                </div>
+                                <!-- checkout cart END -->
+
+                                <!-- checkout order -->
+                                <div class="checkout-order">
+                                    <div class="checkout-header">
+                                        <h2>Оформление заказа</h2>
+                                        <a href="#">Я уже покупал</a>
+                                    </div>
+
+                                    <!-- checkout fast -->
+                                    <div class="checkout-fast">
+                                        <div class="checkout-fast-text">
+                                            <div class="checkout-fast-title">Некогда заполнять форму?</div>
+                                            <div class="checkout-fast-descr">Оставьте телефон и менеджер уточнит все детали!</div>
+                                        </div>
+
+                                        <div class="checkout-fast-link"><a href="#" class="btn-2">Быстрый заказ</a></div>
+                                    </div>
+                                    <!-- checkout fast END -->
+
+                                    <!-- checkout form -->
+                                    <div class="checkout-form">
+                                        <form action="#" method="post">
+                                            <div class="form-row">
+                                                <div class="form-label">Имя <span>*</span></div>
+                                                <div class="form-field">
+                                                    <div class="form-input"><input type="text" name="name" value="" class="required" /></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-label">E-mail <span>*</span></div>
+                                                <div class="form-field">
+                                                    <div class="form-input"><input type="text" name="email" value="" class="required email" /></div>
+                                                    <div class="form-checkbox"><label><input type="checkbox" name="subscribe" checked="checked" class="required" /><span></span>Подписаться на новости и скидки</label></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-label">Ваш телефон <span>*</span></div>
+                                                <div class="form-field">
+                                                    <div class="form-input"><input type="text" name="phone" value="" class="required maskPhone" /></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-label">Адрес<br />и способ<br />доставки</div>
+                                                <div class="form-field">
+                                                    <div class="order-tabs">
+                                                        <div class="order-tabs-menu">
+                                                            <div class="order-tabs-menu-item">
+                                                                <label><input type="radio" name="delivery" value="1" checked="checked" /><span><em>Самовывоз<br />из магазина</em></span></label>
+                                                            </div>
+                                                            <div class="order-tabs-menu-item">
+                                                                <label><input type="radio" name="delivery" value="2" /><span><em>Доставка<br />курьером</em></span></label>
+                                                            </div>
+                                                            <div class="order-tabs-menu-item">
+                                                                <label><input type="radio" name="delivery" value="3" /><span><em>Доставка<br />почтой</em></span></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="order-tab active">
+                                                            <strong>Самовывоз из магазина:</strong><br />Метро Пражская, ул. Кировоградская, д. 13а,<br />ТРЦ Columbus, 1 этаж
+                                                            <div class="order-shop-link"><a href="#">Выбрать другой</a></div>
+                                                        </div>
+                                                        <div class="order-tab">
+                                                            <strong>Доставка курьером</strong> до квартиры
+                                                        </div>
+                                                        <div class="order-tab">
+                                                            <strong>Доставка почтой</strong> до ближайшего отделения
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-label">Способ оплаты</div>
+                                                <div class="form-field">
+                                                    <div class="order-tabs">
+                                                        <div class="order-tabs-menu">
+                                                            <div class="order-tabs-menu-item order-tabs-menu-item-2">
+                                                                <label><input type="radio" name="payment" value="1" checked="checked" /><span><em><img src="images/payment-1.png" alt="" width="69" height="41" />Яндекс.<br />Деньги</em></span></label>
+                                                            </div>
+                                                            <div class="order-tabs-menu-item order-tabs-menu-item-2">
+                                                                <label><input type="radio" name="payment" value="2" /><span><em><img src="images/payment-2.png" alt="" width="69" height="41" />Банковские<br />карты</em></span></label>
+                                                            </div>
+                                                            <div class="order-tabs-menu-item order-tabs-menu-item-2">
+                                                                <label><input type="radio" name="payment" value="3" /><span><em><img src="images/payment-3.png" alt="" width="69" height="41" />Наличные<br />курьеру</em></span></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="order-tab active">
+                                                            <strong>Яндекс.деньги</strong><br />Оплата производится с помощью системы Яндекс.Деньги и средства будут сняты с вашего кошелька
+                                                        </div>
+                                                        <div class="order-tab">
+                                                            <strong>Банковские карты</strong><br />Оплата производится с помощью банковской карты и средства будут сняты с вашей карты
+                                                        </div>
+                                                        <div class="order-tab">
+                                                            <strong>Наличные курьеру</strong><br />при передаче товара
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-label">Комментарий к&nbsp;заказу</div>
+                                                <div class="form-field">
+                                                    <div class="form-input"><textarea name="comment" rows="3" cols="10"></textarea></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-label"></div>
+                                                <div class="form-field">
+                                                    <div class="form-submit"><input type="submit" value="Подтвердить заказ" class="btn-1" /></div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- checkout form END -->
+                                </div>
+                                <!-- checkout order END -->
+
+                            </div>
+                            <!-- checkout END -->
+
+                        </div>
+                    </div>
+                    <!-- content END -->
+
+                </div>
+                <!-- container END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="footer-social">
+                <a href="#" class="footer-social-1"></a>
+                <a href="#" class="footer-social-2"></a>
+                <a href="#" class="footer-social-3"></a>
+                <a href="#" class="footer-social-4"></a>
+                <a href="#" class="footer-social-5"></a>
+            </div>
+
+            <div class="footer-inner">
+
+                <div class="footer-contacts">
+                    <div class="footer-logo">Cool image</div>
+                    <div class="footer-phone">+7 (495) <span>502-42-68</span></div>
+                    <div class="footer-schedule">Время работы: круглосуточно</div>
+                    <div class="footer-copyrights">© Интернет-магазин Cool Image, 2016</div>
+                </div>
+
+                <div class="footer-menu">
+                    <div class="footer-menu-title"><a href="#">Каталог товаров</a></div>
+                    <ul>
+                        <li><a href="#">Бренды</a></li>
+                        <li><a href="#">Платья</a></li>
+                        <li><a href="#">Штаны</a></li>
+                        <li><a href="#">Нижнее белье</a></li>
+                        <li><a href="#">Футболки</a></li>
+                        <li><a href="#">Спортивная Одежда</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu">
+                    <div class="footer-menu-title"><a href="#">О магазине</a></div>
+                    <ul>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Как купить</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">О магазине</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-subscribe">
+                    <div class="footer-menu-title">Рассылка</div>
+                    <form action="#" method="post">
+                        <div class="form-input"><input type="text" name="email" value="" placeholder="Ваш email" class="required email" /></div>
+                        <div class="form-submit"><input type="submit" value="OK" class="btn-1" /></div>
+                    </form>
+                </div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>

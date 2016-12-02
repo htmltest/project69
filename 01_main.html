@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Cool Image</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif&amp;subset=cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.11.4.spinner/jquery-ui.css" />
+        <link rel="stylesheet" href="js/slick/slick.css" />
+
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/jquery-ui-1.11.4.spinner/jquery-ui.min.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- top -->
+                <div class="top">
+                    <div class="top-inner">
+                        <a href="#" class="top-cabinet-link">Личный кабинет</a>
+
+                        <a href="#" class="top-compare-link">Список сравнения <em></em> <span>0</span></a>
+                        <a href="#" class="top-favorite-link">Избранное</a>
+
+                        <div class="top-city">
+                            <div class="top-city-select">
+                                <div class="top-city-value"><span>Санкт-Петербург</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- top END -->
+
+                <header>
+                    <div class="header-phone">
+                        <div class="header-phone-value">+7 (495) <span>502-42-68</span></div>
+                        <div class="header-phone-text">Время работы: круглосуточно</div>
+                    </div>
+
+                    <div class="header-cart">
+                        <div class="header-cart-value">
+                            <div class="header-cart-count">0 товаров</div>
+                            <div class="header-cart-price">на сумму <strong>0 ₽</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="logo">Cool Image</div>
+                </header>
+
+                <!-- nav -->
+                <div class="nav">
+                    <div class="nav-icon"></div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Бренды</a></li>
+                            <li><a href="#">Нижнее белье<span></span></a></li>
+                            <li><a href="#">Косметика</a></li>
+                            <li><a href="#">Бижутерия</a></li>
+                            <li><a href="#">Аксессуары<span></span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <form action="#" method="post">
+                            <div class="form-input"><input type="text" name="search" value="" class="required" /></div>
+                            <div class="form-submit"><input type="submit" value="" /></div>
+                        </form>
+                    </div>
+                </div>
+                <!-- nav END -->
+
+                <!-- main logos -->
+                <div class="main-logos">
+                    <a href="#"><img src="files/main-logo-1.png" alt="" /></a>
+                    <a href="#"><img src="files/main-logo-2.png" alt="" /></a>
+                    <a href="#"><img src="files/main-logo-3.png" alt="" /></a>
+                    <a href="#"><img src="files/main-logo-4.png" alt="" /></a>
+                    <a href="#"><img src="files/main-logo-5.png" alt="" /></a>
+                    <a href="#"><img src="files/main-logo-6.png" alt="" /></a>
+                    <a href="#"><img src="files/main-logo-7.png" alt="" /></a>
+                    <a href="#"><img src="files/main-logo-8.png" alt="" /></a>
+                </div>
+                <!-- main logos END -->
+
+                <!-- slider -->
+                <div class="slider">
+                    <div class="slider-content">
+                        <div class="slider-item" style="background-image:url(files/slider-1.jpg)">
+                            <div class="slider-text">
+                                <div class="slider-title">Новая коллекция нижнего&nbsp;белья</div>
+                                <div class="slider-descr">Потребительский рынок индуцирует имидж. Структура рынка восстанавливает популярный стиль менеджмента, работая над проектом. Надо сказать, что каждая сфера рынка позиционирует традиционный канал.</div>
+                                <a href="#" class="btn-1">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="slider-item" style="background-image:url(files/slider-2.jpg)">
+                            <div class="slider-text">
+                                <div class="slider-title">Новая коллекция</div>
+                                <div class="slider-descr">Потребительский рынок индуцирует имидж. Структура рынка восстанавливает популярный стиль менеджмента, работая над проектом.</div>
+                                <a href="#" class="btn-1">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-ctrl"></div>
+                </div>
+                <!-- slider END -->
+
+                <div class="main-banner">
+                    <a href="#"><img src="files/main-banner.jpg" alt="" /></a>
+                </div>
+
+                <!-- container -->
+                <div class="container">
+
+                    <!-- side -->
+                    <div class="side">
+
+                        <div class="catalogue-search">
+                            <h3>Поиск</h3>
+                            <form action="#" method="post">
+                                <div class="form-input"><input type="text" name="search" value="" placeholder="Введите наименование" class="required" /></div>
+                                <div class="form-submit"><input type="submit" value="OK" class="btn-1" /></div>
+                            </form>
+                        </div>
+
+                        <div class="main-catalogue-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Для женщин</a>
+                                    <ul>
+                                        <li><a href="#">Блузки и кофточки</a></li>
+                                        <li><a href="#">Брюки</a></li>
+                                        <li><a href="#">Джинсы</a></li>
+                                        <li><a href="#">Домашняя одежда</a></li>
+                                        <li><a href="#">Пиджаки</a></li>
+                                        <li><a href="#">Рубашки</a></li>
+                                        <li><a href="#">Свитеры</a></li>
+                                        <li><a href="#">Толстовки</a></li>
+                                        <li><a href="#">Футболки</a></li>
+                                        <li><a href="#">Юбки</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Для мужчин</a>
+                                    <ul>
+                                        <li><a href="#">Брюки</a></li>
+                                        <li><a href="#">Джинсы</a></li>
+                                        <li><a href="#">Домашняя одежда</a></li>
+                                        <li><a href="#">Пиджаки</a></li>
+                                        <li><a href="#">Рубашки</a></li>
+                                        <li><a href="#">Свитеры</a></li>
+                                        <li><a href="#">Толстовки</a></li>
+                                        <li><a href="#">Футболки</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="side-event">
+                            <div class="side-event-photo"><a href="#"><img src="files/side-event-1.jpg" alt="" /></a></div>
+                            <div class="side-event-title"><a href="#">Новинки 2016</a></div>
+                            <div class="side-event-anonce">Каждая сфера рынка все еще интересна для многих. Несмотря на сложности, корпоративная культура однообразно искажает анализ зарубежного опыта</div>
+                        </div>
+
+                        <div class="side-event">
+                            <div class="side-event-photo"><a href="#"><img src="files/side-event-2.jpg" alt="" /></a></div>
+                            <div class="side-event-title"><a href="#">Шляпы, куртки и тельняшки</a></div>
+                            <div class="side-event-anonce">Программа лояльности изящно изменяет конвергентный клиентский спрос. В соответствии с законом Ципфа</div>
+                        </div>
+
+                        <div class="side-event">
+                            <div class="side-event-photo"><a href="#"><img src="files/side-event-3.jpg" alt="" /></a></div>
+                            <div class="side-event-title"><a href="#">Красный наступает</a></div>
+                            <div class="side-event-anonce">Программа лояльности изящно изменяет конвергентный клиентский спрос. В соответствии с законом Ципфа</div>
+                        </div>
+
+                    </div>
+                    <!-- side END -->
+
+                    <!-- content -->
+                    <div class="content">
+                        <div class="content-wrap">
+
+                            <div class="catalogue-other catalogue-other-main">
+                                <div class="catalogue-other-item catalogue-other-item-wide">
+                                    <a href="#">
+                                        <img src="files/catalogue-other-5.jpg" alt="" />
+                                        <div class="catalogue-other-item-title">Новая коллекция нижнего белья <div class="catalogue-other-item-text">Потребительский рынок индуцирует имидж. Структура рынка восстанавливает популярный стиль менеджмента</div></div>
+                                    </a>
+                                </div>
+                                <div class="catalogue-other-item">
+                                    <a href="#">
+                                        <img src="files/catalogue-other-4.jpg" alt="" />
+                                        <div class="catalogue-other-item-title">Новая коллекция Свадебного белья 2016</div>
+                                    </a>
+                                </div>
+                                <div class="catalogue-other-item">
+                                    <a href="#">
+                                        <img src="files/catalogue-other-1.jpg" alt="" />
+                                        <div class="catalogue-other-item-title">Новые мужские модели</div>
+                                    </a>
+                                </div>
+                                <div class="catalogue-other-item">
+                                    <a href="#">
+                                        <img src="files/catalogue-other-2.jpg" alt="" />
+                                        <div class="catalogue-other-item-title">Косметика от&nbsp;ведущих брендов</div>
+                                    </a>
+                                </div>
+                                <div class="catalogue-other-item">
+                                    <a href="#">
+                                        <img src="files/catalogue-other-3.jpg" alt="" />
+                                        <div class="catalogue-other-item-title">Каталог бижутерии<br />2016</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="main-group-title"><span>Модные БЕстселлеры</span></div>
+
+                            <!-- bestsellers -->
+                            <div class="bestsellers">
+
+                                <!-- bestsellers item -->
+                                <div class="bestsellers-item">
+                                    <!-- catalogue -->
+                                    <div class="catalogue">
+
+                                        <!-- catalogue item -->
+                                        <div class="catalogue-item">
+                                            <div class="catalogue-item-wrap">
+                                                <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-1.jpg" alt="" /></a></div>
+                                                <div class="catalogue-item-text">
+                                                    <div class="catalogue-item-title"><a href="#">Копмлект белья<br />от Calvin Klein</a></div>
+                                                    <div class="catalogue-item-anonce">Каждая сфера рынка все еще интересна для многих. Несмотря на сложности, корпоративная культура однообразно искажает анализ зарубежного опыта</div>
+                                                </div>
+                                                <div class="catalogue-item-ctrl">
+                                                    <div class="catalogue-item-price">2 999 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue item END -->
+
+                                        <!-- catalogue item -->
+                                        <div class="catalogue-item">
+                                            <div class="catalogue-item-wrap">
+                                                <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-2.jpg" alt="" /></a></div>
+                                                <div class="catalogue-item-text">
+                                                    <div class="catalogue-item-title"><a href="#">трусики</a></div>
+                                                    <div class="catalogue-item-anonce">Программа лояльности изящно изменяет конвергентный клиентский спрос. В соответствии с законом Ципфа</div>
+                                                </div>
+                                                <div class="catalogue-item-ctrl">
+                                                    <div class="catalogue-item-price">499 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue item END -->
+
+                                        <!-- catalogue item -->
+                                        <div class="catalogue-item">
+                                            <div class="catalogue-item-wrap">
+                                                <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-3.jpg" alt="" /></a></div>
+                                                <div class="catalogue-item-text">
+                                                    <div class="catalogue-item-title"><a href="#">Бюстгалтеры любых размеров</a></div>
+                                                    <div class="catalogue-item-anonce">Концепция новой стратегии решительно детерминирует межличностный направленный маркетинг.</div>
+                                                </div>
+                                                <div class="catalogue-item-ctrl">
+                                                    <div class="catalogue-item-price">899 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue item END -->
+
+                                        <!-- catalogue item -->
+                                        <div class="catalogue-item">
+                                            <div class="catalogue-item-wrap">
+                                                <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-4.jpg" alt="" /></a></div>
+                                                <div class="catalogue-item-text">
+                                                    <div class="catalogue-item-title"><a href="#">Пижамы</a></div>
+                                                    <div class="catalogue-item-anonce">Каждая сфера рынка все еще интересна для многих. Несмотря на сложности, корпоративная культура однообразно искажает анализ зарубежного опыта</div>
+                                                </div>
+                                                <div class="catalogue-item-ctrl">
+                                                    <div class="catalogue-item-price">2 999 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue item END -->
+
+                                        <!-- catalogue item -->
+                                        <div class="catalogue-item">
+                                            <div class="catalogue-item-wrap">
+                                                <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-5.jpg" alt="" /></a></div>
+                                                <div class="catalogue-item-text">
+                                                    <div class="catalogue-item-title"><a href="#">Косметика</a></div>
+                                                    <div class="catalogue-item-anonce">Программа лояльности изящно изменяет конвергентный клиентский спрос. В соответствии с законом Ципфа</div>
+                                                </div>
+                                                <div class="catalogue-item-ctrl">
+                                                    <div class="catalogue-item-price">1 099 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue item END -->
+
+                                        <!-- catalogue item -->
+                                        <div class="catalogue-item">
+                                            <div class="catalogue-item-wrap">
+                                                <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-6.jpg" alt="" /></a></div>
+                                                <div class="catalogue-item-text">
+                                                    <div class="catalogue-item-title"><a href="#">Бижутерия</a></div>
+                                                    <div class="catalogue-item-anonce">Концепция новой стратегии решительно детерминирует межличностный направленный маркетинг.</div>
+                                                </div>
+                                                <div class="catalogue-item-ctrl">
+                                                    <div class="catalogue-item-price">2 999 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue item END -->
+
+                                    </div>
+                                    <!-- catalogue END -->
+
+                                </div>
+                                <!-- bestsellers item END -->
+
+                                <!-- bestsellers item -->
+                                <div class="bestsellers-item">
+                                    <!-- catalogue -->
+                                    <div class="catalogue">
+
+                                        <!-- catalogue item -->
+                                        <div class="catalogue-item">
+                                            <div class="catalogue-item-wrap">
+                                                <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-1.jpg" alt="" /></a></div>
+                                                <div class="catalogue-item-text">
+                                                    <div class="catalogue-item-title"><a href="#">Копмлект белья<br />от Calvin Klein</a></div>
+                                                    <div class="catalogue-item-anonce">Каждая сфера рынка все еще интересна для многих. Несмотря на сложности, корпоративная культура однообразно искажает анализ зарубежного опыта</div>
+                                                </div>
+                                                <div class="catalogue-item-ctrl">
+                                                    <div class="catalogue-item-price">2 999 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue item END -->
+
+                                        <!-- catalogue item -->
+                                        <div class="catalogue-item">
+                                            <div class="catalogue-item-wrap">
+                                                <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-2.jpg" alt="" /></a></div>
+                                                <div class="catalogue-item-text">
+                                                    <div class="catalogue-item-title"><a href="#">трусики</a></div>
+                                                    <div class="catalogue-item-anonce">Программа лояльности изящно изменяет конвергентный клиентский спрос. В соответствии с законом Ципфа</div>
+                                                </div>
+                                                <div class="catalogue-item-ctrl">
+                                                    <div class="catalogue-item-price">499 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue item END -->
+
+                                        <!-- catalogue item -->
+                                        <div class="catalogue-item">
+                                            <div class="catalogue-item-wrap">
+                                                <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-3.jpg" alt="" /></a></div>
+                                                <div class="catalogue-item-text">
+                                                    <div class="catalogue-item-title"><a href="#">Бюстгалтеры любых размеров</a></div>
+                                                    <div class="catalogue-item-anonce">Концепция новой стратегии решительно детерминирует межличностный направленный маркетинг.</div>
+                                                </div>
+                                                <div class="catalogue-item-ctrl">
+                                                    <div class="catalogue-item-price">899 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue item END -->
+
+                                        <!-- catalogue item -->
+                                        <div class="catalogue-item">
+                                            <div class="catalogue-item-wrap">
+                                                <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-4.jpg" alt="" /></a></div>
+                                                <div class="catalogue-item-text">
+                                                    <div class="catalogue-item-title"><a href="#">Пижамы</a></div>
+                                                    <div class="catalogue-item-anonce">Каждая сфера рынка все еще интересна для многих. Несмотря на сложности, корпоративная культура однообразно искажает анализ зарубежного опыта</div>
+                                                </div>
+                                                <div class="catalogue-item-ctrl">
+                                                    <div class="catalogue-item-price">2 999 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue item END -->
+
+                                        <!-- catalogue item -->
+                                        <div class="catalogue-item">
+                                            <div class="catalogue-item-wrap">
+                                                <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-5.jpg" alt="" /></a></div>
+                                                <div class="catalogue-item-text">
+                                                    <div class="catalogue-item-title"><a href="#">Косметика</a></div>
+                                                    <div class="catalogue-item-anonce">Программа лояльности изящно изменяет конвергентный клиентский спрос. В соответствии с законом Ципфа</div>
+                                                </div>
+                                                <div class="catalogue-item-ctrl">
+                                                    <div class="catalogue-item-price">1 099 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue item END -->
+
+                                        <!-- catalogue item -->
+                                        <div class="catalogue-item">
+                                            <div class="catalogue-item-wrap">
+                                                <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-6.jpg" alt="" /></a></div>
+                                                <div class="catalogue-item-text">
+                                                    <div class="catalogue-item-title"><a href="#">Бижутерия</a></div>
+                                                    <div class="catalogue-item-anonce">Концепция новой стратегии решительно детерминирует межличностный направленный маркетинг.</div>
+                                                </div>
+                                                <div class="catalogue-item-ctrl">
+                                                    <div class="catalogue-item-price">2 999 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue item END -->
+
+                                    </div>
+                                    <!-- catalogue END -->
+
+                                </div>
+                                <!-- bestsellers item END -->
+
+                                <!-- bestsellers item -->
+                                <div class="bestsellers-item">
+                                    <!-- catalogue -->
+                                    <div class="catalogue">
+
+                                        <!-- catalogue item -->
+                                        <div class="catalogue-item">
+                                            <div class="catalogue-item-wrap">
+                                                <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-1.jpg" alt="" /></a></div>
+                                                <div class="catalogue-item-text">
+                                                    <div class="catalogue-item-title"><a href="#">Копмлект белья<br />от Calvin Klein</a></div>
+                                                    <div class="catalogue-item-anonce">Каждая сфера рынка все еще интересна для многих. Несмотря на сложности, корпоративная культура однообразно искажает анализ зарубежного опыта</div>
+                                                </div>
+                                                <div class="catalogue-item-ctrl">
+                                                    <div class="catalogue-item-price">2 999 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue item END -->
+
+                                        <!-- catalogue item -->
+                                        <div class="catalogue-item">
+                                            <div class="catalogue-item-wrap">
+                                                <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-2.jpg" alt="" /></a></div>
+                                                <div class="catalogue-item-text">
+                                                    <div class="catalogue-item-title"><a href="#">трусики</a></div>
+                                                    <div class="catalogue-item-anonce">Программа лояльности изящно изменяет конвергентный клиентский спрос. В соответствии с законом Ципфа</div>
+                                                </div>
+                                                <div class="catalogue-item-ctrl">
+                                                    <div class="catalogue-item-price">499 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue item END -->
+
+                                        <!-- catalogue item -->
+                                        <div class="catalogue-item">
+                                            <div class="catalogue-item-wrap">
+                                                <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-3.jpg" alt="" /></a></div>
+                                                <div class="catalogue-item-text">
+                                                    <div class="catalogue-item-title"><a href="#">Бюстгалтеры любых размеров</a></div>
+                                                    <div class="catalogue-item-anonce">Концепция новой стратегии решительно детерминирует межличностный направленный маркетинг.</div>
+                                                </div>
+                                                <div class="catalogue-item-ctrl">
+                                                    <div class="catalogue-item-price">899 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- catalogue item END -->
+
+                                    </div>
+                                    <!-- catalogue END -->
+
+                                </div>
+                                <!-- bestsellers item END -->
+
+                            </div>
+                            <!-- bestsellers END -->
+
+                            <div class="main-group-title"><span>Модные новинки</span></div>
+
+                            <!-- catalogue -->
+                            <div class="catalogue catalogue-newently">
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <div class="catalogue-item-wrap">
+                                        <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-7.jpg" alt="" /></a></div>
+                                        <div class="catalogue-item-text">
+                                            <div class="catalogue-item-title"><a href="#">Аксессуары</a></div>
+                                            <div class="catalogue-item-anonce">Каждая сфера рынка все еще интересна для многих. Несмотря на сложности, корпоративная культура однообразно искажает анализ зарубежного опыта</div>
+                                        </div>
+                                        <div class="catalogue-item-ctrl">
+                                            <div class="catalogue-item-price">2 999 <span>₽</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <div class="catalogue-item-wrap">
+                                        <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-8.jpg" alt="" /></a></div>
+                                        <div class="catalogue-item-text">
+                                            <div class="catalogue-item-title"><a href="#">Ремни женские</a></div>
+                                            <div class="catalogue-item-anonce">Программа лояльности изящно изменяет конвергентный клиентский спрос. В соответствии с законом Ципфа</div>
+                                        </div>
+                                        <div class="catalogue-item-ctrl">
+                                            <div class="catalogue-item-price">1 099 <span>₽</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <div class="catalogue-item-wrap">
+                                        <div class="catalogue-item-preview"><a href="#"><img src="files/main-catalogue-9.jpg" alt="" /></a></div>
+                                        <div class="catalogue-item-text">
+                                            <div class="catalogue-item-title"><a href="#">Ремни мужские</a></div>
+                                            <div class="catalogue-item-anonce">Концепция новой стратегии решительно детерминирует межличностный направленный маркетинг.</div>
+                                        </div>
+                                        <div class="catalogue-item-ctrl">
+                                            <div class="catalogue-item-price">2 999 <span>₽</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- catalogue item END -->
+
+                            </div>
+                            <!-- catalogue END -->
+
+                            <div class="cols">
+                                <div class="col-third">&nbsp;</div>
+                                <div class="col-third newently-link"><a href="#" class="btn-1">Перейти в каталог</a></div>
+                            </div>
+
+                            <div class="main-group-title"><span>Интернет-Магазин Cool Image</span></div>
+
+                            <div class="main-shop">
+                                <div class="main-shop-item">
+                                    <div class="main-shop-icon"><img src="images/main-shop-1.png" alt="" /></div>
+                                    <div class="main-shop-title">Большой ассортимент товаров более 1000 брендов</div>
+                                </div>
+                                <div class="main-shop-item">
+                                    <div class="main-shop-icon"><img src="images/main-shop-2.png" alt="" /></div>
+                                    <div class="main-shop-title">Все вещи отличного<br />качества</div>
+                                </div>
+                                <div class="main-shop-item">
+                                    <div class="main-shop-icon"><img src="images/main-shop-3.png" alt="" /></div>
+                                    <div class="main-shop-title">Доставка и возможность примерки</div>
+                                </div>
+                            </div>
+
+                            <p>Сыр — продукт уникальный. Согласитесь, это и привычный ингредиент бутербродов или соусов, и изысканный деликатес, который подают в особых случаях и дегустируют с профессиональной точностью. Кроме того, это доступный каждому продукт! Можно, например, купить сыр в интернет-магазине, выбрав любой сорт по вкусу. Сегодня очень просто заказать на дом элитные сорта сыров, а всего пару веков назад их делали самостоятельно. Конечно, была возможна покупка домашней продукции, но промышленное производство в России появилось сравнительно недавно. Первый сырный завод открылся только в конце восемнадцатого века.</p>
+                            <p>Тяжело сосчитать точное количество. В одной только Франции любой интернет-магазин элитных сыров, а тем более элитные супермаркеты и магазины могут предложить покупателям около 5000 различных видов! Не отстает и Москва: здесь уже давно можно купить домашние продукты через интернет.</p>
+
+                        </div>
+                    </div>
+                    <!-- content END -->
+
+                </div>
+                <!-- container END -->
+
+                <!-- main brands -->
+                <div class="main-brands">
+
+                    <div class="main-group-title"><span>У нас представлены товары <a href="#">более 1000 брэндов</a></span></div>
+
+                    <div class="main-brands-img"><img src="images/main-brands.jpg" alt="" /></div>
+                    <div class="main-brands-links">
+                        <a href="#">0-9</a>
+                        <a href="#">А-Я</a>
+                        <a href="#">A</a>
+                        <a href="#">B</a>
+                        <a href="#">C</a>
+                        <a href="#">D</a>
+                        <a href="#">E</a>
+                        <a href="#">F</a>
+                        <a href="#">G</a>
+                        <a href="#">H</a>
+                        <a href="#">I</a>
+                        <a href="#">J</a>
+                        <a href="#">K</a>
+                        <a href="#">L</a>
+                        <a href="#">M</a>
+                        <a href="#">N</a>
+                        <a href="#">O</a>
+                        <a href="#">P</a>
+                        <a href="#">Q</a>
+                        <a href="#">R</a>
+                        <a href="#">S</a>
+                        <a href="#">T</a>
+                        <a href="#">U</a>
+                        <a href="#">V</a>
+                        <a href="#">W</a>
+                        <a href="#">X</a>
+                        <a href="#">Y</a>
+                        <a href="#">Z</a>
+                        <a href="#">Все бренды</a>
+                    </div>
+
+                </div>
+                <!-- main brands END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="footer-social">
+                <a href="#" class="footer-social-1"></a>
+                <a href="#" class="footer-social-2"></a>
+                <a href="#" class="footer-social-3"></a>
+                <a href="#" class="footer-social-4"></a>
+                <a href="#" class="footer-social-5"></a>
+            </div>
+
+            <div class="footer-inner">
+
+                <div class="footer-contacts">
+                    <div class="footer-logo">Cool image</div>
+                    <div class="footer-phone">+7 (495) <span>502-42-68</span></div>
+                    <div class="footer-schedule">Время работы: круглосуточно</div>
+                    <div class="footer-copyrights">© Интернет-магазин Cool Image, 2016</div>
+                </div>
+
+                <div class="footer-menu">
+                    <div class="footer-menu-title"><a href="#">Каталог товаров</a></div>
+                    <ul>
+                        <li><a href="#">Бренды</a></li>
+                        <li><a href="#">Платья</a></li>
+                        <li><a href="#">Штаны</a></li>
+                        <li><a href="#">Нижнее белье</a></li>
+                        <li><a href="#">Футболки</a></li>
+                        <li><a href="#">Спортивная Одежда</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu">
+                    <div class="footer-menu-title"><a href="#">О магазине</a></div>
+                    <ul>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Как купить</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">О магазине</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-subscribe">
+                    <div class="footer-menu-title">Рассылка</div>
+                    <form action="#" method="post">
+                        <div class="form-input"><input type="text" name="email" value="" placeholder="Ваш email" class="required email" /></div>
+                        <div class="form-submit"><input type="submit" value="OK" class="btn-1" /></div>
+                    </form>
+                </div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>

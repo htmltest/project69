@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Cool Image</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif&amp;subset=cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.11.4.spinner/jquery-ui.css" />
+        <link rel="stylesheet" href="js/slick/slick.css" />
+
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/jquery-ui-1.11.4.spinner/jquery-ui.min.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- top -->
+                <div class="top">
+                    <div class="top-inner">
+                        <a href="#" class="top-cabinet-link">Личный кабинет</a>
+
+                        <a href="#" class="top-compare-link">Список сравнения <em></em> <span>0</span></a>
+                        <a href="#" class="top-favorite-link">Избранное</a>
+
+                        <div class="top-city">
+                            <div class="top-city-select">
+                                <div class="top-city-value"><span>Санкт-Петербург</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- top END -->
+
+                <header>
+                    <div class="header-phone">
+                        <div class="header-phone-value">+7 (495) <span>502-42-68</span></div>
+                        <div class="header-phone-text">Время работы: круглосуточно</div>
+                    </div>
+
+                    <div class="header-cart">
+                        <div class="header-cart-value">
+                            <div class="header-cart-count">0 товаров</div>
+                            <div class="header-cart-price">на сумму <strong>0 ₽</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="logo"><a href="#">Cool Image</a></div>
+                </header>
+
+                <!-- nav -->
+                <div class="nav">
+                    <div class="nav-icon"></div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Бренды</a></li>
+                            <li class="active"><a href="#">Нижнее белье<span></span></a></li>
+                            <li><a href="#">Косметика</a></li>
+                            <li><a href="#">Бижутерия</a></li>
+                            <li><a href="#">Аксессуары<span></span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <form action="#" method="post">
+                            <div class="form-input"><input type="text" name="search" value="" class="required" /></div>
+                            <div class="form-submit"><input type="submit" value="" /></div>
+                        </form>
+                    </div>
+                </div>
+                <!-- nav END -->
+
+                <div class="breadcrumbs"><a href="#">Каталог</a><span></span><a href="#">Нижнее белье</a><span></span><a href="#">Бюстгалтеры</a><span></span>На косточке</div>
+
+                <!-- container -->
+                <div class="container">
+
+                    <!-- side -->
+                    <div class="side">
+
+                        <div class="side-menu">
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li class="active"><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- side END -->
+
+                    <!-- content -->
+                    <div class="content">
+                        <div class="content-wrap">
+
+                            <h1>Контакты</h1>
+
+                            <!-- contacts -->
+                            <div class="contacts">
+                                <!-- contacts content -->
+                                <div class="contacts-content">
+                                    <div class="contacts-info">
+                                        <div class="contacts-info-row">
+                                            <div class="contacts-info-title">Телефон</div>
+                                            <div class="contacts-info-value">8 (495) 502 42 68</div>
+                                        </div>
+                                        <div class="contacts-info-row">
+                                            <div class="contacts-info-title">Адрес</div>
+                                            <div class="contacts-info-value">г. Москва, ул. Зорге, д. 9</div>
+                                        </div>
+                                    </div>
+
+                                    <h3>Задайте свой вопрос</h3>
+                                    <form action="#" method="post">
+                                        <div class="form-row">
+                                            <div class="form-label">Ваше имя <span>*</span></div>
+                                            <div class="form-field">
+                                                <div class="form-input"><input type="text" name="name" value="" class="required" /></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-label">Ваш EMAIL <span>*</span></div>
+                                            <div class="form-field">
+                                                <div class="form-input"><input type="text" name="email" value="" class="required email" /></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-label">СОобщение <span>*</span></div>
+                                            <div class="form-field">
+                                                <div class="form-input"><textarea name="message" rows="5" cols="10" class="required"></textarea></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-field">
+                                                <div class="form-submit">
+                                                    <input type="submit" value="Задать вопрос" class="btn-1" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- contacts content END -->
+
+                                <!-- contacts map -->
+                                <div class="contacts-map">
+                                    <div id="map"></div>
+                                    <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+                                    <script>
+                                        ymaps.ready(init);
+
+                                        var myMap;
+
+                                        function init() {
+                                            myMap = new ymaps.Map('map', {
+                                                center: [55.782041, 37.509694],
+                                                zoom: 11,
+                                                controls: []
+                                            });
+
+                                            myMap.controls.add('zoomControl');
+                                            myMap.behaviors.disable('scrollZoom');
+
+                                            var myPlacemark = new ymaps.Placemark([55.782041, 37.509694], {}, {
+                                                iconLayout: 'default#image',
+                                                iconImageHref: 'images/map-icon.png',
+                                                iconImageSize: [86, 70],
+                                                iconImageOffset: [-30, -70]
+                                            });
+                                            myMap.geoObjects.add(myPlacemark);
+                                            myMap.setCenter([55.782041, 37.509694]);
+                                        }
+                                    </script>
+                                </div>
+                                <!-- contacts map END -->
+                            </div>
+                            <!-- contacts END -->
+
+                        </div>
+                    </div>
+                    <!-- content END -->
+
+                </div>
+                <!-- container END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="footer-social">
+                <a href="#" class="footer-social-1"></a>
+                <a href="#" class="footer-social-2"></a>
+                <a href="#" class="footer-social-3"></a>
+                <a href="#" class="footer-social-4"></a>
+                <a href="#" class="footer-social-5"></a>
+            </div>
+
+            <div class="footer-inner">
+
+                <div class="footer-contacts">
+                    <div class="footer-logo">Cool image</div>
+                    <div class="footer-phone">+7 (495) <span>502-42-68</span></div>
+                    <div class="footer-schedule">Время работы: круглосуточно</div>
+                    <div class="footer-copyrights">© Интернет-магазин Cool Image, 2016</div>
+                </div>
+
+                <div class="footer-menu">
+                    <div class="footer-menu-title"><a href="#">Каталог товаров</a></div>
+                    <ul>
+                        <li><a href="#">Бренды</a></li>
+                        <li><a href="#">Платья</a></li>
+                        <li><a href="#">Штаны</a></li>
+                        <li><a href="#">Нижнее белье</a></li>
+                        <li><a href="#">Футболки</a></li>
+                        <li><a href="#">Спортивная Одежда</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu">
+                    <div class="footer-menu-title"><a href="#">О магазине</a></div>
+                    <ul>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Как купить</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">О магазине</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-subscribe">
+                    <div class="footer-menu-title">Рассылка</div>
+                    <form action="#" method="post">
+                        <div class="form-input"><input type="text" name="email" value="" placeholder="Ваш email" class="required email" /></div>
+                        <div class="form-submit"><input type="submit" value="OK" class="btn-1" /></div>
+                    </form>
+                </div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>
