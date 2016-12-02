@@ -134,6 +134,25 @@ $(window).on('resize', function() {
     $('.form-select select').chosen({disable_search: true, placeholder_text_multiple: ' ', no_results_text: 'Нет результатов'});
 });
 
+$(window).on('load resize', function() {
+    if ($(window).width() < 1200) {
+        if (!$('.catalogue-newently').hasClass('slick-slider')) {
+            $('.catalogue-newently').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                arrows: false,
+                dots: true
+            });
+        }
+    } else {
+        if ($('.catalogue-newently').hasClass('slick-slider')) {
+            $('.catalogue-newently').slick('unslick');
+        }
+    }
+});
+
 function initForm(curForm) {
     curForm.find('input.maskPhone').mask('+7 (999) 999-99-99');
 
