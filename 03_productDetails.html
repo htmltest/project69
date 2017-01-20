@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="js/chosen/chosen.css" />
         <link rel="stylesheet" href="js/jquery-ui-1.11.4.spinner/jquery-ui.css" />
         <link rel="stylesheet" href="js/slick/slick.css" />
+        <link rel="stylesheet" href="js/jscrollpane/jquery.jscrollpane.css" />
 
         <script src="js/jquery-2.2.4.min.js"></script>
         <script src="js/chosen/chosen.jquery.min.js"></script>
@@ -17,6 +18,8 @@
         <script src="js/validation/messages_ru.js"></script>
         <script src="js/jquery-ui-1.11.4.spinner/jquery-ui.min.js"></script>
         <script src="js/slick/slick.min.js"></script>
+        <script src="js/jscrollpane/jquery.mousewheel.js"></script>
+        <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
         <script src="js/tools.js"></script>
 
         <meta name="viewport" content="width=device-width" />
@@ -39,6 +42,12 @@
                         <div class="top-city">
                             <div class="top-city-select">
                                 <div class="top-city-value"><span>Санкт-Петербург</span></div>
+                                <ul>
+                                    <li><a href="#">Москва</a></li>
+                                    <li class="active"><a href="#">Санкт-Петербург</a></li>
+                                    <li><a href="#">Тверь</a></li>
+                                    <li><a href="#">Воронеж</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -48,7 +57,41 @@
                 <header>
                     <a href="#" class="menu-mobile-link"></a>
 
+                    <div class="menu-mobile">
+                        <div class="menu-mobile-group">Каталог</div>
+                        <div class="menu-mobile-list">
+                            <ul>
+                                <li><a href="#">Серьги</a></li>
+                                <li><a href="#">Кольца</a></li>
+                                <li><a href="#">Браслеты</a></li>
+                                <li><a href="#">Украшения для волос</a></li>
+                                <li><a href="#">Украшения на шею</a></li>
+                                <li><a href="#">Для невесты</a></li>
+                                <li><a href="#">Клатчи</a></li>
+                                <li><a href="#">Другое</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-mobile-group">Информация</div>
+                        <div class="menu-mobile-list">
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">Гарантии</a></li>
+                                <li><a href="#">Вопросы и ответы</a></li>
+                                <li><a href="#">Партнерам</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <a href="#" class="search-mobile-link"></a>
+
+                    <div class="search-mobile-form">
+                        <form action="#" method="post">
+                            <div class="search-mobile-input"><input type="text" name="search" value="" class="required" placeholder="Поиск по сайту" /></div>
+                            <div class="search-mobile-submit"><input type="submit" value="" /></div>
+                        </form>
+                    </div>
 
                     <div class="header-phone">
                         <div class="header-phone-value">+7 (495) <span>502-42-68</span></div>
@@ -60,6 +103,33 @@
                             <div class="header-cart-count">0 товаров</div>
                             <div class="header-cart-price">на сумму <strong>0 ₽</strong></div>
                         </div>
+                        <div class="header-cart-content">
+                            <div class="header-cart-list">
+                                <div class="header-cart-item">
+                                    <div class="header-cart-item-preview"><a href="#"><img src="files/basket-1.jpg" alt="" /></a></div>
+                                    <div class="header-cart-item-text">
+                                        <div class="header-cart-item-title"><a href="#">Бюстгалтеры любых размеров</a></div>
+                                        <div class="header-cart-item-art">SE12261b</div>
+                                    </div>
+                                    <div class="header-cart-item-price">
+                                        <div class="header-cart-item-price-value">5 200 <span>₽</span></div>
+                                        <div class="header-cart-item-price-count">1 шт</div>
+                                    </div>
+                                </div>
+                                <div class="header-cart-item">
+                                    <div class="header-cart-item-preview"><a href="#"><img src="files/basket-2.jpg" alt="" /></a></div>
+                                    <div class="header-cart-item-text">
+                                        <div class="header-cart-item-title"><a href="#">Копмлект белья от Calvin Klein</a></div>
+                                        <div class="header-cart-item-art">SE12261b</div>
+                                    </div>
+                                    <div class="header-cart-item-price">
+                                        <div class="header-cart-item-price-value">15 200 <span>₽</span></div>
+                                        <div class="header-cart-item-price-count">1 шт</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-cart-link"><a href="#" class="btn-1">Оформить заказ</a></div>
+                        </div>
                     </div>
 
                     <div class="logo"><a href="#">Cool Image</a></div>
@@ -68,13 +138,54 @@
                 <!-- nav -->
                 <div class="nav">
                     <div class="nav-icon"></div>
+
+                    <div class="nav-menu">
+                        <ul>
+                            <li>
+                                <a href="#">О магазине<span></span></a>
+                                <ul>
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Как купить</a></li>
+                                    <li><a href="#">Доставка</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Гарантия<span></span></a>
+                                <ul>
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Как купить</a></li>
+                                    <li><a href="#">Доставка</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
                     <nav>
                         <ul>
                             <li><a href="#">Бренды</a></li>
-                            <li class="active"><a href="#">Нижнее белье<span></span></a></li>
+                            <li class="active">
+                                <a href="#">Нижнее белье<span></span></a>
+                                <ul>
+                                    <li><a href="#">На косточках</a></li>
+                                    <li><a href="#">Пуш-ап</a></li>
+                                    <li><a href="#">Без косточек</a></li>
+                                    <li><a href="#">Базовые</a></li>
+                                    <li><a href="#">Наборы</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#">Косметика</a></li>
                             <li><a href="#">Бижутерия</a></li>
-                            <li><a href="#">Аксессуары<span></span></a></li>
+                            <li>
+                                <a href="#">Аксессуары<span></span></a>
+                                <ul>
+                                    <li><a href="#">На косточках</a></li>
+                                    <li><a href="#">Пуш-ап</a></li>
+                                    <li><a href="#">Без косточек</a></li>
+                                    <li><a href="#">Базовые</a></li>
+                                    <li><a href="#">Наборы</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                     <div class="search">
@@ -123,8 +234,15 @@
 
                                     <div class="product-price">7 400 <span>₽</span></div>
 
+                                    <div class="product-mobile-gallery">
+                                        <div class="product-mobile-gallery-list">
+                                            <div class="product-mobile-gallery-item"><img src="files/product-big-1.jpg" alt="" /></div>
+                                            <div class="product-mobile-gallery-item"><img src="files/product-big-2.jpg" alt="" /></div>
+                                        </div>
+                                    </div>
+
                                     <div class="product-order">
-                                        <form action="#" method="post">
+                                        <form action="windows/basket.html" method="post">
                                             <div class="product-order-size">
                                                 <label><input type="radio" name="size" value="XS" checked="checked" /><span>XS</span></label>
                                                 <label><input type="radio" name="size" value="S" /><span>S</span></label>
@@ -132,10 +250,10 @@
                                                 <label><input type="radio" name="size" value="L" /><span>L</span></label>
                                                 <label><input type="radio" name="size" value="XL" /><span>XL</span></label>
                                             </div>
-                                            <div class="product-order-size-me"><a href="#">определить свой размер</a></div>
+                                            <div class="product-order-size-me"><a href="windows/size.html" class="window-link">определить свой размер</a></div>
                                             <div class="form-input"><input type="number" name="count" value="1" step="1" min="1" /></div>
                                             <a href="#" class="btn-1">В корзину</a>
-                                            <a href="#" class="btn-2">В <span>один</span><span>1</span> клик</a>
+                                            <a href="windows/fast.html" class="btn-2 window-link">В <span>один</span><span>1</span> клик</a>
                                         </form>
                                     </div>
 

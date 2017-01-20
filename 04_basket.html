@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="js/chosen/chosen.css" />
         <link rel="stylesheet" href="js/jquery-ui-1.11.4.spinner/jquery-ui.css" />
         <link rel="stylesheet" href="js/slick/slick.css" />
+        <link rel="stylesheet" href="js/jscrollpane/jquery.jscrollpane.css" />
 
         <script src="js/jquery-2.2.4.min.js"></script>
         <script src="js/chosen/chosen.jquery.min.js"></script>
@@ -17,6 +18,8 @@
         <script src="js/validation/messages_ru.js"></script>
         <script src="js/jquery-ui-1.11.4.spinner/jquery-ui.min.js"></script>
         <script src="js/slick/slick.min.js"></script>
+        <script src="js/jscrollpane/jquery.mousewheel.js"></script>
+        <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
         <script src="js/tools.js"></script>
 
         <meta name="viewport" content="width=device-width" />
@@ -39,6 +42,12 @@
                         <div class="top-city">
                             <div class="top-city-select">
                                 <div class="top-city-value"><span>Санкт-Петербург</span></div>
+                                <ul>
+                                    <li><a href="#">Москва</a></li>
+                                    <li class="active"><a href="#">Санкт-Петербург</a></li>
+                                    <li><a href="#">Тверь</a></li>
+                                    <li><a href="#">Воронеж</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -48,7 +57,41 @@
                 <header>
                     <a href="#" class="menu-mobile-link"></a>
 
+                    <div class="menu-mobile">
+                        <div class="menu-mobile-group">Каталог</div>
+                        <div class="menu-mobile-list">
+                            <ul>
+                                <li><a href="#">Серьги</a></li>
+                                <li><a href="#">Кольца</a></li>
+                                <li><a href="#">Браслеты</a></li>
+                                <li><a href="#">Украшения для волос</a></li>
+                                <li><a href="#">Украшения на шею</a></li>
+                                <li><a href="#">Для невесты</a></li>
+                                <li><a href="#">Клатчи</a></li>
+                                <li><a href="#">Другое</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-mobile-group">Информация</div>
+                        <div class="menu-mobile-list">
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">Гарантии</a></li>
+                                <li><a href="#">Вопросы и ответы</a></li>
+                                <li><a href="#">Партнерам</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <a href="#" class="search-mobile-link"></a>
+
+                    <div class="search-mobile-form">
+                        <form action="#" method="post">
+                            <div class="search-mobile-input"><input type="text" name="search" value="" class="required" placeholder="Поиск по сайту" /></div>
+                            <div class="search-mobile-submit"><input type="submit" value="" /></div>
+                        </form>
+                    </div>
 
                     <div class="header-phone">
                         <div class="header-phone-value">+7 (495) <span>502-42-68</span></div>
@@ -60,6 +103,33 @@
                             <div class="header-cart-count">0 товаров</div>
                             <div class="header-cart-price">на сумму <strong>0 ₽</strong></div>
                         </div>
+                        <div class="header-cart-content">
+                            <div class="header-cart-list">
+                                <div class="header-cart-item">
+                                    <div class="header-cart-item-preview"><a href="#"><img src="files/basket-1.jpg" alt="" /></a></div>
+                                    <div class="header-cart-item-text">
+                                        <div class="header-cart-item-title"><a href="#">Бюстгалтеры любых размеров</a></div>
+                                        <div class="header-cart-item-art">SE12261b</div>
+                                    </div>
+                                    <div class="header-cart-item-price">
+                                        <div class="header-cart-item-price-value">5 200 <span>₽</span></div>
+                                        <div class="header-cart-item-price-count">1 шт</div>
+                                    </div>
+                                </div>
+                                <div class="header-cart-item">
+                                    <div class="header-cart-item-preview"><a href="#"><img src="files/basket-2.jpg" alt="" /></a></div>
+                                    <div class="header-cart-item-text">
+                                        <div class="header-cart-item-title"><a href="#">Копмлект белья от Calvin Klein</a></div>
+                                        <div class="header-cart-item-art">SE12261b</div>
+                                    </div>
+                                    <div class="header-cart-item-price">
+                                        <div class="header-cart-item-price-value">15 200 <span>₽</span></div>
+                                        <div class="header-cart-item-price-count">1 шт</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-cart-link"><a href="#" class="btn-1">Оформить заказ</a></div>
+                        </div>
                     </div>
 
                     <div class="logo"><a href="#">Cool Image</a></div>
@@ -68,13 +138,54 @@
                 <!-- nav -->
                 <div class="nav">
                     <div class="nav-icon"></div>
+
+                    <div class="nav-menu">
+                        <ul>
+                            <li>
+                                <a href="#">О магазине<span></span></a>
+                                <ul>
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Как купить</a></li>
+                                    <li><a href="#">Доставка</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Гарантия<span></span></a>
+                                <ul>
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Как купить</a></li>
+                                    <li><a href="#">Доставка</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
                     <nav>
                         <ul>
                             <li><a href="#">Бренды</a></li>
-                            <li><a href="#">Нижнее белье<span></span></a></li>
+                            <li>
+                                <a href="#">Нижнее белье<span></span></a>
+                                <ul>
+                                    <li><a href="#">На косточках</a></li>
+                                    <li><a href="#">Пуш-ап</a></li>
+                                    <li><a href="#">Без косточек</a></li>
+                                    <li><a href="#">Базовые</a></li>
+                                    <li><a href="#">Наборы</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#">Косметика</a></li>
                             <li><a href="#">Бижутерия</a></li>
-                            <li><a href="#">Аксессуары<span></span></a></li>
+                            <li>
+                                <a href="#">Аксессуары<span></span></a>
+                                <ul>
+                                    <li><a href="#">На косточках</a></li>
+                                    <li><a href="#">Пуш-ап</a></li>
+                                    <li><a href="#">Без косточек</a></li>
+                                    <li><a href="#">Базовые</a></li>
+                                    <li><a href="#">Наборы</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                     <div class="search">
@@ -141,6 +252,9 @@
                                             <div class="basket-coupon-title">Купон
                                                 <div class="info-block">
                                                     <div class="info-link"></div>
+                                                    <div class="info-block-content">
+                                                        <div class="info-block-text">Направленный маркетинг, отбрасывая подробности, директивно раскручивает из ряда вон выходящий сегмент рынка. Партисипативное планирование, вопреки мнению П.Друкера, усиливает ролевой рекламный бриф. Производство настроено позитивно.</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="basket-coupon-text">Если у вас есть промокод, введите его ниже и узнайте свою скидку</div>
@@ -154,6 +268,9 @@
                                                 <div class="basket-gift-title">Ваш подарок
                                                     <div class="info-block">
                                                         <div class="info-link"></div>
+                                                        <div class="info-block-content">
+                                                            <div class="info-block-text">Направленный маркетинг, отбрасывая подробности, директивно раскручивает из ряда вон выходящий сегмент рынка. Партисипативное планирование, вопреки мнению П.Друкера, усиливает ролевой рекламный бриф. Производство настроено позитивно.</div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="basket-gift-value">Серьги длинные со снегирями</div>
@@ -208,7 +325,7 @@
                                             <div class="checkout-fast-descr">Оставьте телефон и менеджер уточнит все детали!</div>
                                         </div>
 
-                                        <div class="checkout-fast-link"><a href="#" class="btn-2">Быстрый заказ</a></div>
+                                        <div class="checkout-fast-link"><a href="windows/fast.html" class="btn-2 window-link">Быстрый заказ</a></div>
                                     </div>
                                     <!-- checkout fast END -->
 
@@ -253,8 +370,72 @@
                                                             </div>
                                                         </div>
                                                         <div class="order-tab active">
-                                                            <strong>Самовывоз из магазина:</strong><br />Метро Пражская, ул. Кировоградская, д. 13а,<br />ТРЦ Columbus, 1 этаж
-                                                            <div class="order-shop-link"><a href="#">Выбрать другой</a></div>
+                                                            <div class="selected-shop">
+                                                                <div class="selected-shop-title">Выбран магазин <span>на Пражской</span>:</div>
+                                                                <div class="selected-shop-address">Метро Пражская, ул. Кировоградская, д. 13а,<br />ТРЦ Columbus, 1 этаж</div>
+                                                                <div class="selected-shop-link"><a href="windows/select.html">Выбрать другой</a><input type="hidden" name="selectedShop" value="2" /></div>
+                                                            </div>
+                                                            <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+                                                            <script>
+                                                                var myMap;
+
+                                                                function init() {
+                                                                    myMap = new ymaps.Map('map', {
+                                                                        center: [55.755768, 37.617671],
+                                                                        zoom: 10,
+                                                                        controls: []
+                                                                    });
+
+                                                                    myMap.controls.add('zoomControl');
+                                                                    myMap.behaviors.disable('scrollZoom');
+
+                                                                    var placemarkList = [];
+                                                                    var i = 0;
+
+                                                                    var curID = $('input[name="selectedShop"]').val();
+                                                                    $('.select-shops .contacts-list input[value="' + curID + '"]').parents().filter('.product-shops-item').click();
+                                                                    $('.product-shops-item').each(function() {
+                                                                        var curItem = $(this);
+                                                                        var curIndex = $('.product-shops-item').index(curItem);
+                                                                        var myPlacemark = new ymaps.Placemark([curItem.data('coord1'), curItem.data('coord2')], {
+                                                                            hintContent: curItem.data('title'),
+                                                                            balloonId: curIndex
+                                                                        }, {
+                                                                            iconLayout: 'default#image',
+                                                                            iconImageHref: 'images/map-icon-1.png',
+                                                                            iconImageSize: [60, 80],
+                                                                            iconImageOffset: [-30, -80]
+                                                                        });
+                                                                        myPlacemark.events.add('click', function(e) {
+                                                                            var curPlacemark = e.get('target');
+                                                                            $('.product-shops-item.open').removeClass('open');
+                                                                            $('.product-shops-item').eq(curPlacemark.properties.get('balloonId')).addClass('open');
+                                                                            $('.product-shops-item').eq(curPlacemark.properties.get('balloonId')).find('input').prop('checked', true);
+                                                                            for (var j = 0; j < placemarkList.length; j++) {
+                                                                                placemarkList[j].options.set('iconImageHref', 'images/map-icon-1.png');
+                                                                            }
+                                                                            curPlacemark.options.set('iconImageHref', 'images/map-icon-2.png');
+                                                                            myMap.setCenter(curPlacemark.geometry.getCoordinates(), 10, {duration: 300});
+                                                                        });
+                                                                        placemarkList.push(myPlacemark);
+                                                                        i++;
+                                                                        myMap.geoObjects.add(myPlacemark);
+                                                                        if (curItem.hasClass('open')) {
+                                                                            myMap.setCenter([curItem.data('coord1'), curItem.data('coord2')], 10, {duration: 300});
+                                                                            myPlacemark.options.set('iconImageHref', 'images/map-icon-2.png');
+                                                                        }
+                                                                    });
+
+                                                                    $('.product-shops-item').click(function() {
+                                                                        myMap.setCenter([$(this).data('coord1'), $(this).data('coord2')], 10, {duration: 300});
+                                                                        var curIndex = $('.product-shops-item').index($(this));
+                                                                        for (var j = 0; j < placemarkList.length; j++) {
+                                                                            placemarkList[j].options.set('iconImageHref', 'images/map-icon-1.png');
+                                                                        }
+                                                                        placemarkList[curIndex].options.set('iconImageHref', 'images/map-icon-2.png');
+                                                                    });
+                                                                }
+                                                            </script>
                                                         </div>
                                                         <div class="order-tab">
                                                             <strong>Доставка курьером</strong> до квартиры
