@@ -206,296 +206,251 @@
                     <div class="content">
                         <div class="content-wrap">
 
-                            <!-- checkout -->
-                            <div class="checkout">
+                            <h1>Моя корзина</h1>
 
-                                <!-- checkout cart -->
-                                <div class="checkout-cart">
-                                    <div class="checkout-header">
-                                        <h2>Моя корзина</h2>
-                                    </div>
-
-                                    <form action="#" method="post">
-
-                                        <!-- basket row -->
-                                        <div class="basket-row">
-                                            <div class="basket-photo"><a href="#"><img src="files/basket-1.jpg" alt="" /></a></div>
-                                            <div class="basket-text">
-                                                <div class="basket-title"><a href="#">Бюстгалтеры любых размеров</a></div>
-                                                <div class="basket-art">SE12261b</div>
-                                            </div>
-                                            <div class="basket-row-count">
-                                                <div class="form-input"><input type="number" name="count[]" value="1" step="1" min="1" /></div>
-                                            </div>
-                                            <div class="basket-row-price"><span>5 200</span> <i>₽</i></div>
-                                            <div class="basket-delete"><a href="#"></a></div>
-                                        </div>
-                                        <!-- basket row END -->
-
-                                        <!-- basket row -->
-                                        <div class="basket-row">
-                                            <div class="basket-photo"><a href="#"><img src="files/basket-2.jpg" alt="" /></a></div>
-                                            <div class="basket-text">
-                                                <div class="basket-title"><a href="#">Копмлект белья от&nbsp;Calvin Klein</a></div>
-                                                <div class="basket-art">SE12261b</div>
-                                            </div>
-                                            <div class="basket-row-count">
-                                                <div class="form-input"><input type="number" name="count[]" value="1" step="1" min="1" /></div>
-                                            </div>
-                                            <div class="basket-row-price"><span>15 200</span> <i>₽</i></div>
-                                            <div class="basket-delete"><a href="#"></a></div>
-                                        </div>
-                                        <!-- basket row END -->
-
-                                        <!-- basket coupon -->
-                                        <div class="basket-coupon">
-                                            <div class="basket-coupon-title">Купон
-                                                <div class="info-block">
-                                                    <div class="info-link"></div>
-                                                    <div class="info-block-content">
-                                                        <div class="info-block-text">Направленный маркетинг, отбрасывая подробности, директивно раскручивает из ряда вон выходящий сегмент рынка. Партисипативное планирование, вопреки мнению П.Друкера, усиливает ролевой рекламный бриф. Производство настроено позитивно.</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="basket-coupon-text">Если у вас есть промокод, введите его ниже и узнайте свою скидку</div>
-                                            <div class="form-input"><input type="text" name="coupon" value="" /></div>
-                                        </div>
-                                        <!-- basket coupon END -->
-
-                                        <!-- basket results -->
-                                        <div class="basket-results">
-                                            <div class="basket-gift">
-                                                <div class="basket-gift-title">Ваш подарок
-                                                    <div class="info-block">
-                                                        <div class="info-link"></div>
-                                                        <div class="info-block-content">
-                                                            <div class="info-block-text">Направленный маркетинг, отбрасывая подробности, директивно раскручивает из ряда вон выходящий сегмент рынка. Партисипативное планирование, вопреки мнению П.Друкера, усиливает ролевой рекламный бриф. Производство настроено позитивно.</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="basket-gift-value">Серьги длинные со снегирями</div>
-                                            </div>
-
-                                            <div class="basket-info">
-                                                <div class="basket-info-row">
-                                                    <div class="basket-info-title">Стоимость товаров</div>
-                                                    <div class="basket-info-discount"></div>
-                                                    <div class="basket-info-value">20 200 ₽</div>
-                                                </div>
-                                                <div class="basket-info-row">
-                                                    <div class="basket-info-title">Доставка</div>
-                                                    <div class="basket-info-discount"></div>
-                                                    <div class="basket-info-value">500 ₽</div>
-                                                </div>
-                                                <div class="basket-info-row">
-                                                    <div class="basket-info-title">Скидка</div>
-                                                    <div class="basket-info-discount">10%</div>
-                                                    <div class="basket-info-value">-2 020 ₽</div>
-                                                </div>
-                                                <div class="basket-info-row">
-                                                    <div class="basket-info-title">Скидка по купону</div>
-                                                    <div class="basket-info-discount">7%</div>
-                                                    <div class="basket-info-value">-1 540 ₽</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="basket-summ">
-                                                <div class="basket-summ-title">К оплате</div>
-                                                <div class="basket-summ-value">17 140 <i>₽</i></div>
-                                            </div>
-                                        </div>
-                                        <!-- basket results END -->
-
-                                    </form>
-
+                            <div class="bx_ordercart bx_green">
+                                <div class="bx_sort_container">
+                                    <span>Товары в корзине:</span>
+                                    <a href="javascript:void(0)" id="basket_toolbar_button" class="current" onclick="showBasketItemsList()">Готовые к заказу<div id="normal_count" class="flat" style="display:none">&nbsp;(2)</div></a>
+                                    <a href="javascript:void(0)" id="basket_toolbar_button_delayed" onclick="showBasketItemsList(2)" style="display:none;">Отложенные<div id="delay_count" class="flat">&nbsp;(0)</div></a>
+                                    <a href="javascript:void(0)" id="basket_toolbar_button_subscribed" onclick="showBasketItemsList(3)" style="display:none;">Ожидаемые<div id="subscribe_count" class="flat">&nbsp;(0)</div></a>
+                                    <a href="javascript:void(0)" id="basket_toolbar_button_not_available" onclick="showBasketItemsList(4)" style="display:none;">Отсутствуют<div id="not_available_count" class="flat">&nbsp;(0)</div></a>
                                 </div>
-                                <!-- checkout cart END -->
 
-                                <!-- checkout order -->
-                                <div class="checkout-order">
-                                    <div class="checkout-header">
-                                        <h2>Оформление заказа</h2>
-                                        <a href="#">Я уже покупал</a>
+                                <div id="basket_items_list">
+                                    <div class="bx_ordercart_order_table_container">
+                                        <table id="basket_items">
+                                            <thead>
+                                                <tr>
+                                                    <td class="margin"></td>
+                                                    <td class="item" colspan="2" id="col_NAME">Товары</td>
+                                                    <td class="custom" id="col_DISCOUNT">Скидка</td>
+                                                    <td class="price" id="col_PRICE">Цена</td>
+                                                    <td class="custom" id="col_QUANTITY">Количество</td>
+                                                    <td class="custom" id="col_SUM">Сумма</td>
+                                                    <td class="custom"></td>
+                                                    <td class="margin"></td>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr id="86">
+                                                    <td class="margin"></td>
+                                                    <td class="itemphoto">
+                                                        <div class="bx_ordercart_photo_container">
+                                                            <a href="#"><div class="bx_ordercart_photo" style="background-image:url(files/basket-1-new.jpg)"></div></a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="item">
+                                                        <h2 class="bx_ordercart_itemtitle"><a href="#">Бюстгалтеры любых размеров</a></h2>
+                                                        <div class="bx_ordercart_itemart"></div>
+                                                        <div class="bx_item_detail_scu_small_noadaptive">
+                                                            <span class="bx_item_section_name_gray">Цвет</span>
+                                                            <div class="bx_scu_scroller_container">
+                                                                <div class="bx_scu">
+                                                                    <ul id="prop_COLOR_REF_86" style="width: 200%; margin-left:0;" class="sku_prop_list">
+                                                                        <li style="width:10%;" class="sku_prop bx_active" data-value-id="black" data-element="86" data-property="COLOR_REF">
+                                                                            <a href="javascript:void(0)" class="cnt"><span class="cnt_item" style="background-image:url(files/basket-color-1.png)"></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="bx_slide_left" onclick="leftScroll('COLOR_REF', 86, 1);"></div>
+                                                                <div class="bx_slide_right" onclick="rightScroll('COLOR_REF', 86, 1);"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bx_item_detail_size_small_noadaptive">
+                                                            <span class="bx_item_section_name_gray">Размер</span>
+                                                            <div class="bx_size_scroller_container">
+                                                                <div class="bx_size">
+                                                                    <ul id="prop_SIZES_CLOTHES_86" style="width: 200%; margin-left:0;" class="sku_prop_list">
+                                                                        <li style="width:10%;" class="sku_prop bx_active" data-value-id="XS" data-element="86" data-property="SIZES_CLOTHES">
+                                                                            <a href="javascript:void(0)" class="cnt">XS</a>
+                                                                        </li>
+                                                                        <li style="width:10%;" class="sku_prop" data-value-id="S" data-element="86" data-property="SIZES_CLOTHES">
+                                                                            <a href="javascript:void(0)" class="cnt">S</a>
+                                                                        </li>
+                                                                        <li style="width:10%;" class="sku_prop" data-value-id="M" data-element="86" data-property="SIZES_CLOTHES">
+                                                                            <a href="javascript:void(0)" class="cnt">M</a>
+                                                                        </li>
+                                                                        <li style="width:10%;" class="sku_prop" data-value-id="L" data-element="86" data-property="SIZES_CLOTHES">
+                                                                            <a href="javascript:void(0)" class="cnt">L</a>
+                                                                        </li>
+                                                                        <li style="width:10%;" class="sku_prop" data-value-id="XL" data-element="86" data-property="SIZES_CLOTHES">
+                                                                            <a href="javascript:void(0)" class="cnt">XL</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="bx_slide_left" onclick="leftScroll('SIZES_CLOTHES', 86, 5);"></div>
+                                                                <div class="bx_slide_right" onclick="rightScroll('SIZES_CLOTHES', 86, 5);"></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="custom">
+                                                        <span>Скидка:</span>
+                                                        <div id="discount_value_86">0%</div>
+                                                    </td>
+                                                    <td class="price">
+                                                        <div class="current_price" id="current_price_86">2 600 <span>₽</span></div>
+                                                        <div class="old_price" id="old_price_86"></div>
+                                                    </td>
+                                                    <td class="custom">
+                                                        <span>Количество:</span>
+                                                        <div class="centered">
+                                                            <table class="counter" cellspacing="0" cellpadding="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input size="3" id="QUANTITY_INPUT_86" name="QUANTITY_INPUT_86" maxlength="18" min="0" max="100" step="0" style="max-width: 50px" value="2" onchange="updateQuantity('QUANTITY_INPUT_86', '86', 0, false)" type="text">
+                                                                        </td>
+                                                                        <td id="basket_quantity_control">
+                                                                            <div class="basket_quantity_control">
+                                                                                <a href="javascript:void(0);" class="plus" onclick="setQuantity(86, 1, 'up', false);"></a>
+                                                                                <a href="javascript:void(0);" class="minus" onclick="setQuantity(86, 1, 'down', false);"></a>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td style="text-align: left">шт</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <input id="QUANTITY_86" name="QUANTITY_86" value="2" type="hidden">
+                                                    </td>
+                                                    <td class="custom">
+                                                        <span>Сумма:</span>
+                                                        <div id="sum_86">5 200 <span>₽</span></div>
+                                                    </td>
+                                                    <td class="control">
+                                                        <a href="/personal/cart/?basketAction=delete&amp;id=86">Удалить</a><br>
+                                                        <a href="/personal/cart/?basketAction=delay&amp;id=86">Отложить</a>
+                                                    </td>
+                                                    <td class="margin"></td>
+                                                </tr>
+
+                                                <tr id="88">
+                                                    <td class="margin"></td>
+                                                    <td class="itemphoto">
+                                                        <div class="bx_ordercart_photo_container">
+                                                            <a href="#"><div class="bx_ordercart_photo" style="background-image:url(files/basket-2-new.jpg)"></div></a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="item">
+                                                        <h2 class="bx_ordercart_itemtitle"><a href="#">Копмлект белья от Calvin Klein</a></h2>
+                                                        <div class="bx_ordercart_itemart"></div>
+                                                        <div class="bx_item_detail_scu_small_noadaptive">
+                                                            <span class="bx_item_section_name_gray">Цвет</span>
+                                                            <div class="bx_scu_scroller_container">
+                                                                <div class="bx_scu">
+                                                                    <ul id="prop_COLOR_REF_88" style="width: 200%; margin-left:0;" class="sku_prop_list">
+                                                                        <li style="width:10%;" class="sku_prop bx_active" data-value-id="orangered" data-element="88" data-property="COLOR_REF">
+                                                                            <a href="javascript:void(0)" class="cnt"><span class="cnt_item" style="background-image:url(files/basket-color-2.png)"></span></a>
+                                                                        </li>
+                                                                        <li style="width:10%;" class="sku_prop" data-value-id="redblue" data-element="88" data-property="COLOR_REF">
+                                                                            <a href="javascript:void(0)" class="cnt"><span class="cnt_item" style="background-image:url(files/basket-color-3.png)"></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="bx_slide_left" onclick="leftScroll('COLOR_REF', 88, 2);"></div>
+                                                                <div class="bx_slide_right" onclick="rightScroll('COLOR_REF', 88, 2);"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bx_item_detail_size_small_noadaptive">
+                                                            <span class="bx_item_section_name_gray">Размер</span>
+                                                            <div class="bx_size_scroller_container">
+                                                                <div class="bx_size">
+                                                                    <ul id="prop_SIZES_CLOTHES_88" style="width: 200%; margin-left:0;" class="sku_prop_list">
+                                                                        <li style="width:10%;" class="sku_prop bx_active" data-value-id="XS" data-element="88" data-property="SIZES_CLOTHES">
+                                                                            <a href="javascript:void(0)" class="cnt">XS</a>
+                                                                        </li>
+                                                                        <li style="width:10%;" class="sku_prop" data-value-id="S" data-element="88" data-property="SIZES_CLOTHES">
+                                                                            <a href="javascript:void(0)" class="cnt">S</a>
+                                                                        </li>
+                                                                        <li style="width:10%;" class="sku_prop" data-value-id="M" data-element="88" data-property="SIZES_CLOTHES">
+                                                                            <a href="javascript:void(0)" class="cnt">M</a>
+                                                                        </li>
+                                                                        <li style="width:10%;" class="sku_prop" data-value-id="L" data-element="88" data-property="SIZES_CLOTHES">
+                                                                            <a href="javascript:void(0)" class="cnt">L</a>
+                                                                        </li>
+                                                                        <li style="width:10%;" class="sku_prop" data-value-id="XL" data-element="88" data-property="SIZES_CLOTHES">
+                                                                            <a href="javascript:void(0)" class="cnt">XL</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="bx_slide_left" onclick="leftScroll('SIZES_CLOTHES', 88, 5);"></div>
+                                                                <div class="bx_slide_right" onclick="rightScroll('SIZES_CLOTHES', 88, 5);"></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="custom">
+                                                        <span>Скидка:</span>
+                                                        <div id="discount_value_88">10%</div>
+                                                    </td>
+                                                    <td class="price">
+                                                        <div class="current_price" id="current_price_88">15 200 <span>₽</span></div>
+                                                        <div class="old_price" id="old_price_88">16 300 <span>₽</span></div>
+                                                    </td>
+                                                    <td class="custom">
+                                                        <span>Количество:</span>
+                                                        <div class="centered">
+                                                            <table class="counter" cellspacing="0" cellpadding="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input size="3" id="QUANTITY_INPUT_88" name="QUANTITY_INPUT_88" maxlength="18" min="0" max="100" step="0" style="max-width: 50px" value="1" onchange="updateQuantity('QUANTITY_INPUT_88', '88', 0, false)" type="text">
+                                                                        </td>
+                                                                        <td id="basket_quantity_control">
+                                                                            <div class="basket_quantity_control">
+                                                                                <a href="javascript:void(0);" class="plus" onclick="setQuantity(88, 1, 'up', false);"></a>
+                                                                                <a href="javascript:void(0);" class="minus" onclick="setQuantity(88, 1, 'down', false);"></a>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td style="text-align: left">шт</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <input id="QUANTITY_88" name="QUANTITY_88" value="1" type="hidden">
+                                                    </td>
+                                                    <td class="custom">
+                                                        <span>Сумма:</span>
+                                                        <div id="sum_88">15 200 <span>₽</span></div>
+                                                    </td>
+                                                    <td class="control">
+                                                        <a href="/personal/cart/?basketAction=delete&amp;id=88">Удалить</a><br>
+                                                        <a href="/personal/cart/?basketAction=delay&amp;id=88">Отложить</a>
+                                                    </td>
+                                                    <td class="margin"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
 
-                                    <!-- checkout fast -->
-                                    <div class="checkout-fast">
-                                        <div class="checkout-fast-text">
-                                            <div class="checkout-fast-title">Некогда заполнять форму?</div>
-                                            <div class="checkout-fast-descr">Оставьте телефон и менеджер уточнит все детали!</div>
+                                    <div class="bx_ordercart_order_pay">
+                                        <div class="bx_ordercart_order_pay_right">
+                                            <table class="bx_ordercart_order_sum">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Товаров на сумму:</td>
+                                                        <td id="allSum_wVAT_FORMATED">18 300 <span>₽</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Скидка:</td>
+                                                        <td id="allSum_wVAT_FORMATED">1000 <span>₽</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fwb">Итого:</td>
+                                                        <td class="fwb" id="allSum_FORMATED">17&nbsp;140&nbsp;<span>₽</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div style="clear:both;"></div>
                                         </div>
-
-                                        <div class="checkout-fast-link"><a href="windows/fast.html" class="btn-2 window-link">Быстрый заказ</a></div>
+                                        <div style="clear:both;"></div>
+                                        <div class="bx_ordercart_order_pay_center">
+                                            <a href="javascript:void(0)" onclick="checkOut();" class="checkout">Оформить заказ</a>
+                                        </div>
                                     </div>
-                                    <!-- checkout fast END -->
-
-                                    <!-- checkout form -->
-                                    <div class="checkout-form">
-                                        <form action="#" method="post">
-                                            <div class="form-row">
-                                                <div class="form-label">Имя <span>*</span></div>
-                                                <div class="form-field">
-                                                    <div class="form-input"><input type="text" name="name" value="" class="required" /></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-label">E-mail <span>*</span></div>
-                                                <div class="form-field">
-                                                    <div class="form-input"><input type="text" name="email" value="" class="required email" /></div>
-                                                    <div class="form-checkbox"><label><input type="checkbox" name="subscribe" checked="checked" class="required" /><span></span>Подписаться на новости и скидки</label></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-label">Ваш телефон <span>*</span></div>
-                                                <div class="form-field">
-                                                    <div class="form-input"><input type="text" name="phone" value="" class="required maskPhone" /></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-label">Адрес и&nbsp;способ доставки</div>
-                                                <div class="form-field">
-                                                    <div class="order-tabs">
-                                                        <div class="order-tabs-menu">
-                                                            <div class="order-tabs-menu-item">
-                                                                <label><input type="radio" name="delivery" value="1" checked="checked" /><span><em>Самовывоз<br />из магазина</em></span></label>
-                                                            </div>
-                                                            <div class="order-tabs-menu-item">
-                                                                <label><input type="radio" name="delivery" value="2" /><span><em>Доставка<br />курьером</em></span></label>
-                                                            </div>
-                                                            <div class="order-tabs-menu-item">
-                                                                <label><input type="radio" name="delivery" value="3" /><span><em>Доставка<br />почтой</em></span></label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="order-tab active">
-                                                            <div class="selected-shop">
-                                                                <div class="selected-shop-title">Выбран магазин <span>на Пражской</span>:</div>
-                                                                <div class="selected-shop-address">Метро Пражская, ул. Кировоградская, д. 13а,<br />ТРЦ Columbus, 1 этаж</div>
-                                                                <div class="selected-shop-link"><a href="windows/select.html">Выбрать другой</a><input type="hidden" name="selectedShop" value="2" /></div>
-                                                            </div>
-                                                            <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
-                                                            <script>
-                                                                var myMap;
-
-                                                                function init() {
-                                                                    myMap = new ymaps.Map('map', {
-                                                                        center: [55.755768, 37.617671],
-                                                                        zoom: 10,
-                                                                        controls: []
-                                                                    });
-
-                                                                    myMap.controls.add('zoomControl');
-                                                                    myMap.behaviors.disable('scrollZoom');
-
-                                                                    var placemarkList = [];
-                                                                    var i = 0;
-
-                                                                    var curID = $('input[name="selectedShop"]').val();
-                                                                    $('.select-shops .contacts-list input[value="' + curID + '"]').parents().filter('.product-shops-item').click();
-                                                                    $('.product-shops-item').each(function() {
-                                                                        var curItem = $(this);
-                                                                        var curIndex = $('.product-shops-item').index(curItem);
-                                                                        var myPlacemark = new ymaps.Placemark([curItem.data('coord1'), curItem.data('coord2')], {
-                                                                            hintContent: curItem.data('title'),
-                                                                            balloonId: curIndex
-                                                                        }, {
-                                                                            iconLayout: 'default#image',
-                                                                            iconImageHref: 'images/map-icon-1.png',
-                                                                            iconImageSize: [60, 80],
-                                                                            iconImageOffset: [-30, -80]
-                                                                        });
-                                                                        myPlacemark.events.add('click', function(e) {
-                                                                            var curPlacemark = e.get('target');
-                                                                            $('.product-shops-item.open').removeClass('open');
-                                                                            $('.product-shops-item').eq(curPlacemark.properties.get('balloonId')).addClass('open');
-                                                                            $('.product-shops-item').eq(curPlacemark.properties.get('balloonId')).find('input').prop('checked', true);
-                                                                            for (var j = 0; j < placemarkList.length; j++) {
-                                                                                placemarkList[j].options.set('iconImageHref', 'images/map-icon-1.png');
-                                                                            }
-                                                                            curPlacemark.options.set('iconImageHref', 'images/map-icon-2.png');
-                                                                            myMap.setCenter(curPlacemark.geometry.getCoordinates(), 10, {duration: 300});
-                                                                        });
-                                                                        placemarkList.push(myPlacemark);
-                                                                        i++;
-                                                                        myMap.geoObjects.add(myPlacemark);
-                                                                        if (curItem.hasClass('open')) {
-                                                                            myMap.setCenter([curItem.data('coord1'), curItem.data('coord2')], 10, {duration: 300});
-                                                                            myPlacemark.options.set('iconImageHref', 'images/map-icon-2.png');
-                                                                        }
-                                                                    });
-
-                                                                    $('.product-shops-item').click(function() {
-                                                                        myMap.setCenter([$(this).data('coord1'), $(this).data('coord2')], 10, {duration: 300});
-                                                                        var curIndex = $('.product-shops-item').index($(this));
-                                                                        for (var j = 0; j < placemarkList.length; j++) {
-                                                                            placemarkList[j].options.set('iconImageHref', 'images/map-icon-1.png');
-                                                                        }
-                                                                        placemarkList[curIndex].options.set('iconImageHref', 'images/map-icon-2.png');
-                                                                    });
-                                                                }
-                                                            </script>
-                                                        </div>
-                                                        <div class="order-tab">
-                                                            <strong>Доставка курьером</strong> до квартиры
-                                                        </div>
-                                                        <div class="order-tab">
-                                                            <strong>Доставка почтой</strong> до ближайшего отделения
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-label">Способ оплаты</div>
-                                                <div class="form-field">
-                                                    <div class="order-tabs">
-                                                        <div class="order-tabs-menu">
-                                                            <div class="order-tabs-menu-item order-tabs-menu-item-2">
-                                                                <label><input type="radio" name="payment" value="1" checked="checked" /><span><em><img src="images/payment-1.png" alt="" width="69" height="41" />Яндекс.<br />Деньги</em></span></label>
-                                                            </div>
-                                                            <div class="order-tabs-menu-item order-tabs-menu-item-2">
-                                                                <label><input type="radio" name="payment" value="2" /><span><em><img src="images/payment-2.png" alt="" width="69" height="41" />Банковские<br />карты</em></span></label>
-                                                            </div>
-                                                            <div class="order-tabs-menu-item order-tabs-menu-item-2">
-                                                                <label><input type="radio" name="payment" value="3" /><span><em><img src="images/payment-3.png" alt="" width="69" height="41" />Наличные<br />курьеру</em></span></label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="order-tab active">
-                                                            <strong>Яндекс.деньги</strong><br />Оплата производится с помощью системы Яндекс.Деньги и средства будут сняты с вашего кошелька
-                                                        </div>
-                                                        <div class="order-tab">
-                                                            <strong>Банковские карты</strong><br />Оплата производится с помощью банковской карты и средства будут сняты с вашей карты
-                                                        </div>
-                                                        <div class="order-tab">
-                                                            <strong>Наличные курьеру</strong><br />при передаче товара
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-label">Комментарий к&nbsp;заказу</div>
-                                                <div class="form-field">
-                                                    <div class="form-input"><textarea name="comment" rows="3" cols="10"></textarea></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-label"></div>
-                                                <div class="form-field">
-                                                    <div class="form-submit"><input type="submit" value="Подтвердить заказ" class="btn-1" /></div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <!-- checkout form END -->
                                 </div>
-                                <!-- checkout order END -->
-
                             </div>
-                            <!-- checkout END -->
 
                         </div>
                     </div>

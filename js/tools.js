@@ -190,27 +190,6 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
-    $('body').on('click', '.selected-shop-link a', function(e) {
-        windowOpen($(this).attr('href'));
-        e.preventDefault();
-    });
-
-    $('body').on('click', '.product-shops-item', function() {
-        $('.product-shops-item.open').removeClass('open');
-        $(this).addClass('open');
-    });
-
-    $('body').on('click', '.select-shops .btn-1', function(e) {
-        var curSelect = $('.select-shops .product-shops-item.open');
-        if (curSelect.length == 1) {
-            $('input[name="selectedShop"]').val(curSelect.find('input').val());
-            $('.selected-shop-title span').html(curSelect.find('.product-shops-item-name span').html());
-            $('.selected-shop-address').html(curSelect.find('.product-shops-item-detail dd').eq(0).html());
-        }
-        windowClose();
-        e.preventDefault();
-    });
-
     $('.product-mobile-gallery-list').slick({
         infinite: true,
         slidesToShow: 1,

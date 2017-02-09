@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Cool Image</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif&amp;subset=cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.11.4.spinner/jquery-ui.css" />
+        <link rel="stylesheet" href="js/slick/slick.css" />
+        <link rel="stylesheet" href="js/jscrollpane/jquery.jscrollpane.css" />
+
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/jquery-ui-1.11.4.spinner/jquery-ui.min.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/jscrollpane/jquery.mousewheel.js"></script>
+        <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <!-- top -->
+                <div class="top">
+                    <div class="top-inner">
+                        <a href="#" class="top-cabinet-link">Личный кабинет</a>
+
+                        <a href="#" class="top-compare-link"><strong>Список сравнения</strong> <em></em> <span>0</span></a>
+                        <a href="#" class="top-favorite-link">Избранное</a>
+
+                        <div class="top-city">
+                            <div class="top-city-select">
+                                <div class="top-city-value"><span>Санкт-Петербург</span></div>
+                                <ul>
+                                    <li><a href="#">Москва</a></li>
+                                    <li class="active"><a href="#">Санкт-Петербург</a></li>
+                                    <li><a href="#">Тверь</a></li>
+                                    <li><a href="#">Воронеж</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- top END -->
+
+                <header>
+                    <a href="#" class="menu-mobile-link"></a>
+
+                    <div class="menu-mobile">
+                        <div class="menu-mobile-group">Каталог</div>
+                        <div class="menu-mobile-list">
+                            <ul>
+                                <li><a href="#">Серьги</a></li>
+                                <li><a href="#">Кольца</a></li>
+                                <li><a href="#">Браслеты</a></li>
+                                <li><a href="#">Украшения для волос</a></li>
+                                <li><a href="#">Украшения на шею</a></li>
+                                <li><a href="#">Для невесты</a></li>
+                                <li><a href="#">Клатчи</a></li>
+                                <li><a href="#">Другое</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-mobile-group">Информация</div>
+                        <div class="menu-mobile-list">
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">Гарантии</a></li>
+                                <li><a href="#">Вопросы и ответы</a></li>
+                                <li><a href="#">Партнерам</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="#" class="search-mobile-link"></a>
+
+                    <div class="search-mobile-form">
+                        <form action="#" method="post">
+                            <div class="search-mobile-input"><input type="text" name="search" value="" class="required" placeholder="Поиск по сайту" /></div>
+                            <div class="search-mobile-submit"><input type="submit" value="" /></div>
+                        </form>
+                    </div>
+
+                    <div class="header-phone">
+                        <div class="header-phone-value">+7 (495) <span>502-42-68</span></div>
+                        <div class="header-phone-text">Время работы: круглосуточно</div>
+                    </div>
+
+                    <div class="header-cart">
+                        <div class="header-cart-value">
+                            <div class="header-cart-count">0<span> товаров</span></div>
+                            <div class="header-cart-price">на сумму <strong>0 ₽</strong></div>
+                        </div>
+                        <div class="header-cart-content">
+                            <div class="header-cart-list">
+                                <div class="header-cart-item">
+                                    <div class="header-cart-item-preview"><a href="#"><img src="files/basket-1.jpg" alt="" /></a></div>
+                                    <div class="header-cart-item-text">
+                                        <div class="header-cart-item-title"><a href="#">Бюстгалтеры любых размеров</a></div>
+                                        <div class="header-cart-item-art">SE12261b</div>
+                                    </div>
+                                    <div class="header-cart-item-price">
+                                        <div class="header-cart-item-price-value">5 200 <span>₽</span></div>
+                                        <div class="header-cart-item-price-count">1 шт</div>
+                                    </div>
+                                </div>
+                                <div class="header-cart-item">
+                                    <div class="header-cart-item-preview"><a href="#"><img src="files/basket-2.jpg" alt="" /></a></div>
+                                    <div class="header-cart-item-text">
+                                        <div class="header-cart-item-title"><a href="#">Копмлект белья от Calvin Klein</a></div>
+                                        <div class="header-cart-item-art">SE12261b</div>
+                                    </div>
+                                    <div class="header-cart-item-price">
+                                        <div class="header-cart-item-price-value">15 200 <span>₽</span></div>
+                                        <div class="header-cart-item-price-count">1 шт</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-cart-link"><a href="#" class="btn-1">Оформить заказ</a></div>
+                        </div>
+                    </div>
+
+                    <div class="logo"><a href="#">Cool Image</a></div>
+                </header>
+
+                <!-- nav -->
+                <div class="nav">
+                    <div class="nav-icon"></div>
+
+                    <div class="nav-menu">
+                        <ul>
+                            <li>
+                                <a href="#">О магазине<span></span></a>
+                                <ul>
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Как купить</a></li>
+                                    <li><a href="#">Доставка</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Гарантия<span></span></a>
+                                <ul>
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Как купить</a></li>
+                                    <li><a href="#">Доставка</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <nav>
+                        <ul>
+                            <li><a href="#">Бренды</a></li>
+                            <li>
+                                <a href="#">Нижнее белье<span></span></a>
+                                <ul>
+                                    <li><a href="#">На косточках</a></li>
+                                    <li><a href="#">Пуш-ап</a></li>
+                                    <li><a href="#">Без косточек</a></li>
+                                    <li><a href="#">Базовые</a></li>
+                                    <li><a href="#">Наборы</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Косметика</a></li>
+                            <li><a href="#">Бижутерия</a></li>
+                            <li>
+                                <a href="#">Аксессуары<span></span></a>
+                                <ul>
+                                    <li><a href="#">На косточках</a></li>
+                                    <li><a href="#">Пуш-ап</a></li>
+                                    <li><a href="#">Без косточек</a></li>
+                                    <li><a href="#">Базовые</a></li>
+                                    <li><a href="#">Наборы</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <form action="#" method="post">
+                            <div class="form-input"><input type="text" name="search" value="" class="required" /></div>
+                            <div class="form-submit"><input type="submit" value="" /></div>
+                        </form>
+                    </div>
+                </div>
+                <!-- nav END -->
+
+                <div class="breadcrumbs"><a href="#">Каталог</a><span></span>Корзина</div>
+
+                <!-- container -->
+                <div class="container">
+
+                    <!-- content -->
+                    <div class="content">
+                        <div class="content-wrap">
+
+                            <h1>Оформление заказа</h1>
+
+                            <div class="bx-content col-xs-12"><div style="display:none">
+
+
+	<div id="sls-42230" class="bx-slst">
+
+
+
+		<input name="SALE_LOCATION_SELECTOR_RESOURCES" value="" class="bx-ui-slst-target" type="hidden">
+
+		<div class="bx-ui-slst-pool">
+		<div class="dropdown-block bx-ui-slst-input-block">
+				<span class="dropdown-icon"></span>
+				<input name="" value="" autocomplete="off" class="dropdown-field" style="display: none;" type="text">
+				<div class="bx-ui-combobox-container" style="margin: 0px; padding: 0px; border: none; position: relative;">
+											<input value="" autocomplete="off" class="bx-ui-combobox-fake" placeholder="Выберите местоположение ..." type="text">
+									</div>
+				<div class="dropdown-fade2white"></div>
+				<div class="bx-ui-combobox-loader" data-bx-ui-id="combobox-loader"></div>
+				<div class="bx-ui-combobox-toggle" title="Открыть / закрыть" data-bx-ui-id="combobox-toggle"></div>
+
+				<div class="bx-ui-combobox-dropdown" data-bx-ui-id="combobox-dropdown" style="display: none;">
+
+					<div data-bx-ui-id="pager-pane">
+					<div style="height: 100px;"></div><div></div><div style="height: 100px;"></div></div>
+				</div>
+			</div></div>
+
+					<div data-bx-ui-id="slst-error">
+							</div>
+
+
+
+		<div class="bx-ui-slst-loader"></div>
+	</div>
+
+	<script type="text/javascript">
+
+		if (!window.BX && top.BX)
+			window.BX = top.BX;
+
+
+							if(typeof window.BX.locationSelectors == 'undefined') window.BX.locationSelectors = {};
+				window.BX.locationSelectors['SALE_LOCATION_SELECTOR_RESOURCES'] =
+
+			new BX.Sale.component.location.selector.steps({'scope':'sls-42230','source':'/bitrix/components/bitrix/sale.location.selector.steps/get.php','query':{'FILTER':{'SITE_ID':'s1'},'BEHAVIOUR':{'SEARCH_BY_PRIMARY':'1','LANGUAGE_ID':'ru'}},'selectedItem':0,'knownBundles':{'a':[]},'provideLinkBy':'code','messages':{'notSelected':'Выберите местоположение ...','error':'К сожалению, произошла внутренняя ошибка','nothingFound':'Не удалось обнаружить местоположение','clearSelection':'--- Отменить выбор'},'callback':'','useSpawn':true,'initializeByGlobalEvent':'','globalEventScope':'','rootNodeValue':0,'showDefault':false,'bundlesIncomplete':{'a':true,'0':true},'autoSelectWhenSingle':true,'types':{'1':{'CODE':'COUNTRY'},'2':{'CODE':'COUNTRY_DISTRICT'},'3':{'CODE':'REGION'},'4':{'CODE':'SUBREGION'},'5':{'CODE':'CITY'},'6':{'CODE':'VILLAGE'},'7':{'CODE':'STREET'}},'disableKeyboardInput':false,'dontShowNextChoice':false});
+
+
+	</script>
+
+</div>	<noscript>
+		<div style="color:red">Для оформления заказа необходимо включить JavaScript. По-видимому, JavaScript либо не поддерживается браузером, либо отключен. Измените настройки браузера и затем <a href="">повторите попытку</a>.</div>
+	</noscript>
+	<form action="/personal/order/make/" method="POST" name="ORDER_FORM" id="bx-soa-order-form" enctype="multipart/form-data">
+		<input name="sessid" id="sessid" value="ecf67caa8042f6040e1e3f2f30b4c9e9" type="hidden">		<input name="action" value="saveOrderAjax" type="hidden">
+		<input name="location_type" value="code" type="hidden">
+		<input name="BUYER_STORE" id="BUYER_STORE" value="0" type="hidden">
+		<div id="bx-soa-order" class="row bx-green">
+			<!--	MAIN BLOCK	-->
+			<div class="col-sm-9 bx-soa">
+				<div id="bx-soa-main-notifications">
+					<div class="alert alert-danger" style="display:none"></div>
+					<div data-type="informer" style="display:none"></div>
+				</div>
+				<!--	AUTH BLOCK	-->
+				<div id="bx-soa-auth" class="bx-soa-section bx-soa-auth" style="display:none">
+					<div class="bx-soa-section-title-container">
+						<h2 class="bx-soa-section-title col-sm-9">
+							<span class="bx-soa-section-title-count"></span>Авторизация						</h2>
+					</div>
+					<div class="bx-soa-section-content container-fluid"></div>
+				</div>
+
+				<!--	DUPLICATE MOBILE ORDER SAVE BLOCK	-->
+				<div id="bx-soa-total-mobile" style="margin-bottom: 6px;" class="visible-xs"><div class="bx-soa-cart-total"><div class="bx-soa-cart-total-line"><span class="bx-soa-cart-t">Товаров на:</span><span class="bx-soa-cart-d">1 878.10 руб.<br><span class="bx-price-old">1 998 руб.</span></span></div><div class="bx-soa-cart-total-line"><span class="bx-soa-cart-t">Доставка:</span><span class="bx-soa-cart-d">500 руб.</span></div><div class="bx-soa-cart-total-line bx-soa-cart-total-line-total"><span class="bx-soa-cart-t">Итого:</span><span class="bx-soa-cart-d">2 378.10 руб.</span></div><div class="bx-soa-cart-total-button-container visible-xs"><a href="javascript:void(0)" class="btn btn-default btn-lg btn-order-save">Оформить заказ</a></div></div></div>
+
+									<!--	BASKET ITEMS BLOCK	-->
+					<div id="bx-soa-basket" data-visited="true" class="bx-soa-section bx-active bx-step-completed" style="">
+						<div class="bx-soa-section-title-container">
+							<h2 class="bx-soa-section-title col-sm-9">
+								<span class="bx-soa-section-title-count">1</span>Товары в заказе							</h2>
+							<div class="col-xs-12 col-sm-3 text-right"><a href="javascript:void(0)" class="bx-soa-editstep">изменить</a></div>
+						</div>
+
+					<div class="bx-soa-section-content container-fluid"><div class="bx-soa-table-fade"><div style="overflow-x: auto; overflow-y: hidden;"><div class="bx-soa-item-table"><div class="bx-soa-item-tr bx-soa-basket-info bx-soa-item-tr-first"><div style="min-width: 300px;" class="bx-soa-item-td"><div class="bx-soa-item-block"><div class="bx-soa-item-img-block"><a href="/catalog/underwear/underwear-rose-perplexity/"><div class="bx-soa-item-imgcontainer" style="background-image: url(files/basket-1.jpg);"></div></a></div><div class="bx-soa-item-content"><div class="bx-soa-item-title"><a href="/catalog/underwear/underwear-rose-perplexity/">Нижнее белье Розовое Смущенье</a></div><div class="bx-scu-container"><div style="text-align: left;" class="bx-soa-item-td-title">Цвет</div><div style="text-align: left;" class="bx-soa-item-td-text">Розовый</div><div style="text-align: left;" class="bx-soa-item-td-title">Размеры одежды </div><div style="text-align: left;" class="bx-soa-item-td-text">XL</div></div></div></div></div><div class="bx-soa-item-td bx-soa-item-properties bx-text-right"><div class="bx-soa-item-td-title visible-xs visible-sm">Количество</div><div class="bx-soa-item-td-text"><span>1&nbsp;шт</span></div></div><div class="bx-soa-item-td bx-soa-item-properties bx-text-right"><div class="bx-soa-item-td-title visible-xs visible-sm">Сумма</div><div class="bx-soa-item-td-text"><strong class="bx-price all">1 079.10 руб.</strong><br><strong class="bx-price-old">1 199 руб.</strong></div></div></div><div class="bx-soa-item-tr bx-soa-basket-info"><div style="min-width: 300px;" class="bx-soa-item-td"><div class="bx-soa-item-block"><div class="bx-soa-item-img-block"><a href="/catalog/t-shirts/t-shirt-mens-purity/"><div class="bx-soa-item-imgcontainer" style="background-image: url(files/basket-2.jpg);"></div></a></div><div class="bx-soa-item-content"><div class="bx-soa-item-title"><a href="/catalog/t-shirts/t-shirt-mens-purity/">Футболка Мужская Чистота</a></div><div class="bx-scu-container"><div style="text-align: left;" class="bx-soa-item-td-title">Цвет</div><div style="text-align: left;" class="bx-soa-item-td-text">Белый</div><div style="text-align: left;" class="bx-soa-item-td-title">Размеры одежды </div><div style="text-align: left;" class="bx-soa-item-td-text">XL</div></div></div></div></div><div class="bx-soa-item-td bx-soa-item-properties bx-text-right"><div class="bx-soa-item-td-title visible-xs visible-sm">Количество</div><div class="bx-soa-item-td-text"><span>1&nbsp;шт</span></div></div><div class="bx-soa-item-td bx-soa-item-properties bx-text-right"><div class="bx-soa-item-td-title visible-xs visible-sm">Сумма</div><div class="bx-soa-item-td-text"><strong class="bx-price all">799 руб.</strong></div></div></div></div></div></div></div></div>
+
+				<!--	REGION BLOCK	-->
+				<div id="bx-soa-region" data-visited="true" class="bx-soa-section bx-active bx-step-error bx-step-completed" style="">
+					<div class="bx-soa-section-title-container">
+						<h2 class="bx-soa-section-title col-sm-9">
+							<span class="bx-soa-section-title-count">2</span>Регион доставки						</h2>
+						<div class="col-xs-12 col-sm-3 text-right"><a href="" class="bx-soa-editstep" style="">изменить</a></div>
+					</div>
+
+				<div class="bx-soa-section-content"><div class="alert alert-danger"><div>Поле "Местоположение" обязательно для заполнения</div></div><strong>Местоположение:</strong> не указано<br></div></div>
+
+									<!--	DELIVERY BLOCK	-->
+					<div id="bx-soa-delivery" data-visited="true" class="bx-soa-section bx-active bx-step-completed" style="">
+						<div class="bx-soa-section-title-container">
+							<h2 class="bx-soa-section-title col-sm-9">
+								<span class="bx-soa-section-title-count">3</span>Доставка							</h2>
+							<div class="col-xs-12 col-sm-3 text-right"><a href="" class="bx-soa-editstep" style="">изменить</a></div>
+						</div>
+
+					<div class="bx-soa-section-content"><div style="display: none;" class="alert alert-danger"></div><div class="col-sm-9 bx-soa-pp-company-selected"><img style="height: 18px;" src="files/order-delivery.png" alt=""><strong>Доставка курьером</strong></div><div class="col-sm-3 bx-soa-pp-price">500 руб.</div><div style="clear: both;"></div></div></div>
+					<!--	PICKUP BLOCK	-->
+					<div id="bx-soa-pickup" data-visited="false" class="bx-soa-section" style="display:none">
+						<div class="bx-soa-section-title-container">
+							<h2 class="bx-soa-section-title col-sm-9">
+								<span class="bx-soa-section-title-count"></span>
+							</h2>
+							<div class="col-xs-12 col-sm-3 text-right"><a href="" class="bx-soa-editstep" style="display: none;">изменить</a></div>
+						</div>
+						<div class="bx-soa-section-content container-fluid" style="display: none;"></div>
+					</div>
+					<!--	PAY SYSTEMS BLOCK	-->
+					<div id="bx-soa-paysystem" data-visited="true" class="bx-soa-section bx-active bx-step-completed" style="">
+						<div class="bx-soa-section-title-container">
+							<h2 class="bx-soa-section-title col-sm-9">
+								<span class="bx-soa-section-title-count">4</span>Оплата							</h2>
+							<div class="col-xs-12 col-sm-3 text-right"><a href="" class="bx-soa-editstep" style="">изменить</a></div>
+						</div>
+
+					<div class="bx-soa-section-content"><div style="display: none;" class="alert alert-danger"></div><div class="bx-soa-pp-company-selected"><img src="files/order-payment.png" style="height:18px;" alt=""><strong>Яндекс.Деньги</strong></div><div style="clear: both;"></div></div></div>
+								<!--	BUYER PROPS BLOCK	-->
+				<div id="bx-soa-properties" data-visited="true" class="bx-soa-section bx-active bx-selected">
+					<div class="bx-soa-section-title-container">
+						<h2 class="bx-soa-section-title col-sm-9">
+							<span class="bx-soa-section-title-count">5</span>Покупатель						</h2>
+						<div class="col-xs-12 col-sm-3 text-right"><a href="" class="bx-soa-editstep" style="">изменить</a></div>
+					</div>
+
+				<div class="bx-soa-section-content container-fluid"><div style="display: none;" class="alert alert-danger"></div><div class="row"><div class="col-sm-12 bx-soa-customer"><div class="form-group bx-soa-customer-field" data-property-id-row="1"><label for="soa-property-1" class="bx-soa-custom-label"><span class="bx-authform-starrequired">*</span> Ф.И.О.</label><div class="soa-property-container"><input size="40" name="ORDER_PROP_1" id="soa-property-1" autocomplete="name" placeholder="" class="form-control bx-soa-customer-input bx-ios-fix" type="text"></div></div><div class="form-group bx-soa-customer-field" data-property-id-row="2"><label for="soa-property-2" class="bx-soa-custom-label"><span class="bx-authform-starrequired">*</span> E-Mail</label><div class="soa-property-container"><input size="40" name="ORDER_PROP_2" id="soa-property-2" autocomplete="email" placeholder="" class="form-control bx-soa-customer-input bx-ios-fix" type="text"></div></div><div class="form-group bx-soa-customer-field" data-property-id-row="3"><label for="soa-property-3" class="bx-soa-custom-label"><span class="bx-authform-starrequired">*</span> Телефон</label><div class="soa-property-container"><input size="30" name="ORDER_PROP_3" id="soa-property-3" autocomplete="tel" placeholder="" class="form-control bx-soa-customer-input bx-ios-fix" type="text"></div></div><div class="form-group bx-soa-customer-field" data-property-id-row="7"><label for="soa-property-7" class="bx-soa-custom-label"><span class="bx-authform-starrequired">*</span> Адрес доставки</label><div class="soa-property-container"><textarea cols="30" rows="3" name="ORDER_PROP_7" id="soa-property-7" placeholder="" class="form-control bx-ios-fix"></textarea></div></div></div><div class="col-sm-12"><div class="form-group bx-soa-customer-field"><label for="orderDescription" class="bx-soa-customer-label">Комментарии к заказу:</label><textarea id="orderDescription" cols="4" class="form-control bx-soa-customer-textarea bx-ios-fix" name="ORDER_DESCRIPTION"></textarea></div></div></div><div class="row bx-soa-more"><div class="bx-soa-more-btn col-xs-12"><a href="" class="pull-left btn btn-default btn-md">Назад</a></div></div></div></div>
+
+
+				<!--	ORDER SAVE BLOCK	-->
+				<div id="bx-soa-orderSave" class="hidden-xs">
+					<a href="javascript:void(0)" style="margin: 10px 0" class="pull-right btn btn-default btn-lg">
+						Оформить заказ					</a>
+				</div>
+
+				<div style="display: none;">
+					<div id="bx-soa-basket-hidden" class="bx-soa-section"><div class="bx-soa-section-content container-fluid"><div class="bx-soa-table-fade"><div style="overflow-x: auto; overflow-y: hidden;"><div class="bx-soa-item-table"><div class="bx-soa-item-tr bx-soa-basket-info bx-soa-item-tr-first"><div style="min-width: 300px;" class="bx-soa-item-td"><div class="bx-soa-item-block"><div class="bx-soa-item-img-block"><a href="/catalog/underwear/underwear-rose-perplexity/"><div class="bx-soa-item-imgcontainer" style="background-image: url(/upload/resize_cache/iblock/17b/160_160_1/17b9929cefad0fb3382a45bca9433947.jpg);background-image: -webkit-image-set(url(/upload/resize_cache/iblock/17b/160_160_1/17b9929cefad0fb3382a45bca9433947.jpg) 1x, url(/upload/resize_cache/iblock/17b/320_320_1/17b9929cefad0fb3382a45bca9433947.jpg) 2x)"></div></a></div><div class="bx-soa-item-content"><div class="bx-soa-item-title"><a href="/catalog/underwear/underwear-rose-perplexity/">Нижнее белье Розовое Смущенье</a></div><div class="bx-scu-container"><div style="text-align: left;" class="bx-soa-item-td-title">Цвет</div><div style="text-align: left;" class="bx-soa-item-td-text">Розовый</div><div style="text-align: left;" class="bx-soa-item-td-title">Размеры одежды </div><div style="text-align: left;" class="bx-soa-item-td-text">XL</div></div></div></div></div><div class="bx-soa-item-td bx-soa-item-properties bx-text-right"><div class="bx-soa-item-td-title visible-xs visible-sm">Количество</div><div class="bx-soa-item-td-text"><span>1&nbsp;шт</span></div></div><div class="bx-soa-item-td bx-soa-item-properties bx-text-right"><div class="bx-soa-item-td-title visible-xs visible-sm">Сумма</div><div class="bx-soa-item-td-text"><strong class="bx-price all">1 079.10 руб.</strong><br><strong class="bx-price-old">1 199 руб.</strong></div></div></div><div class="bx-soa-item-tr bx-soa-basket-info"><div style="min-width: 300px;" class="bx-soa-item-td"><div class="bx-soa-item-block"><div class="bx-soa-item-img-block"><a href="/catalog/t-shirts/t-shirt-mens-purity/"><div class="bx-soa-item-imgcontainer" style="background-image: url(/upload/resize_cache/iblock/f68/160_160_1/f68172b514d8b02e197c99f732568cd3.jpg);background-image: -webkit-image-set(url(/upload/resize_cache/iblock/f68/160_160_1/f68172b514d8b02e197c99f732568cd3.jpg) 1x, url(/upload/resize_cache/iblock/f68/320_320_1/f68172b514d8b02e197c99f732568cd3.jpg) 2x)"></div></a></div><div class="bx-soa-item-content"><div class="bx-soa-item-title"><a href="/catalog/t-shirts/t-shirt-mens-purity/">Футболка Мужская Чистота</a></div><div class="bx-scu-container"><div style="text-align: left;" class="bx-soa-item-td-title">Цвет</div><div style="text-align: left;" class="bx-soa-item-td-text">Белый</div><div style="text-align: left;" class="bx-soa-item-td-title">Размеры одежды </div><div style="text-align: left;" class="bx-soa-item-td-text">XL</div></div></div></div></div><div class="bx-soa-item-td bx-soa-item-properties bx-text-right"><div class="bx-soa-item-td-title visible-xs visible-sm">Количество</div><div class="bx-soa-item-td-text"><span>1&nbsp;шт</span></div></div><div class="bx-soa-item-td bx-soa-item-properties bx-text-right"><div class="bx-soa-item-td-title visible-xs visible-sm">Сумма</div><div class="bx-soa-item-td-text"><strong class="bx-price all">799 руб.</strong></div></div></div></div></div></div><div class="bx-soa-coupon"><div class="bx-soa-coupon-label"><label>Применить купон:</label></div><div class="bx-soa-coupon-block"><div class="bx-soa-coupon-input"><input id="coupon" class="form-control bx-ios-fix" type="text"></div><span class="bx-soa-coupon-item"></span></div></div><div class="row bx-soa-more"><div class="bx-soa-more-btn col-xs-12"><a href="" class="pull-right btn btn-default btn-md">Далее</a></div></div></div></div>
+
+
+
+					<div id="bx-soa-pickup-hidden" class="bx-soa-section"></div>
+
+					<div id="bx-soa-auth-hidden" class="bx-soa-section">
+						<div class="bx-soa-section-content container-fluid reg"></div>
+					</div>
+				<div id="bx-soa-region-hidden" class="bx-soa-section"><div class="bx-soa-section-content container-fluid"><div style="display: none;" class="alert alert-danger"></div><div class="bx_soa_location row"><div class="col-xs-12"><input name="PERSON_TYPE" value="1" type="hidden"><div data-property-id-row="6" class="form-group bx-soa-location-input-container has-error"><label class="bx-soa-custom-label" for="soa-property-6"><span class="bx-authform-starrequired">*</span> Местоположение</label><div id="tooltip-soa-property-6" class="bx-soa-tooltip bx-soa-tooltip-static bx-soa-tooltip-danger tooltip top" data-state="opened" style="opacity: 1; display: block;"><div class="tooltip-arrow"></div><div class="tooltip-inner">Поле "Местоположение" обязательно для заполнения</div></div>
+
+
+
+	<div id="sls-32325" class="bx-sls ">
+
+
+		<div class="dropdown-block bx-ui-sls-input-block form-control">
+
+			<span class="dropdown-icon"></span>
+			<input autocomplete="off" name="ORDER_PROP_6" value="0000073738" class="dropdown-field" placeholder="Введите название ..." style="display: none;" type="text"><div style="margin: 0px; padding: 0px; border: medium none; position: relative;" class="bx-ui-sls-container"><input disabled="disabled" autocomplete="off" class="bx-ui-sls-route" style="padding: 0px; margin: 0px;" type="text"><input autocomplete="off" value="0000073738" class="bx-ui-sls-fake" placeholder="Введите название ..." title="" type="text"></div>
+
+			<div class="dropdown-fade2white"></div>
+			<div class="bx-ui-sls-loader"></div>
+			<div class="bx-ui-sls-clear" title="Отменить выбор" style="display: none;"></div>
+			<div class="bx-ui-sls-pane" style="overflow-y: auto; overflow-x: hidden; display: none; bottom: auto; top: 35px;"><div class="bx-ui-sls-variants"><div class="dropdown-item bx-ui-sls-variant bx-ui-sls-variant-active">
+				<span class="dropdown-item-text"><span>Мос</span>альск, Мосальский район, Калужская область, Центр, Россия</span>
+							</div><div class="dropdown-item bx-ui-sls-variant">
+				<span class="dropdown-item-text"><span>Мос</span>ква, Московская область, Центр, Россия</span>
+							</div><div class="dropdown-item bx-ui-sls-variant">
+				<span class="dropdown-item-text"><span>Мос</span>ковский, Москва, Московская область, Центр, Россия</span>
+							</div><div class="dropdown-item bx-ui-sls-variant">
+				<span class="dropdown-item-text"><span>Мос</span>альский район, Калужская область, Центр, Россия</span>
+							</div><div class="dropdown-item bx-ui-sls-variant">
+				<span class="dropdown-item-text"><span>Мос</span>каленский район, Омская область, Сибирь, Россия</span>
+							</div><div class="dropdown-item bx-ui-sls-variant">
+				<span class="dropdown-item-text"><span>Мос</span>товский район, Краснодарский край, Юг, Россия</span>
+							</div><div class="dropdown-item bx-ui-sls-variant">
+				<span class="dropdown-item-text"><span>Мос</span>ковская область, Центр, Россия</span>
+							</div></div></div>
+
+		</div>
+
+
+
+
+
+		<div class="bx-ui-sls-error-message" style="display: none;">
+					</div>
+
+	</div>
+
+
+
+</div><input name="RECENT_DELIVERY_VALUE" value="0000073738" type="hidden"><div class="form-group bx-soa-location-input-container" data-property-id-row="4"><label for="zipProperty" class="bx-soa-custom-label"><span class="bx-authform-starrequired">*</span> Индекс</label><input id="zipProperty" placeholder="" autocomplete="zip" class="form-control bx-soa-customer-input bx-ios-fix" name="ORDER_PROP_4" type="text"></div><div class="bx-soa-reference">Выберите свой город в списке. Если вы не нашли свой город, выберите "другое местоположение", а город впишите в поле "Город"</div></div></div><div class="row bx-soa-more"><div class="bx-soa-more-btn col-xs-12"><a href="" class="pull-left btn btn-default btn-md">Назад</a><a href="" class="pull-right btn btn-default btn-md">Далее</a></div></div></div></div><div id="bx-soa-delivery-hidden" class="bx-soa-section"><div class="bx-soa-section-content container-fluid"><div style="display: none;" class="alert alert-danger"></div><div class="bx-soa-pp row"><div class="col-sm-7 bx-soa-pp-item-container"><div class="bx-soa-pp-company col-lg-3 col-sm-4 col-xs-6 bx-selected"><div class="bx-soa-pp-company-graf-container"><input id="ID_DELIVERY_ID_2" name="DELIVERY_ID" class="bx-soa-pp-company-checkbox" value="2" type="checkbox"><div class="bx-soa-pp-company-image" style="background-image: url(/upload/resize_cache/sale/delivery/logotip/02f/300_300_1/02f657bf9ecce9427c8d03f84fda7cf8.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/delivery/logotip/02f/300_300_1/02f657bf9ecce9427c8d03f84fda7cf8.png) 1x, url(/upload/sale/delivery/logotip/02f/02f657bf9ecce9427c8d03f84fda7cf8.png) 2x)"></div><div class="bx-soa-pp-delivery-cost">500 руб.</div></div><div class="bx-soa-pp-company-smalltitle">Доставка курьером</div></div><div class="bx-soa-pp-company col-lg-3 col-sm-4 col-xs-6"><div class="bx-soa-pp-company-graf-container"><input id="ID_DELIVERY_ID_3" name="DELIVERY_ID" class="bx-soa-pp-company-checkbox" value="3" type="checkbox"><div class="bx-soa-pp-company-image" style="background-image: url(/upload/resize_cache/sale/delivery/logotip/4bc/300_300_1/4bcb22c1852b6c7d1e1965de00a2bd57.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/delivery/logotip/4bc/300_300_1/4bcb22c1852b6c7d1e1965de00a2bd57.png) 1x, url(/upload/sale/delivery/logotip/4bc/4bcb22c1852b6c7d1e1965de00a2bd57.png) 2x)"></div><div class="bx-soa-pp-delivery-cost">0 руб.</div></div><div class="bx-soa-pp-company-smalltitle">Самовывоз</div></div></div><div class="col-sm-5 bx-soa-pp-desc-container"><div class="bx-soa-pp-company"><div class="bx-soa-pp-company-subTitle">Доставка курьером</div><div class="bx-soa-pp-company-logo"><div class="bx-soa-pp-company-graf-container"><div class="bx-soa-pp-company-image" style="background-image: url(/upload/resize_cache/sale/delivery/logotip/02f/300_300_1/02f657bf9ecce9427c8d03f84fda7cf8.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/delivery/logotip/02f/300_300_1/02f657bf9ecce9427c8d03f84fda7cf8.png) 1x, url(/upload/sale/delivery/logotip/02f/02f657bf9ecce9427c8d03f84fda7cf8.png) 2x)"></div></div></div><div class="bx-soa-pp-company-block"><div class="bx-soa-pp-company-desc">Доставка осуществляется в течение дня в удобное для вас время.</div></div><div style="clear: both;"></div><ul class="bx-soa-pp-list"><li><div class="bx-soa-pp-list-termin">Стоимость:</div><div class="bx-soa-pp-list-description">500 руб.</div></li></ul></div></div></div><div class="bx-soa-coupon"><div class="bx-soa-coupon-label"><label>Применить купон:</label></div><div class="bx-soa-coupon-block"><div class="bx-soa-coupon-input"><input id="coupon" class="form-control bx-ios-fix" type="text"></div><span class="bx-soa-coupon-item"></span></div></div><div class="row bx-soa-more"><div class="bx-soa-more-btn col-xs-12"><a href="" class="pull-left btn btn-default btn-md">Назад</a><a href="" class="pull-right btn btn-default btn-md">Далее</a></div></div></div></div><div id="bx-soa-paysystem-hidden" class="bx-soa-section"><div class="bx-soa-section-content container-fluid"><div style="display: none;" class="alert alert-danger"></div><div class="bx-soa-pp row"><div class="col-sm-7 bx-soa-pp-item-container"><div class="bx-soa-pp-company col-lg-3 col-sm-4 col-xs-6 bx-selected"><div class="bx-soa-pp-company-graf-container"><input id="ID_PAY_SYSTEM_ID_3" name="PAY_SYSTEM_ID" class="bx-soa-pp-company-checkbox" value="3" type="checkbox"><div class="bx-soa-pp-company-image" style="background-image: url(/upload/resize_cache/sale/paysystem/logotip/5e7/300_300_1/5e7be269224a0989876e20e195dfeb95.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/paysystem/logotip/5e7/300_300_1/5e7be269224a0989876e20e195dfeb95.png) 1x, url(/upload/resize_cache/sale/paysystem/logotip/5e7/600_600_1/5e7be269224a0989876e20e195dfeb95.png) 2x)"></div></div><div class="bx-soa-pp-company-smalltitle">Яндекс.Деньги</div></div><div class="bx-soa-pp-company col-lg-3 col-sm-4 col-xs-6"><div class="bx-soa-pp-company-graf-container"><input id="ID_PAY_SYSTEM_ID_4" name="PAY_SYSTEM_ID" class="bx-soa-pp-company-checkbox" value="4" type="checkbox"><div class="bx-soa-pp-company-image" style="background-image: url(/upload/resize_cache/sale/paysystem/logotip/638/300_300_1/638c87bcc7f1df426f6d3636b694c78b.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/paysystem/logotip/638/300_300_1/638c87bcc7f1df426f6d3636b694c78b.png) 1x, url(/upload/sale/paysystem/logotip/638/638c87bcc7f1df426f6d3636b694c78b.png) 2x)"></div></div><div class="bx-soa-pp-company-smalltitle">Банковские карты</div></div><div class="bx-soa-pp-company col-lg-3 col-sm-4 col-xs-6"><div class="bx-soa-pp-company-graf-container"><input id="ID_PAY_SYSTEM_ID_5" name="PAY_SYSTEM_ID" class="bx-soa-pp-company-checkbox" value="5" type="checkbox"><div class="bx-soa-pp-company-image" style="background-image: url(/upload/resize_cache/sale/paysystem/logotip/4e7/300_300_1/4e75dbbb444eb613931575af3b206541.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/paysystem/logotip/4e7/300_300_1/4e75dbbb444eb613931575af3b206541.png) 1x, url(/upload/sale/paysystem/logotip/4e7/4e75dbbb444eb613931575af3b206541.png) 2x)"></div></div><div class="bx-soa-pp-company-smalltitle">Терминалы</div></div><div class="bx-soa-pp-company col-lg-3 col-sm-4 col-xs-6"><div class="bx-soa-pp-company-graf-container"><input id="ID_PAY_SYSTEM_ID_1" name="PAY_SYSTEM_ID" class="bx-soa-pp-company-checkbox" value="1" type="checkbox"><div class="bx-soa-pp-company-image" style="background-image: url(/upload/resize_cache/sale/paysystem/logotip/184/300_300_1/184e5e4c890aece8f0176f31f6660aef.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/paysystem/logotip/184/300_300_1/184e5e4c890aece8f0176f31f6660aef.png) 1x, url(/upload/sale/paysystem/logotip/184/184e5e4c890aece8f0176f31f6660aef.png) 2x)"></div></div><div class="bx-soa-pp-company-smalltitle">Наличные курьеру</div></div><div class="bx-soa-pp-company col-lg-3 col-sm-4 col-xs-6"><div class="bx-soa-pp-company-graf-container"><input id="ID_PAY_SYSTEM_ID_2" name="PAY_SYSTEM_ID" class="bx-soa-pp-company-checkbox" value="2" type="checkbox"><div class="bx-soa-pp-company-image" style="background-image: url(/upload/resize_cache/sale/paysystem/logotip/fb2/300_300_1/fb245842eb59bef802c9663db265f1db.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/paysystem/logotip/fb2/300_300_1/fb245842eb59bef802c9663db265f1db.png) 1x, url(/upload/sale/paysystem/logotip/fb2/fb245842eb59bef802c9663db265f1db.png) 2x)"></div></div><div class="bx-soa-pp-company-smalltitle">Наложенный платеж</div></div><div class="bx-soa-pp-company col-lg-3 col-sm-4 col-xs-6"><div class="bx-soa-pp-company-graf-container"><input id="ID_PAY_SYSTEM_ID_7" name="PAY_SYSTEM_ID" class="bx-soa-pp-company-checkbox" value="7" type="checkbox"><div class="bx-soa-pp-company-image" style="background-image: url(/upload/resize_cache/sale/paysystem/logotip/a5e/300_300_1/a5eb9cac23aedad51b23314d07c03c36.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/paysystem/logotip/a5e/300_300_1/a5eb9cac23aedad51b23314d07c03c36.png) 1x, url(/upload/sale/paysystem/logotip/a5e/a5eb9cac23aedad51b23314d07c03c36.png) 2x)"></div></div><div class="bx-soa-pp-company-smalltitle">Сбербанк</div></div></div><div class="col-sm-5 bx-soa-pp-desc-container"><div class="bx-soa-pp-company"><div><div class="bx-soa-pp-company-subTitle">Яндекс.Деньги</div><div class="bx-soa-pp-company-logo"><div class="bx-soa-pp-company-graf-container"><div class="bx-soa-pp-company-image" style="background-image: url(/upload/resize_cache/sale/paysystem/logotip/5e7/300_300_1/5e7be269224a0989876e20e195dfeb95.png);background-image: -webkit-image-set(url(/upload/resize_cache/sale/paysystem/logotip/5e7/300_300_1/5e7be269224a0989876e20e195dfeb95.png) 1x, url(/upload/resize_cache/sale/paysystem/logotip/5e7/600_600_1/5e7be269224a0989876e20e195dfeb95.png) 2x)"></div></div></div><div class="bx-soa-pp-company-block"><div class="bx-soa-pp-company-desc">Оплата производится Яндекс деньгами, через сервис Яндекс.Касса. Подтверждением вашей оплаты является электронное почтовое уведомление, пришедшее после оплаты.</div></div></div></div></div></div><div class="row bx-soa-more"><div class="bx-soa-more-btn col-xs-12"><a href="" class="pull-left btn btn-default btn-md">Назад</a><a href="" class="pull-right btn btn-default btn-md">Далее</a></div></div></div></div><div id="bx-soa-properties-hidden" class="bx-soa-section"></div></div>
+			</div>
+
+			<!--	SIDEBAR BLOCK	-->
+			<div id="bx-soa-total" class="col-sm-3 bx-soa-sidebar">
+				<div class="bx-soa-cart-total-ghost" style="padding-top: 0px;"></div>
+				<div class="bx-soa-cart-total bx-soa-cart-total-fixed" style="width: 247px;"><div class="bx-soa-cart-total-line"><span class="bx-soa-cart-t">Товаров на:</span><span class="bx-soa-cart-d">1 878.10 руб.<br><span class="bx-price-old">1 998 руб.</span></span></div><div class="bx-soa-cart-total-line"><span class="bx-soa-cart-t">Доставка:</span><span class="bx-soa-cart-d">500 руб.</span></div><div class="bx-soa-cart-total-line bx-soa-cart-total-line-total"><span class="bx-soa-cart-t">Итого:</span><span class="bx-soa-cart-d" style="font-size: 28px;">2 378.10 руб.</span></div><div class="bx-soa-cart-total-button-container visible-xs"><a href="javascript:void(0)" class="btn btn-default btn-lg btn-order-save">Оформить заказ</a></div></div>
+			</div>
+		</div>
+	</form>
+
+	<div id="bx-soa-saved-files" style="display:none"></div>
+	<div id="bx-soa-soc-auth-services" style="display:none">
+		<script type="text/javascript">
+function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+</script>
+
+<div class="bx-authform-social">
+	<ul>
+		<li>
+			<a id="bx_socserv_icon_Livejournal" class="livejournal bx-authform-social-icon" href="javascript:void(0)" onclick="BxSocServPopup('Livejournal')" title="Livejournal"></a>
+				<div id="bx_socserv_form_Livejournal" class="bx-authform-social-popup">
+				<form action="/personal/order/make/" method="post">
+
+<span class="bx-ss-icon livejournal"></span>
+<input name="OPENID_IDENTITY_LIVEJOURNAL" value="" size="20" type="text">
+<span>.livejournal.com</span>
+<input name="sessid" id="sessid_1" value="ecf67caa8042f6040e1e3f2f30b4c9e9" type="hidden">
+<input name="auth_service_error" value="" type="hidden">
+<input class="button" name="" value="Войти" type="submit">
+										<input name="auth_service_id" value="Livejournal" type="hidden">
+				</form>
+			</div>
+			</li>
+		<li>
+			<a id="bx_socserv_icon_MailRuOpenID" class="openid-mail-ru bx-authform-social-icon" href="javascript:void(0)" onclick="BxSocServPopup('MailRuOpenID')" title="Mail.Ru"></a>
+				<div id="bx_socserv_form_MailRuOpenID" class="bx-authform-social-popup">
+				<form action="/personal/order/make/" method="post">
+
+<span class="bx-ss-icon openid-mail-ru"></span>
+<input name="OPENID_IDENTITY_MAILRU" value="" size="20" type="text">
+<span>@mail.ru</span>
+<input name="sessid" id="sessid_2" value="ecf67caa8042f6040e1e3f2f30b4c9e9" type="hidden">
+<input name="auth_service_error" value="" type="hidden">
+<input class="button" name="" value="Войти" type="submit">
+										<input name="auth_service_id" value="MailRuOpenID" type="hidden">
+				</form>
+			</div>
+			</li>
+		<li>
+			<a id="bx_socserv_icon_Liveinternet" class="liveinternet bx-authform-social-icon" href="javascript:void(0)" onclick="BxSocServPopup('Liveinternet')" title="Liveinternet"></a>
+				<div id="bx_socserv_form_Liveinternet" class="bx-authform-social-popup">
+				<form action="/personal/order/make/" method="post">
+
+<span class="bx-ss-icon liveinternet"></span>
+<span>liveinternet.ru/users/</span>
+<input name="OPENID_IDENTITY_LIVEINTERNET" value="" size="15" type="text">
+<input name="sessid" id="sessid_3" value="ecf67caa8042f6040e1e3f2f30b4c9e9" type="hidden">
+<input name="auth_service_error" value="" type="hidden">
+<input class="button" name="" value="Войти" type="submit">
+										<input name="auth_service_id" value="Liveinternet" type="hidden">
+				</form>
+			</div>
+			</li>
+		<li>
+			<a id="bx_socserv_icon_Blogger" class="blogger bx-authform-social-icon" href="javascript:void(0)" onclick="BxSocServPopup('Blogger')" title="Blogger"></a>
+				<div id="bx_socserv_form_Blogger" class="bx-authform-social-popup">
+				<form action="/personal/order/make/" method="post">
+
+<span class="bx-ss-icon blogger"></span>
+<input name="OPENID_IDENTITY_BLOGGER" value="" size="20" type="text">
+<span>.blogspot.com</span>
+<input name="sessid" id="sessid_4" value="ecf67caa8042f6040e1e3f2f30b4c9e9" type="hidden">
+<input name="auth_service_error" value="" type="hidden">
+<input class="button" name="" value="Войти" type="submit">
+										<input name="auth_service_id" value="Blogger" type="hidden">
+				</form>
+			</div>
+			</li>
+		<li>
+			<a id="bx_socserv_icon_OpenID" class="openid bx-authform-social-icon" href="javascript:void(0)" onclick="BxSocServPopup('OpenID')" title="OpenID"></a>
+				<div id="bx_socserv_form_OpenID" class="bx-authform-social-popup">
+				<form action="/personal/order/make/" method="post">
+
+<span class="bx-ss-icon openid"></span>
+<span>OpenID:</span>
+<input name="OPENID_IDENTITY_OPENID" value="" size="30" type="text">
+<input name="sessid" id="sessid_5" value="ecf67caa8042f6040e1e3f2f30b4c9e9" type="hidden">
+<input name="auth_service_error" value="" type="hidden">
+<input class="button" name="" value="Войти" type="submit">
+										<input name="auth_service_id" value="OpenID" type="hidden">
+				</form>
+			</div>
+			</li>
+	</ul>
+</div>
+	</div>
+
+	<div style="display: none">
+
+
+
+	<div id="sls-19509" class="bx-slst">
+
+
+
+		<input name="LOCATION" value="" class="bx-ui-slst-target" type="hidden">
+
+		<div class="bx-ui-slst-pool">
+		<div class="dropdown-block bx-ui-slst-input-block">
+				<span class="dropdown-icon"></span>
+				<input name="" value="" autocomplete="off" class="dropdown-field" style="display: none;" type="text">
+				<div class="bx-ui-combobox-container" style="margin: 0px; padding: 0px; border: none; position: relative;">
+											<input value="" autocomplete="off" class="bx-ui-combobox-fake" placeholder="Выберите местоположение ..." type="text">
+									</div>
+				<div class="dropdown-fade2white"></div>
+				<div class="bx-ui-combobox-loader" data-bx-ui-id="combobox-loader"></div>
+				<div class="bx-ui-combobox-toggle" title="Открыть / закрыть" data-bx-ui-id="combobox-toggle"></div>
+
+				<div class="bx-ui-combobox-dropdown" data-bx-ui-id="combobox-dropdown" style="display: none;">
+
+					<div data-bx-ui-id="pager-pane">
+					<div style="height: 100px;"></div><div></div><div style="height: 100px;"></div></div>
+				</div>
+			</div></div>
+
+					<div data-bx-ui-id="slst-error">
+							</div>
+
+
+
+		<div class="bx-ui-slst-loader"></div>
+	</div>
+
+	<script type="text/javascript">
+
+		if (!window.BX && top.BX)
+			window.BX = top.BX;
+
+
+
+			new BX.Sale.component.location.selector.steps({'scope':'sls-19509','source':'/bitrix/components/bitrix/sale.location.selector.steps/get.php','query':{'FILTER':{'SITE_ID':''},'BEHAVIOUR':{'SEARCH_BY_PRIMARY':'0','LANGUAGE_ID':'ru'}},'selectedItem':0,'knownBundles':{'a':[]},'provideLinkBy':'id','messages':{'notSelected':'Выберите местоположение ...','error':'К сожалению, произошла внутренняя ошибка','nothingFound':'Не удалось обнаружить местоположение','clearSelection':'--- Отменить выбор'},'callback':'','useSpawn':false,'initializeByGlobalEvent':'','globalEventScope':'','rootNodeValue':0,'showDefault':false,'bundlesIncomplete':{'a':true,'0':true},'autoSelectWhenSingle':true,'types':{'1':{'CODE':'COUNTRY'},'2':{'CODE':'COUNTRY_DISTRICT'},'3':{'CODE':'REGION'},'4':{'CODE':'SUBREGION'},'5':{'CODE':'CITY'},'6':{'CODE':'VILLAGE'},'7':{'CODE':'STREET'}},'disableKeyboardInput':false,'dontShowNextChoice':false});
+
+
+	</script>
+
+
+
+
+
+	<div id="sls-45403" class="bx-sls ">
+
+
+		<div class="dropdown-block bx-ui-sls-input-block">
+
+			<span class="dropdown-icon"></span>
+			<input autocomplete="off" name="LOCATION" value="" class="dropdown-field" placeholder="Введите название ..." style="display: none;" type="text"><div style="margin: 0px; padding: 0px; border: medium none; position: relative;" class="bx-ui-sls-container"><input disabled="disabled" autocomplete="off" class="bx-ui-sls-route" style="padding: 0px; margin: 0px;" type="text"><input autocomplete="off" value="" class="bx-ui-sls-fake" placeholder="Введите название ..." type="text"></div>
+
+			<div class="dropdown-fade2white"></div>
+			<div class="bx-ui-sls-loader"></div>
+			<div class="bx-ui-sls-clear" title="Отменить выбор" style="display: none;"></div>
+			<div class="bx-ui-sls-pane" style="overflow-y: auto; overflow-x: hidden; display: none;"><div class="bx-ui-sls-variants"></div></div>
+
+		</div>
+
+
+
+
+
+		<div class="bx-ui-sls-error-message">
+												</div>
+
+	</div>
+
+	<script>
+
+		if (!window.BX && top.BX)
+			window.BX = top.BX;
+
+
+
+			new BX.Sale.component.location.selector.search({'scope':'sls-45403','source':'/bitrix/components/bitrix/sale.location.selector.search/get.php','query':{'FILTER':{'EXCLUDE_ID':0,'SITE_ID':''},'BEHAVIOUR':{'SEARCH_BY_PRIMARY':'0','LANGUAGE_ID':'ru'}},'selectedItem':false,'knownItems':[],'provideLinkBy':'id','messages':{'nothingFound':'Не удалось обнаружить местоположение','error':'К сожалению, произошла внутренняя ошибка'},'callback':'','useSpawn':false,'initializeByGlobalEvent':'','globalEventScope':'','pathNames':[],'types':{'1':{'CODE':'COUNTRY'},'2':{'CODE':'COUNTRY_DISTRICT'},'3':{'CODE':'REGION'},'4':{'CODE':'SUBREGION'},'5':{'CODE':'CITY'},'6':{'CODE':'VILLAGE'},'7':{'CODE':'STREET'}}});
+
+
+	</script>
+
+	</div>
+
+
+	<script type="text/javascript">
+		BX.message({'SOA_YES':'да','SOA_NO':'нет','SOA_DO_SOC_SERV':'Войти с помощью соцсетей','SOA_NOT_FOUND':'Не найден','SOA_NOT_SPECIFIED':'не указано','SOA_NOT_SELECTED':'не выбрано','SOA_NOT_CALCULATED':'не рассчитана','SOA_PS_SELECT_ERROR':'Платежная система не выбрана','SOA_DELIVERY_SELECT_ERROR':'Служба доставки не выбрана','SOA_PICKUP_PHONE':'Телефон','SOA_PICKUP_ADDRESS':'Адрес','SOA_PICKUP_WORK':'Режим работы','SOA_PICKUP_STORE':'Склад','SOA_PICKUP_EMAIL':'Электронная почта','SOA_PICKUP_DESC':'Описание','SOA_MAP_COORDS':'Координаты на карте','SOA_DISTANCE_KM':'км','SOA_ORDER_PROPS':'Свойства заказа','SOA_FIELD':'Поле','SOA_REQUIRED':'обязательно для заполнения','SOA_INVALID_EMAIL':'Введен неверный e-mail','SOA_MIN_LENGTH':'Минимальная длина поля','SOA_MAX_LENGTH':'Максимальная длина поля','SOA_NOT_NUMERIC':'должно быть числовым','SOA_MIN_VALUE':'Минимальное значение поля','SOA_MAX_VALUE':'Максимальное значение поля','SOA_NUM_STEP':'не соответствует шагу','SOA_LESS':'не менее','SOA_MORE':'не более','SOA_SYMBOLS':'символов','SOA_INVALID_PATTERN':'не соответствует шаблону','SOA_PROP_NEW_PROFILE':'Новый профиль','SOA_PAY_SYSTEM':'Платежная система','SOA_PAY_ACCOUNT3':'Средств достаточно для полной оплаты заказа.','SOA_DELIVERY':'Служба доставки','SOA_ORDER_SUC':'Ваш заказ <b>№#ORDER_ID#<\/b> от #ORDER_DATE# успешно создан.','SOA_PAYMENT_SUC':'Номер вашей оплаты: <b>№#PAYMENT_ID#<\/b>','SOA_ORDER_SUC1':'Вы можете следить за выполнением своего заказа в <a href=\"#LINK#\">Персональном разделе сайта<\/a>. Обратите внимание, что для входа в этот раздел вам необходимо будет ввести логин и пароль пользователя сайта.','SOA_PAY':'Оплата заказа','SOA_PAY_LINK':'Если окно с платежной информацией не открылось автоматически, нажмите на ссылку <a href=\"#LINK#\" target=\"_blank\">Оплатить заказ<\/a>.','SOA_PAY_PDF':'Для того, чтобы скачать счет в формате pdf, нажмите на ссылку <a href=\"#LINK#\" target=\"_blank\">Скачать счет<\/a>.','SOA_ERROR_ORDER':'Ошибка формирования заказа','SOA_ERROR_ORDER_LOST':'Заказ №#ORDER_ID# не найден.','SOA_ERROR_ORDER_LOST1':'Пожалуйста обратитесь к администрации интернет-магазина или попробуйте оформить ваш заказ еще раз.','SOA_SUM_NAME':'Наименование','SOA_SUM_DISCOUNT':'Скидка','SOA_SUM_WEIGHT':'Вес','SOA_SUM_QUANTITY':'Кол-во','SOA_SUM_PRICE':'Цена','SOA_SUM_WEIGHT_SUM':'Общий вес:','SOA_SUM_SUMMARY':'Товаров на:','SOA_SUM_VAT':'НДС:','SOA_SUM_DELIVERY':'Доставка:','SOA_SUM_IT':'Итого:','SOA_SUM_PAYED':'Оплачено:','SOA_SUM_LEFT_TO_PAY':'Осталось оплатить:','SOA_ORDER_COMPLETE':'Заказ сформирован','CAPTCHA_REGF_TITLE':'Защита от автоматической регистрации','CAPTCHA_REGF_PROMT':'Введите слово на картинке','STOF_LOGIN':'Логин','STOF_PASSWORD':'Пароль','STOF_REMEMBER':'Запомнить меня','STOF_ENTER':'Войти','STOF_REGISTER':'Регистрация','STOF_DO_AUTHORIZE':'Авторизоваться','STOF_DO_REGISTER':'Зарегистрироваться','STOF_AUTH_REQUEST':'Пожалуйста, авторизуйтесь','STOF_REG_REQUEST':'Пожалуйста, зарегистрируйтесь','STOF_REG_HINT':'Если вы впервые на сайте, и хотите что бы мы вас помнили и все ваши заказы сохранялись,\nзаполните регистрационную форму.','STOF_FORGET_PASSWORD':'Забыли пароль?','STOF_NEXT_STEP':'Продолжить оформление заказа','STOF_NAME':'Имя','STOF_LASTNAME':'Фамилия','STOF_EMAIL':'E-mail','STOF_MY_PASSWORD':'Задать логин и пароль','STOF_RE_PASSWORD':'Повтор пароля','STOF_SYS_PASSWORD':'Сгенерировать логин и пароль','SALE_SADC_TRANSIT':'Срок доставки','SOA_NO_JS':'Для оформления заказа необходимо включить JavaScript. По-видимому, JavaScript либо не поддерживается браузером, либо отключен. Измените настройки браузера и затем <a href=\"\">повторите попытку<\/a>.','SOA_PAYSYSTEM_PRICE':'Дополнительно наложенный платеж:','SOA_OTHER_LOCATION':'Другое местоположение','SOA_LOCATION_NOT_FOUND':'Местоположение не найдено','SOA_LOCATION_NOT_FOUND_PROMPT':'Нажмите #ANCHOR#добавить местоположение#ANCHOR_END#, чтобы мы узнали, куда нам доставить ваш заказ','SOA_NOT_SELECTED_ALT':'При необходимости уточнить местоположение','SOA_ORDER_PS_ERROR':'Ошибка выбранного способа оплаты. Обратитесь к Администрации сайта, либо выберите другой способ оплаты.','AUTH_BLOCK_NAME_DEFAULT':'Авторизация','REG_BLOCK_NAME_DEFAULT':'Регистрация','BASKET_BLOCK_NAME_DEFAULT':'Товары в заказе','REGION_BLOCK_NAME_DEFAULT':'Регион доставки','PAYMENT_BLOCK_NAME_DEFAULT':'Оплата','DELIVERY_BLOCK_NAME_DEFAULT':'Доставка','BUYER_BLOCK_NAME_DEFAULT':'Покупатель','BACK_DEFAULT':'Назад','FURTHER_DEFAULT':'Далее','EDIT_DEFAULT':'изменить','ORDER_DEFAULT':'Оформить заказ','ADD_DEFAULT':'Добавить','PRICE_DEFAULT':'Стоимость','PERIOD_DEFAULT':'Срок доставки','NAV_BACK_DEFAULT':'Назад','NAV_FORWARD_DEFAULT':'Вперед','REGISTRATION_REFERENCE_DEFAULT':'Если вы впервые на сайте, и хотите что бы мы вас помнили и все ваши заказы сохранялись, заполните регистрационную форму.','AUTH_REFERENCE_1_DEFAULT':'Символом \"звездочка\" (*) отмечены обязательные для заполнения поля.','AUTH_REFERENCE_2_DEFAULT':'После регистрации вы получите информационное письмо.','AUTH_REFERENCE_3_DEFAULT':'Личные сведения, полученные в распоряжение интернет-магазина при регистрации или каким-либо иным образом, не будут без разрешения пользователей передаваться третьим организациям и лицам за исключением ситуаций, когда этого требует закон или судебное решение.','ADDITIONAL_PROPS_DEFAULT':'Дополнительные свойства','USE_COUPON_DEFAULT':'Применить купон','COUPON_DEFAULT':'Купон','PERSON_TYPE_DEFAULT':'Тип плательщика','SELECT_PROFILE_DEFAULT':'Выберите профиль','REGION_REFERENCE_DEFAULT':'Выберите свой город в списке. Если вы не нашли свой город, выберите \"другое местоположение\", а город впишите в поле \"Город\"','PICKUP_LIST_DEFAULT':'Пункты самовывоза:','NEAREST_PICKUP_LIST_DEFAULT':'Ближайшие пункты:','SELECT_PICKUP_DEFAULT':'Выбрать','INNER_PS_BALANCE_DEFAULT':'На вашем пользовательском счете:','ORDER_DESC_DEFAULT':'Комментарии к заказу:','SELECT_FILE_DEFAULT':'Выбрать','SUCCESS_PRELOAD_TEXT_DEFAULT':'Вы заказывали в нашем интернет-магазине, поэтому мы заполнили все данные автоматически.<br />\nЕсли все заполнено верно, нажмите кнопку \"#ORDER_BUTTON#\".\n','FAIL_PRELOAD_TEXT_DEFAULT':'Вы заказывали в нашем интернет-магазине, поэтому мы заполнили все данные автоматически.<br />\nОбратите внимание на развернутый блок с информацией о заказе. Здесь вы можете внести необходимые изменения или \nоставить как есть и нажать кнопку \"#ORDER_BUTTON#\".\n','DELIVERY_CALC_ERROR_TITLE_DEFAULT':'Не удалось рассчитать стоимость доставки.','DELIVERY_CALC_ERROR_TEXT_DEFAULT':'Вы можете продолжить оформление заказа, а чуть позже менеджер магазина свяжется с вами и уточнит информацию по доставке.','EMPTY_BASKET_TITLE':'Ваша корзина пуста','EMPTY_BASKET_HINT':'#A1#Нажмите здесь#A2#, чтобы продолжить покупки','SOA_BAD_EXTENSION':'Неверный тип файла','SOA_MAX_SIZE':'Превышен максимальный размер файла','PAY_SYSTEM_PAYABLE_ERROR_DEFAULT':'Вы сможете оплатить заказ после того, как менеджер проверит наличие полного комплекта товаров на складе. Сразу после проверки вы получите письмо с инструкциями по оплате. Оплатить заказ можно будет в персональном разделе сайта.'});
+		BX.Sale.OrderAjaxComponent.init({
+			result: {'IS_AUTHORIZED':false,'LAST_ORDER_DATA':{'FAIL':false},'ORDER_DESCRIPTION':false,'SHOW_AUTH':false,'SHOW_EMPTY_BASKET':false,'AUTH':{'new_user_registration_email_confirmation':'N','new_user_registration':'Y','new_user_email_required':'N'},'OK_MESSAGE':'','GRID':{'DEFAULT_COLUMNS':false,'HEADERS':[{'id':'NAME','name':'Название'},{'id':'PREVIEW_PICTURE','name':'Изображение'},{'id':'PROPS','name':'Свойства'},{'id':'QUANTITY','name':'Количество'},{'id':'SUM','name':'Сумма'}],'HEADERS_HIDDEN':[],'ROWS':{'12':{'id':'12','data':{'MODULE':'catalog','PRODUCT_ID':'143','ID':'12','LID':'s1','QUANTITY':'1','WEIGHT':'0.00','DELAY':'N','CAN_BUY':'Y','PRICE':'1079.1000','CUSTOM_PRICE':'N','BASE_PRICE':'1199.0000','PRODUCT_PRICE_ID':'102','CURRENCY':'RUB','BARCODE_MULTI':'N','RESERVED':'N','RESERVE_QUANTITY':'','NAME':'Нижнее белье Розовое Смущенье','CATALOG_XML_ID':'clothes_offers_s1','VAT_RATE':'0.0000','NOTES':'Розничная цена','DISCOUNT_PRICE':'119.9000','PRODUCT_PROVIDER_CLASS':'CCatalogProductProvider','CALLBACK_FUNC':'','ORDER_CALLBACK_FUNC':'','PAY_CALLBACK_FUNC':'','CANCEL_CALLBACK_FUNC':'','DIMENSIONS':'a:3:{s:5:\"WIDTH\";s:1:\"0\";s:6:\"HEIGHT\";s:1:\"0\";s:6:\"LENGTH\";s:1:\"0\";}','TYPE':'','SET_PARENT_ID':'','DETAIL_PAGE_URL':'/catalog/underwear/underwear-rose-perplexity/','FUSER_ID':'2','MEASURE_CODE':'796','MEASURE_NAME':'шт','ORDER_ID':'','DATE_INSERT':'09.02.2017 05:41:30','DATE_UPDATE':'09.02.2017 05:44:13','PRODUCT_XML_ID':'341#345','SUBSCRIBE':'N','RECOMMENDATION':'','VAT_INCLUDED':'Y','SORT':'100','DISCOUNT_NAME':'[1] Скидка на нижнее белье','DISCOUNT_COUPON':'','DISCOUNT_VALUE':'10%','PRICE_FORMATED':'1 079.10 руб.','WEIGHT_FORMATED':'0 кг','DISCOUNT_PRICE_PERCENT':'10','DISCOUNT_PRICE_PERCENT_FORMATED':'10%','BASE_PRICE_FORMATED':'1 199 руб.','PROPS':[{'CODE':'COLOR_REF','ID':'2','VALUE':'Розовый','SORT':'1','NAME':'Цвет'},{'CODE':'SIZES_CLOTHES','ID':'3','VALUE':'XL','SORT':'2','NAME':'Размеры одежды '}],'SUM_NUM':'1079.1','SUM':'1 079.10 руб.','SUM_BASE':'1199','SUM_BASE_FORMATED':'1 199 руб.','DETAIL_PICTURE':'105','PREVIEW_PICTURE_SRC':'','DETAIL_PICTURE_SRC':'/upload/resize_cache/iblock/17b/160_160_1/17b9929cefad0fb3382a45bca9433947.jpg','DETAIL_PICTURE_SRC_2X':'/upload/resize_cache/iblock/17b/320_320_1/17b9929cefad0fb3382a45bca9433947.jpg','DETAIL_PICTURE_SRC_ORIGINAL':'/upload/iblock/17b/17b9929cefad0fb3382a45bca9433947.jpg','MEASURE_TEXT':'шт','MEASURE':'796'},'actions':[],'columns':{'PROPS':'Цвет:&nbsp;Розовый<br />Размеры&nbsp;одежды&nbsp;:&nbsp;XL<br />','DETAIL_PICTURE':'<a href=\"/upload/iblock/17b/17b9929cefad0fb3382a45bca9433947.jpg\" title=\"Увеличить\" target=\"_blank\"><img src=\"/upload/iblock/17b/17b9929cefad0fb3382a45bca9433947.jpg\" border=0 alt=\"\" width=\"48\" height=\"110\" title=\"Увеличить\" /><\/a>','QUANTITY':'1&nbsp;шт'},'editable':true},'13':{'id':'13','data':{'MODULE':'catalog','PRODUCT_ID':'153','ID':'13','LID':'s1','QUANTITY':'1','WEIGHT':'0.00','DELAY':'N','CAN_BUY':'Y','PRICE':'799.0000','CUSTOM_PRICE':'N','BASE_PRICE':'799.0000','PRODUCT_PRICE_ID':'112','CURRENCY':'RUB','BARCODE_MULTI':'N','RESERVED':'N','RESERVE_QUANTITY':'','NAME':'Футболка Мужская Чистота','CATALOG_XML_ID':'clothes_offers_s1','VAT_RATE':'0.0000','NOTES':'Розничная цена','DISCOUNT_PRICE':'0.0000','PRODUCT_PROVIDER_CLASS':'CCatalogProductProvider','CALLBACK_FUNC':'','ORDER_CALLBACK_FUNC':'','PAY_CALLBACK_FUNC':'','CANCEL_CALLBACK_FUNC':'','DIMENSIONS':'a:3:{s:5:\"WIDTH\";s:1:\"0\";s:6:\"HEIGHT\";s:1:\"0\";s:6:\"LENGTH\";s:1:\"0\";}','TYPE':'','SET_PARENT_ID':'','DETAIL_PAGE_URL':'/catalog/t-shirts/t-shirt-mens-purity/','FUSER_ID':'2','MEASURE_CODE':'796','MEASURE_NAME':'шт','ORDER_ID':'','DATE_INSERT':'09.02.2017 05:41:34','DATE_UPDATE':'09.02.2017 05:44:13','PRODUCT_XML_ID':'359#363','SUBSCRIBE':'N','RECOMMENDATION':'','VAT_INCLUDED':'Y','SORT':'100','DISCOUNT_NAME':'','DISCOUNT_COUPON':'','DISCOUNT_VALUE':'0','PRICE_FORMATED':'799 руб.','WEIGHT_FORMATED':'0 кг','DISCOUNT_PRICE_PERCENT':'0','DISCOUNT_PRICE_PERCENT_FORMATED':'0%','BASE_PRICE_FORMATED':'799 руб.','PROPS':[{'CODE':'COLOR_REF','ID':'6','VALUE':'Белый','SORT':'1','NAME':'Цвет'},{'CODE':'SIZES_CLOTHES','ID':'7','VALUE':'XL','SORT':'2','NAME':'Размеры одежды '}],'SUM_NUM':'799','SUM':'799 руб.','SUM_BASE':'799','SUM_BASE_FORMATED':'799 руб.','DETAIL_PICTURE':'117','PREVIEW_PICTURE_SRC':'','DETAIL_PICTURE_SRC':'/upload/resize_cache/iblock/f68/160_160_1/f68172b514d8b02e197c99f732568cd3.jpg','DETAIL_PICTURE_SRC_2X':'/upload/resize_cache/iblock/f68/320_320_1/f68172b514d8b02e197c99f732568cd3.jpg','DETAIL_PICTURE_SRC_ORIGINAL':'/upload/iblock/f68/f68172b514d8b02e197c99f732568cd3.jpg','MEASURE_TEXT':'шт','MEASURE':'796'},'actions':[],'columns':{'PROPS':'Цвет:&nbsp;Белый<br />Размеры&nbsp;одежды&nbsp;:&nbsp;XL<br />','DETAIL_PICTURE':'<a href=\"/upload/iblock/f68/f68172b514d8b02e197c99f732568cd3.jpg\" title=\"Увеличить\" target=\"_blank\"><img src=\"/upload/iblock/f68/f68172b514d8b02e197c99f732568cd3.jpg\" border=0 alt=\"\" width=\"72\" height=\"110\" title=\"Увеличить\" /><\/a>','QUANTITY':'1&nbsp;шт'},'editable':true}}},'PERSON_TYPE':{'1':{'ID':'1','LID':'s1','NAME':'Физическое лицо','SORT':'100','ACTIVE':'Y','CHECKED':'Y'}},'PAY_SYSTEM':[{'ID':'3','PAY_SYSTEM_ID':'3','NAME':'Яндекс.Деньги','PSA_NAME':'Яндекс.Деньги','CODE':'','SORT':'50','DESCRIPTION':'Оплата производится Яндекс деньгами, через сервис Яндекс.Касса. Подтверждением вашей оплаты является электронное почтовое уведомление, пришедшее после оплаты.','PS_MODE':'PC','HAVE_PRICE':'N','ACTIVE':'Y','ALLOW_EDIT_PAYMENT':'Y','IS_CASH':'N','AUTO_CHANGE_1C':'N','PSA_ID':'3','PSA_ACTION_FILE':'yandex','PSA_RESULT_FILE':'','PSA_NEW_WINDOW':'N','PSA_PERSON_TYPE_ID':'','PSA_PARAMS':'a:1:{s:16:\"BX_PAY_SYSTEM_ID\";i:3;}','PSA_TARIF':'','PSA_HAVE_PAYMENT':'Y','PSA_HAVE_ACTION':'N','PSA_HAVE_RESULT':'N','PSA_HAVE_PREPAY':'N','PSA_HAVE_RESULT_RECEIVE':'Y','PSA_ENCODING':'','PSA_LOGOTIP':{'ID':'935','TIMESTAMP_X':'09.02.2017 05:35:09','MODULE_ID':'sale','HEIGHT':'488','WIDTH':'1024','FILE_SIZE':'30724','CONTENT_TYPE':'image/png','SUBDIR':'sale/paysystem/logotip/5e7','FILE_NAME':'5e7be269224a0989876e20e195dfeb95.png','ORIGINAL_NAME':'yandex.png','DESCRIPTION':'','HANDLER_ID':'','EXTERNAL_ID':'af5dae65387afd781d0f2a1cb883e28b','~src':false,'SRC':'/upload/sale/paysystem/logotip/5e7/5e7be269224a0989876e20e195dfeb95.png'},'CHECKED':'Y','PRICE':'0','PSA_LOGOTIP_SRC':'/upload/resize_cache/sale/paysystem/logotip/5e7/300_300_1/5e7be269224a0989876e20e195dfeb95.png','PSA_LOGOTIP_SRC_2X':'/upload/resize_cache/sale/paysystem/logotip/5e7/600_600_1/5e7be269224a0989876e20e195dfeb95.png','PSA_LOGOTIP_SRC_ORIGINAL':'/upload/sale/paysystem/logotip/5e7/5e7be269224a0989876e20e195dfeb95.png'},{'ID':'4','PAY_SYSTEM_ID':'4','NAME':'Банковские карты','PSA_NAME':'Банковские карты','CODE':'','SORT':'60','DESCRIPTION':'Оплата производится банковской картой через сервис Яндекс.Касса. Подтверждением вашей оплаты является электронное почтовое уведомление, пришедшее после оплаты.','PS_MODE':'AC','HAVE_PRICE':'N','ACTIVE':'Y','ALLOW_EDIT_PAYMENT':'Y','IS_CASH':'N','AUTO_CHANGE_1C':'N','PSA_ID':'4','PSA_ACTION_FILE':'yandex','PSA_RESULT_FILE':'','PSA_NEW_WINDOW':'N','PSA_PERSON_TYPE_ID':'','PSA_PARAMS':'a:1:{s:16:\"BX_PAY_SYSTEM_ID\";i:4;}','PSA_TARIF':'','PSA_HAVE_PAYMENT':'Y','PSA_HAVE_ACTION':'N','PSA_HAVE_RESULT':'N','PSA_HAVE_PREPAY':'N','PSA_HAVE_RESULT_RECEIVE':'Y','PSA_ENCODING':'','PSA_LOGOTIP':{'ID':'936','TIMESTAMP_X':'09.02.2017 05:35:09','MODULE_ID':'','HEIGHT':'249','WIDTH':'512','FILE_SIZE':'74090','CONTENT_TYPE':'image/png','SUBDIR':'sale/paysystem/logotip/638','FILE_NAME':'638c87bcc7f1df426f6d3636b694c78b.png','ORIGINAL_NAME':'yandex_cards.png','DESCRIPTION':'','HANDLER_ID':'','EXTERNAL_ID':'3e246e79f108ab3274fbc59df2ecede4','~src':false,'SRC':'/upload/sale/paysystem/logotip/638/638c87bcc7f1df426f6d3636b694c78b.png'},'PRICE':'0','PSA_LOGOTIP_SRC':'/upload/resize_cache/sale/paysystem/logotip/638/300_300_1/638c87bcc7f1df426f6d3636b694c78b.png','PSA_LOGOTIP_SRC_2X':'/upload/sale/paysystem/logotip/638/638c87bcc7f1df426f6d3636b694c78b.png','PSA_LOGOTIP_SRC_ORIGINAL':'/upload/sale/paysystem/logotip/638/638c87bcc7f1df426f6d3636b694c78b.png'},{'ID':'5','PAY_SYSTEM_ID':'5','NAME':'Терминалы','PSA_NAME':'Терминалы','CODE':'','SORT':'70','DESCRIPTION':'Оплата производится через Терминалы с использованием сервиса Яндекс.Касса. Подтверждением вашей оплаты является электронное почтовое уведомление, пришедшее после оплаты.','PS_MODE':'','HAVE_PRICE':'N','ACTIVE':'Y','ALLOW_EDIT_PAYMENT':'Y','IS_CASH':'N','AUTO_CHANGE_1C':'N','PSA_ID':'5','PSA_ACTION_FILE':'yandex','PSA_RESULT_FILE':'','PSA_NEW_WINDOW':'N','PSA_PERSON_TYPE_ID':'','PSA_PARAMS':'a:1:{s:16:\"BX_PAY_SYSTEM_ID\";i:5;}','PSA_TARIF':'','PSA_HAVE_PAYMENT':'Y','PSA_HAVE_ACTION':'N','PSA_HAVE_RESULT':'N','PSA_HAVE_PREPAY':'N','PSA_HAVE_RESULT_RECEIVE':'Y','PSA_ENCODING':'','PSA_LOGOTIP':{'ID':'937','TIMESTAMP_X':'09.02.2017 05:35:09','MODULE_ID':'','HEIGHT':'249','WIDTH':'512','FILE_SIZE':'65517','CONTENT_TYPE':'image/png','SUBDIR':'sale/paysystem/logotip/4e7','FILE_NAME':'4e75dbbb444eb613931575af3b206541.png','ORIGINAL_NAME':'yandex_terminals.png','DESCRIPTION':'','HANDLER_ID':'','EXTERNAL_ID':'98935c4fe8d6e2efa3df1b02d7b4ef81','~src':false,'SRC':'/upload/sale/paysystem/logotip/4e7/4e75dbbb444eb613931575af3b206541.png'},'PRICE':'0','PSA_LOGOTIP_SRC':'/upload/resize_cache/sale/paysystem/logotip/4e7/300_300_1/4e75dbbb444eb613931575af3b206541.png','PSA_LOGOTIP_SRC_2X':'/upload/sale/paysystem/logotip/4e7/4e75dbbb444eb613931575af3b206541.png','PSA_LOGOTIP_SRC_ORIGINAL':'/upload/sale/paysystem/logotip/4e7/4e75dbbb444eb613931575af3b206541.png'},{'ID':'1','PAY_SYSTEM_ID':'1','NAME':'Наличные курьеру','PSA_NAME':'Наличные курьеру','CODE':'','SORT':'80','DESCRIPTION':'Оплата производится наличными деньгами, в момент получения заказа. Подтверждением вашей оплаты является фискальный кассовый чек, вручаемый во время получения и оплаты заказа.','PS_MODE':'','HAVE_PRICE':'N','ACTIVE':'Y','ALLOW_EDIT_PAYMENT':'Y','IS_CASH':'N','AUTO_CHANGE_1C':'N','PSA_ID':'1','PSA_ACTION_FILE':'cash','PSA_RESULT_FILE':'','PSA_NEW_WINDOW':'N','PSA_PERSON_TYPE_ID':'','PSA_PARAMS':'a:1:{s:16:\"BX_PAY_SYSTEM_ID\";i:1;}','PSA_TARIF':'','PSA_HAVE_PAYMENT':'Y','PSA_HAVE_ACTION':'N','PSA_HAVE_RESULT':'N','PSA_HAVE_PREPAY':'N','PSA_HAVE_RESULT_RECEIVE':'N','PSA_ENCODING':'','PSA_LOGOTIP':{'ID':'933','TIMESTAMP_X':'09.02.2017 05:35:09','MODULE_ID':'sale','HEIGHT':'249','WIDTH':'512','FILE_SIZE':'7636','CONTENT_TYPE':'image/png','SUBDIR':'sale/paysystem/logotip/184','FILE_NAME':'184e5e4c890aece8f0176f31f6660aef.png','ORIGINAL_NAME':'cash.png','DESCRIPTION':'','HANDLER_ID':'','EXTERNAL_ID':'3c40eff88114ab54a5fd004e1497ae63','~src':false,'SRC':'/upload/sale/paysystem/logotip/184/184e5e4c890aece8f0176f31f6660aef.png'},'PRICE':'0','PSA_LOGOTIP_SRC':'/upload/resize_cache/sale/paysystem/logotip/184/300_300_1/184e5e4c890aece8f0176f31f6660aef.png','PSA_LOGOTIP_SRC_2X':'/upload/sale/paysystem/logotip/184/184e5e4c890aece8f0176f31f6660aef.png','PSA_LOGOTIP_SRC_ORIGINAL':'/upload/sale/paysystem/logotip/184/184e5e4c890aece8f0176f31f6660aef.png'},{'ID':'2','PAY_SYSTEM_ID':'2','NAME':'Наложенный платеж','PSA_NAME':'Наложенный платеж','CODE':'','SORT':'110','DESCRIPTION':'Оплата производится в момент получения заказа. Подтверждением вашей оплаты является фискальный кассовый чек, вручаемый во время получения и оплаты заказа.','PS_MODE':'','HAVE_PRICE':'N','ACTIVE':'Y','ALLOW_EDIT_PAYMENT':'Y','IS_CASH':'N','AUTO_CHANGE_1C':'N','PSA_ID':'2','PSA_ACTION_FILE':'cashondeliverycalc','PSA_RESULT_FILE':'','PSA_NEW_WINDOW':'N','PSA_PERSON_TYPE_ID':'','PSA_PARAMS':'a:1:{s:16:\"BX_PAY_SYSTEM_ID\";i:2;}','PSA_TARIF':'','PSA_HAVE_PAYMENT':'Y','PSA_HAVE_ACTION':'N','PSA_HAVE_RESULT':'N','PSA_HAVE_PREPAY':'N','PSA_HAVE_RESULT_RECEIVE':'N','PSA_ENCODING':'','PSA_LOGOTIP':{'ID':'934','TIMESTAMP_X':'09.02.2017 05:35:09','MODULE_ID':'sale','HEIGHT':'249','WIDTH':'512','FILE_SIZE':'9357','CONTENT_TYPE':'image/png','SUBDIR':'sale/paysystem/logotip/fb2','FILE_NAME':'fb245842eb59bef802c9663db265f1db.png','ORIGINAL_NAME':'cashondeliverycalc.png','DESCRIPTION':'','HANDLER_ID':'','EXTERNAL_ID':'9d029b6f2cb39b553b5f3f155a0a054a','~src':false,'SRC':'/upload/sale/paysystem/logotip/fb2/fb245842eb59bef802c9663db265f1db.png'},'PRICE':'0','PSA_LOGOTIP_SRC':'/upload/resize_cache/sale/paysystem/logotip/fb2/300_300_1/fb245842eb59bef802c9663db265f1db.png','PSA_LOGOTIP_SRC_2X':'/upload/sale/paysystem/logotip/fb2/fb245842eb59bef802c9663db265f1db.png','PSA_LOGOTIP_SRC_ORIGINAL':'/upload/sale/paysystem/logotip/fb2/fb245842eb59bef802c9663db265f1db.png'},{'ID':'7','PAY_SYSTEM_ID':'7','NAME':'Сбербанк','PSA_NAME':'Сбербанк','CODE':'','SORT':'110','DESCRIPTION':'Вы можете оплатить заказ в любом отделении Сбербанка. За услугу по переводу денег с Вас возьмут от 3 до 7% от стоимости заказа, в зависимости от региона. Перечисление денег займет до 10 дней.','PS_MODE':'','HAVE_PRICE':'N','ACTIVE':'Y','ALLOW_EDIT_PAYMENT':'Y','IS_CASH':'N','AUTO_CHANGE_1C':'N','PSA_ID':'7','PSA_ACTION_FILE':'sberbank','PSA_RESULT_FILE':'','PSA_NEW_WINDOW':'Y','PSA_PERSON_TYPE_ID':'','PSA_PARAMS':'a:1:{s:16:\"BX_PAY_SYSTEM_ID\";i:7;}','PSA_TARIF':'','PSA_HAVE_PAYMENT':'Y','PSA_HAVE_ACTION':'N','PSA_HAVE_RESULT':'N','PSA_HAVE_PREPAY':'N','PSA_HAVE_RESULT_RECEIVE':'N','PSA_ENCODING':'','PSA_LOGOTIP':{'ID':'939','TIMESTAMP_X':'09.02.2017 05:35:09','MODULE_ID':'sale','HEIGHT':'249','WIDTH':'512','FILE_SIZE':'29639','CONTENT_TYPE':'image/png','SUBDIR':'sale/paysystem/logotip/a5e','FILE_NAME':'a5eb9cac23aedad51b23314d07c03c36.png','ORIGINAL_NAME':'sberbank.png','DESCRIPTION':'','HANDLER_ID':'','EXTERNAL_ID':'e2aa0d2fb5b53026fbb841aeb49874b0','~src':false,'SRC':'/upload/sale/paysystem/logotip/a5e/a5eb9cac23aedad51b23314d07c03c36.png'},'PRICE':'0','PSA_LOGOTIP_SRC':'/upload/resize_cache/sale/paysystem/logotip/a5e/300_300_1/a5eb9cac23aedad51b23314d07c03c36.png','PSA_LOGOTIP_SRC_2X':'/upload/sale/paysystem/logotip/a5e/a5eb9cac23aedad51b23314d07c03c36.png','PSA_LOGOTIP_SRC_ORIGINAL':'/upload/sale/paysystem/logotip/a5e/a5eb9cac23aedad51b23314d07c03c36.png'}],'INNER_PAY_SYSTEM':{'ID':'8','PAY_SYSTEM_ID':'','PERSON_TYPE_ID':'','NAME':'Внутренний счет','PSA_NAME':'Внутренний счет','CODE':'','SORT':'100','ACTION_FILE':'inner','RESULT_FILE':'','DESCRIPTION':'','NEW_WINDOW':'N','PARAMS':'','TARIF':'','PS_MODE':'','HAVE_PAYMENT':'N','HAVE_ACTION':'N','HAVE_RESULT':'N','HAVE_PREPAY':'N','HAVE_PRICE':'N','HAVE_RESULT_RECEIVE':'N','ENCODING':'','LOGOTIP':{'ID':'940','TIMESTAMP_X':'09.02.2017 05:35:10','MODULE_ID':'sale','HEIGHT':'249','WIDTH':'512','FILE_SIZE':'6562','CONTENT_TYPE':'image/png','SUBDIR':'sale/paysystem/logotip/d96','FILE_NAME':'d96103588b5c5ac0e58b867e48d80c48.png','ORIGINAL_NAME':'inner.png','DESCRIPTION':'','HANDLER_ID':'','EXTERNAL_ID':'f0f922036debeaa7b957726b103fcc80','~src':false,'SRC':'/upload/sale/paysystem/logotip/d96/d96103588b5c5ac0e58b867e48d80c48.png'},'ACTIVE':'Y','ALLOW_EDIT_PAYMENT':'Y','IS_CASH':'N','AUTO_CHANGE_1C':'N','LOGOTIP_SRC':'/upload/resize_cache/sale/paysystem/logotip/d96/300_300_1/d96103588b5c5ac0e58b867e48d80c48.png','LOGOTIP_SRC_2X':'/upload/sale/paysystem/logotip/d96/d96103588b5c5ac0e58b867e48d80c48.png','LOGOTIP_SRC_ORIGINAL':'/upload/sale/paysystem/logotip/d96/d96103588b5c5ac0e58b867e48d80c48.png'},'DELIVERY':{'2':{'CHECKED':'Y','PRICE':'500','PRICE_FORMATED':'500 руб.','ID':'2','NAME':'Доставка курьером','OWN_NAME':'Доставка курьером','DESCRIPTION':'Доставка осуществляется в течение дня в удобное для вас время.','FIELD_NAME':'DELIVERY_ID','CURRENCY':'RUB','SORT':'100','EXTRA_SERVICES':[],'STORE':[],'LOGOTIP':{'ID':'941','TIMESTAMP_X':'09.02.2017 05:35:13','MODULE_ID':'sale','HEIGHT':'249','WIDTH':'512','FILE_SIZE':'11154','CONTENT_TYPE':'image/png','SUBDIR':'sale/delivery/logotip/02f','FILE_NAME':'02f657bf9ecce9427c8d03f84fda7cf8.png','ORIGINAL_NAME':'courier_logo.png','DESCRIPTION':'','HANDLER_ID':'','EXTERNAL_ID':'51b0d6b2284ce87fb2b68a723a485f16','~src':false,'SRC':'/upload/sale/delivery/logotip/02f/02f657bf9ecce9427c8d03f84fda7cf8.png'},'LOGOTIP_SRC':'/upload/resize_cache/sale/delivery/logotip/02f/300_300_1/02f657bf9ecce9427c8d03f84fda7cf8.png','LOGOTIP_SRC_2X':'/upload/sale/delivery/logotip/02f/02f657bf9ecce9427c8d03f84fda7cf8.png','LOGOTIP_SRC_ORIGINAL':'/upload/sale/delivery/logotip/02f/02f657bf9ecce9427c8d03f84fda7cf8.png'},'3':{'PRICE':'0','PRICE_FORMATED':'0 руб.','ID':'3','NAME':'Самовывоз','OWN_NAME':'Самовывоз','DESCRIPTION':'Вы можете самостоятельно забрать заказ из нашего магазина.','FIELD_NAME':'DELIVERY_ID','CURRENCY':'RUB','SORT':'200','EXTRA_SERVICES':[],'STORE':['1'],'LOGOTIP':{'ID':'942','TIMESTAMP_X':'09.02.2017 05:35:13','MODULE_ID':'sale','HEIGHT':'249','WIDTH':'512','FILE_SIZE':'7852','CONTENT_TYPE':'image/png','SUBDIR':'sale/delivery/logotip/4bc','FILE_NAME':'4bcb22c1852b6c7d1e1965de00a2bd57.png','ORIGINAL_NAME':'self_logo.png','DESCRIPTION':'','HANDLER_ID':'','EXTERNAL_ID':'9ee2f7fb5c38fdb76602efcc71a40f71','~src':false,'SRC':'/upload/sale/delivery/logotip/4bc/4bcb22c1852b6c7d1e1965de00a2bd57.png'},'LOGOTIP_SRC':'/upload/resize_cache/sale/delivery/logotip/4bc/300_300_1/4bcb22c1852b6c7d1e1965de00a2bd57.png','LOGOTIP_SRC_2X':'/upload/sale/delivery/logotip/4bc/4bcb22c1852b6c7d1e1965de00a2bd57.png','LOGOTIP_SRC_ORIGINAL':'/upload/sale/delivery/logotip/4bc/4bcb22c1852b6c7d1e1965de00a2bd57.png'}},'USER_PROFILES':'','ORDER_PROP':{'groups':[{'ID':'1','NAME':'Личные данные','PERSON_TYPE_ID':'1','SORT':'100'},{'ID':'2','NAME':'Данные для доставки','PERSON_TYPE_ID':'1','SORT':'200'}],'properties':[{'ID':'1','PERSON_TYPE_ID':'1','NAME':'Ф.И.О.','TYPE':'STRING','REQUIRED':'Y','DEFAULT_VALUE':'','SORT':'100','USER_PROPS':'Y','IS_LOCATION':'N','PROPS_GROUP_ID':'1','DESCRIPTION':'','IS_EMAIL':'N','IS_PROFILE_NAME':'Y','IS_PAYER':'Y','IS_LOCATION4TAX':'N','IS_FILTERED':'Y','CODE':'FIO','IS_ZIP':'N','IS_PHONE':'N','IS_ADDRESS':'N','ACTIVE':'Y','UTIL':'N','INPUT_FIELD_LOCATION':'0','MULTIPLE':'N','SIZE':'40','VALUE':['']},{'ID':'2','PERSON_TYPE_ID':'1','NAME':'E-Mail','TYPE':'STRING','REQUIRED':'Y','DEFAULT_VALUE':'','SORT':'110','USER_PROPS':'Y','IS_LOCATION':'N','PROPS_GROUP_ID':'1','DESCRIPTION':'','IS_EMAIL':'Y','IS_PROFILE_NAME':'N','IS_PAYER':'N','IS_LOCATION4TAX':'N','IS_FILTERED':'Y','CODE':'EMAIL','IS_ZIP':'N','IS_PHONE':'N','IS_ADDRESS':'N','ACTIVE':'Y','UTIL':'N','INPUT_FIELD_LOCATION':'0','MULTIPLE':'N','SIZE':'40','VALUE':['']},{'ID':'3','PERSON_TYPE_ID':'1','NAME':'Телефон','TYPE':'STRING','REQUIRED':'Y','DEFAULT_VALUE':'','SORT':'120','USER_PROPS':'Y','IS_LOCATION':'N','PROPS_GROUP_ID':'1','DESCRIPTION':'','IS_EMAIL':'N','IS_PROFILE_NAME':'N','IS_PAYER':'N','IS_LOCATION4TAX':'N','IS_FILTERED':'N','CODE':'PHONE','IS_ZIP':'N','IS_PHONE':'Y','IS_ADDRESS':'N','ACTIVE':'Y','UTIL':'N','INPUT_FIELD_LOCATION':'0','MULTIPLE':'N','VALUE':['']},{'ID':'4','PERSON_TYPE_ID':'1','NAME':'Индекс','TYPE':'STRING','REQUIRED':'Y','DEFAULT_VALUE':'101000','SORT':'130','USER_PROPS':'Y','IS_LOCATION':'N','PROPS_GROUP_ID':'2','DESCRIPTION':'','IS_EMAIL':'N','IS_PROFILE_NAME':'N','IS_PAYER':'N','IS_LOCATION4TAX':'N','IS_FILTERED':'N','CODE':'ZIP','IS_ZIP':'Y','IS_PHONE':'N','IS_ADDRESS':'N','ACTIVE':'Y','UTIL':'N','INPUT_FIELD_LOCATION':'0','MULTIPLE':'N','SIZE':'8','VALUE':['101000']},{'ID':'6','PERSON_TYPE_ID':'1','NAME':'Местоположение','TYPE':'LOCATION','REQUIRED':'Y','DEFAULT_VALUE':'0000073738','SORT':'140','USER_PROPS':'Y','IS_LOCATION':'Y','PROPS_GROUP_ID':'2','DESCRIPTION':'','IS_EMAIL':'N','IS_PROFILE_NAME':'N','IS_PAYER':'N','IS_LOCATION4TAX':'N','IS_FILTERED':'N','CODE':'LOCATION','IS_ZIP':'N','IS_PHONE':'N','IS_ADDRESS':'N','ACTIVE':'Y','UTIL':'N','INPUT_FIELD_LOCATION':'5','MULTIPLE':'N','SIZE':'40','VALUE':['0000073738']},{'ID':'5','PERSON_TYPE_ID':'1','NAME':'Город','TYPE':'STRING','REQUIRED':'N','DEFAULT_VALUE':'Москва','SORT':'145','USER_PROPS':'Y','IS_LOCATION':'N','PROPS_GROUP_ID':'2','DESCRIPTION':'','IS_EMAIL':'N','IS_PROFILE_NAME':'N','IS_PAYER':'N','IS_LOCATION4TAX':'N','IS_FILTERED':'Y','CODE':'CITY','IS_ZIP':'N','IS_PHONE':'N','IS_ADDRESS':'N','ACTIVE':'Y','UTIL':'N','INPUT_FIELD_LOCATION':'0','MULTIPLE':'N','SIZE':'40','VALUE':['Москва']},{'ID':'7','PERSON_TYPE_ID':'1','NAME':'Адрес доставки','TYPE':'STRING','REQUIRED':'Y','DEFAULT_VALUE':'','SORT':'150','USER_PROPS':'Y','IS_LOCATION':'N','PROPS_GROUP_ID':'2','DESCRIPTION':'','IS_EMAIL':'N','IS_PROFILE_NAME':'N','IS_PAYER':'N','IS_LOCATION4TAX':'N','IS_FILTERED':'N','CODE':'ADDRESS','IS_ZIP':'N','IS_PHONE':'N','IS_ADDRESS':'N','ACTIVE':'Y','UTIL':'N','INPUT_FIELD_LOCATION':'0','MULTIPLE':'N','MULTILINE':'Y','COLS':'30','ROWS':'3','VALUE':['']}]},'STORE_LIST':{'1':{'ID':'1','TITLE':'Склад','ADDRESS':'пр. Московский д. 51','DESCRIPTION':'Здесь вы найдете одежду ведущих производителей мира','IMAGE_ID':{'ID':'1','TIMESTAMP_X':'09.02.2017 05:34:19','MODULE_ID':'catalog','HEIGHT':'600','WIDTH':'800','FILE_SIZE':'116542','CONTENT_TYPE':'image/jpeg','SUBDIR':'catalog/1e6','FILE_NAME':'1e687b99afe1fc6271b347e6d6e0e7d2.jpg','ORIGINAL_NAME':'storepoint.jpg','DESCRIPTION':'','HANDLER_ID':'','EXTERNAL_ID':'c3cffb985708ec52701578a29a2b25e2','~src':false,'SRC':'/upload/catalog/1e6/1e687b99afe1fc6271b347e6d6e0e7d2.jpg'},'PHONE':'8 (495) 212 85 06','SCHEDULE':'Пн.-Пт. с 9:00 до 20:00, Сб.-Вс. с 11:00 до 18:00','GPS_N':'54.71411','GPS_S':'20.56675','ISSUING_CENTER':'Y','SITE_ID':'','IMAGE_ID_SRC':'/upload/resize_cache/catalog/1e6/160_160_1/1e687b99afe1fc6271b347e6d6e0e7d2.jpg','IMAGE_ID_SRC_2X':'/upload/resize_cache/catalog/1e6/320_320_1/1e687b99afe1fc6271b347e6d6e0e7d2.jpg','IMAGE_ID_SRC_ORIGINAL':'/upload/catalog/1e6/1e687b99afe1fc6271b347e6d6e0e7d2.jpg'}},'BUYER_STORE':'0','COUPON_LIST':[],'PAY_CURRENT_ACCOUNT':'N','PAY_FROM_ACCOUNT':'N','CURRENT_BUDGET_FORMATED':false,'TOTAL':{'PRICE_WITHOUT_DISCOUNT_VALUE':'1998','PRICE_WITHOUT_DISCOUNT':'1 998 руб.','PAYED_FROM_ACCOUNT_FORMATED':false,'ORDER_TOTAL_PRICE':'2378.1','ORDER_TOTAL_PRICE_FORMATED':'2 378.10 руб.','ORDER_TOTAL_LEFT_TO_PAY':'','ORDER_TOTAL_LEFT_TO_PAY_FORMATED':'','ORDER_WEIGHT':'0','ORDER_WEIGHT_FORMATED':'0 кг','ORDER_PRICE':'1878.1','ORDER_PRICE_FORMATED':'1 878.10 руб.','USE_VAT':false,'VAT_RATE':'0','VAT_SUM':'0','VAT_SUM_FORMATED':'0 руб.','TAX_PRICE':'0','TAX_LIST':[],'DISCOUNT_PRICE':'0','DISCOUNT_PRICE_FORMATED':'0 руб.','DELIVERY_PRICE':'500','DELIVERY_PRICE_FORMATED':'500 руб.','PAY_SYSTEM_PRICE':'','PAY_SYSTEM_PRICE_FORMATTED':''},'ERROR':[],'WARNING':[]},
+			locations: {'6':{'template':'search','output':['\n\n\n				\n	<div id=\"sls-32325\" class=\"bx-sls \">\n\n		\n		<div class=\"dropdown-block bx-ui-sls-input-block\">\n\n			<span class=\"dropdown-icon\"><\/span>\n			<input type=\"text\" autocomplete=\"off\" name=\"ORDER_PROP_6\" value=\"0000073738\" class=\"dropdown-field\" placeholder=\"Введите название ...\" />\n\n			<div class=\"dropdown-fade2white\"><\/div>\n			<div class=\"bx-ui-sls-loader\"><\/div>\n			<div class=\"bx-ui-sls-clear\" title=\"Отменить выбор\"><\/div>\n			<div class=\"bx-ui-sls-pane\"><\/div>\n\n		<\/div>\n\n		<script type=\"text/html\" data-template-id=\"bx-ui-sls-error\">\n			<div class=\"bx-ui-sls-error\">\n				<div><\/div>\n				{{message}}\n			<\/div>\n		<\/script>\n\n		<script type=\"text/html\" data-template-id=\"bx-ui-sls-dropdown-item\">\n			<div class=\"dropdown-item bx-ui-sls-variant\">\n				<span class=\"dropdown-item-text\">{{display_wrapped}}<\/span>\n							<\/div>\n		<\/script>\n\n		<div class=\"bx-ui-sls-error-message\">\n					<\/div>\n\n	<\/div>\n\n	<script>\n\n		if (!window.BX && top.BX)\n			window.BX = top.BX;\n\n					if(typeof window.BX.locationsDeferred == \'undefined\') window.BX.locationsDeferred = {};\n			window.BX.locationsDeferred[\'6\'] = function(){\n		\n							if(typeof window.BX.locationSelectors == \'undefined\') window.BX.locationSelectors = {};\n				window.BX.locationSelectors[\'6\'] = \n			\n			new BX.Sale.component.location.selector.search({\'scope\':\'sls-32325\',\'source\':\'/bitrix/components/bitrix/sale.location.selector.search/get.php\',\'query\':{\'FILTER\':{\'EXCLUDE_ID\':0,\'SITE_ID\':\'s1\'},\'BEHAVIOUR\':{\'SEARCH_BY_PRIMARY\':\'0\',\'LANGUAGE_ID\':\'ru\'}},\'selectedItem\':129,\'knownItems\':{\'129\':{\'CODE\':\'0000073738\',\'TYPE_ID\':\'5\',\'PATH\':[3,2,1],\'VALUE\':129,\'DISPLAY\':\'Москва\'},\'1\':{\'CODE\':\'0000028023\',\'TYPE_ID\':\'1\',\'PATH\':[2,1],\'VALUE\':1,\'DISPLAY\':\'Россия\'},\'2\':{\'CODE\':\'0000028024\',\'TYPE_ID\':\'2\',\'PATH\':[1],\'VALUE\':2,\'DISPLAY\':\'Центр\'},\'3\':{\'CODE\':\'0000028025\',\'TYPE_ID\':\'3\',\'PATH\':[],\'VALUE\':3,\'DISPLAY\':\'Московская область\'}},\'provideLinkBy\':\'code\',\'messages\':{\'nothingFound\':\'К сожалению, ничего не найдено\',\'error\':\'К сожалению, произошла внутренняя ошибка\'},\'callback\':\'submitFormProxy\',\'useSpawn\':false,\'initializeByGlobalEvent\':\'\',\'globalEventScope\':\'\',\'pathNames\':{\'1\':\'Россия\',\'2\':\'Центр\',\'3\':\'Московская область\',\'129\':\'Москва\'},\'types\':{\'1\':{\'CODE\':\'COUNTRY\'},\'2\':{\'CODE\':\'COUNTRY_DISTRICT\'},\'3\':{\'CODE\':\'REGION\'},\'4\':{\'CODE\':\'SUBREGION\'},\'5\':{\'CODE\':\'CITY\'},\'6\':{\'CODE\':\'VILLAGE\'},\'7\':{\'CODE\':\'STREET\'}}});\n\n					};\n		\n	<\/script>\n\n'],'showAlt':false,'lastValue':'0000073738'}},
+			params: {'PAY_FROM_ACCOUNT':'Y','COUNT_DELIVERY_TAX':'N','COUNT_DISCOUNT_4_ALL_QUANTITY':'N','ONLY_FULL_PAY_FROM_ACCOUNT':'N','ALLOW_AUTO_REGISTER':'Y','SEND_NEW_USER_NOTIFY':'Y','DELIVERY_NO_AJAX':'N','TEMPLATE_LOCATION':'popup','PROP_1':[],'PATH_TO_BASKET':'/personal/cart/','PATH_TO_PERSONAL':'/personal/order/','PATH_TO_PAYMENT':'/personal/order/payment/','PATH_TO_ORDER':'/personal/order/make/','SET_TITLE':'Y','SHOW_ACCOUNT_NUMBER':'Y','DELIVERY_NO_SESSION':'Y','COMPATIBLE_MODE':'N','BASKET_POSITION':'before','BASKET_IMAGES_SCALING':'adaptive','SERVICES_IMAGES_SCALING':'adaptive','CACHE_TYPE':'A','USE_PRELOAD':'Y','ACTION_VARIABLE':'action','PATH_TO_AUTH':'/auth/','USE_PREPAYMENT':'N','DISPLAY_IMG_HEIGHT':'90','DELIVERY_TO_PAYSYSTEM':'d2p','DISABLE_BASKET_REDIRECT':'N','CURRENT_PAGE':'/personal/order/make/','ALLOW_NEW_PROFILE':'Y','SHOW_NOT_CALCULATED_DELIVERIES':'L','PRODUCT_COLUMNS':{'NAME':'Название','PREVIEW_PICTURE':'Изображение','PROPS':'Свойства','QUANTITY':'Количество','SUM':'Сумма'},'PRODUCT_COLUMNS_VISIBLE':['PREVIEW_PICTURE','PROPS'],'~PAY_FROM_ACCOUNT':'Y','~COUNT_DELIVERY_TAX':'N','~COUNT_DISCOUNT_4_ALL_QUANTITY':'N','~ONLY_FULL_PAY_FROM_ACCOUNT':'N','~ALLOW_AUTO_REGISTER':'Y','~SEND_NEW_USER_NOTIFY':'Y','~DELIVERY_NO_AJAX':'N','~TEMPLATE_LOCATION':'popup','~PROP_1':[],'~PATH_TO_BASKET':'/personal/cart/','~PATH_TO_PERSONAL':'/personal/order/','~PATH_TO_PAYMENT':'/personal/order/payment/','~PATH_TO_ORDER':'/personal/order/make/','~SET_TITLE':'Y','~SHOW_ACCOUNT_NUMBER':'Y','~DELIVERY_NO_SESSION':'Y','~COMPATIBLE_MODE':'N','~BASKET_POSITION':'before','~BASKET_IMAGES_SCALING':'adaptive','~SERVICES_IMAGES_SCALING':'adaptive','~CACHE_TYPE':'A','~USE_PRELOAD':'Y','~ACTION_VARIABLE':'action','~PATH_TO_AUTH':'/auth/','~USE_PREPAYMENT':'N','~DISPLAY_IMG_HEIGHT':'90','~DELIVERY_TO_PAYSYSTEM':'d2p','~DISABLE_BASKET_REDIRECT':'N','~CURRENT_PAGE':'/personal/order/make/','~ALLOW_NEW_PROFILE':'Y','~SHOW_NOT_CALCULATED_DELIVERIES':'L','~PRODUCT_COLUMNS':{'NAME':'Название','PREVIEW_PICTURE':'Изображение','PROPS':'Свойства','QUANTITY':'Количество','SUM':'Сумма'},'~PRODUCT_COLUMNS_VISIBLE':['PREVIEW_PICTURE','PROPS'],'TEMPLATE_THEME':'green','ALLOW_USER_PROFILES':'N','SKIP_USELESS_BLOCK':'Y','SHOW_ORDER_BUTTON':'final_step','SHOW_TOTAL_ORDER_BUTTON':'N','SHOW_PAY_SYSTEM_LIST_NAMES':'Y','SHOW_PAY_SYSTEM_INFO_NAME':'Y','SHOW_DELIVERY_LIST_NAMES':'Y','SHOW_DELIVERY_INFO_NAME':'Y','SHOW_DELIVERY_PARENT_NAMES':'Y','SHOW_STORES_IMAGES':'Y','SHOW_BASKET_HEADERS':'N','DELIVERY_FADE_EXTRA_SERVICES':'N','SHOW_COUPONS_BASKET':'Y','SHOW_COUPONS_DELIVERY':'Y','SHOW_COUPONS_PAY_SYSTEM':'N','SHOW_NEAREST_PICKUP':'N','DELIVERIES_PER_PAGE':'8','PAY_SYSTEMS_PER_PAGE':'8','PICKUPS_PER_PAGE':'5','SHOW_MAP_IN_PROPS':'N','USE_YM_GOALS':'N','USE_ENHANCED_ECOMMERCE':'N','DATA_LAYER_NAME':'dataLayer','BRAND_PROPERTY':'','MESS_AUTH_BLOCK_NAME':'Авторизация','MESS_REG_BLOCK_NAME':'Регистрация','MESS_BASKET_BLOCK_NAME':'Товары в заказе','MESS_REGION_BLOCK_NAME':'Регион доставки','MESS_PAYMENT_BLOCK_NAME':'Оплата','MESS_DELIVERY_BLOCK_NAME':'Доставка','MESS_BUYER_BLOCK_NAME':'Покупатель','MESS_BACK':'Назад','MESS_FURTHER':'Далее','MESS_EDIT':'изменить','MESS_ORDER':'Оформить заказ','MESS_PRICE':'Стоимость','MESS_PERIOD':'Срок доставки','MESS_NAV_BACK':'Назад','MESS_NAV_FORWARD':'Вперед','MESS_REGISTRATION_REFERENCE':'Если вы впервые на сайте, и хотите что бы мы вас помнили и все ваши заказы сохранялись, заполните регистрационную форму.','MESS_AUTH_REFERENCE_1':'Символом \"звездочка\" (*) отмечены обязательные для заполнения поля.','MESS_AUTH_REFERENCE_2':'После регистрации вы получите информационное письмо.','MESS_AUTH_REFERENCE_3':'Личные сведения, полученные в распоряжение интернет-магазина при регистрации или каким-либо иным образом, не будут без разрешения пользователей передаваться третьим организациям и лицам за исключением ситуаций, когда этого требует закон или судебное решение.','MESS_ADDITIONAL_PROPS':'Дополнительные свойства','MESS_USE_COUPON':'Применить купон','MESS_COUPON':'Купон','MESS_PERSON_TYPE':'Тип плательщика','MESS_SELECT_PROFILE':'Выберите профиль','MESS_REGION_REFERENCE':'Выберите свой город в списке. Если вы не нашли свой город, выберите \"другое местоположение\", а город впишите в поле \"Город\"','MESS_PICKUP_LIST':'Пункты самовывоза:','MESS_NEAREST_PICKUP_LIST':'Ближайшие пункты:','MESS_SELECT_PICKUP':'Выбрать','MESS_INNER_PS_BALANCE':'На вашем пользовательском счете:','MESS_ORDER_DESC':'Комментарии к заказу:','MESS_PRELOAD_ORDER_TITLE':'','MESS_SUCCESS_PRELOAD_TEXT':'Вы заказывали в нашем интернет-магазине, поэтому мы заполнили все данные автоматически.<br />\nЕсли все заполнено верно, нажмите кнопку \"#ORDER_BUTTON#\".\n','MESS_FAIL_PRELOAD_TEXT':'Вы заказывали в нашем интернет-магазине, поэтому мы заполнили все данные автоматически.<br />\nОбратите внимание на развернутый блок с информацией о заказе. Здесь вы можете внести необходимые изменения или \nоставить как есть и нажать кнопку \"#ORDER_BUTTON#\".\n','MESS_DELIVERY_CALC_ERROR_TITLE':'Не удалось рассчитать стоимость доставки.','MESS_DELIVERY_CALC_ERROR_TEXT':'Вы можете продолжить оформление заказа, а чуть позже менеджер магазина свяжется с вами и уточнит информацию по доставке.','MESS_PAY_SYSTEM_PAYABLE_ERROR':'Вы сможете оплатить заказ после того, как менеджер проверит наличие полного комплекта товаров на складе. Сразу после проверки вы получите письмо с инструкциями по оплате. Оплатить заказ можно будет в персональном разделе сайта.'},
+			signedParamsString: 'YToxMjc6e3M6MTY6IlBBWV9GUk9NX0FDQ09VTlQiO3M6MToiWSI7czoxODoiQ09VTlRfREVMSVZFUllfVEFYIjtzOjE6Ik4iO3M6Mjk6IkNPVU5UX0RJU0NPVU5UXzRfQUxMX1FVQU5USVRZIjtzOjE6Ik4iO3M6MjY6Ik9OTFlfRlVMTF9QQVlfRlJPTV9BQ0NPVU5UIjtzOjE6Ik4iO3M6MTk6IkFMTE9XX0FVVE9fUkVHSVNURVIiO3M6MToiWSI7czoyMDoiU0VORF9ORVdfVVNFUl9OT1RJRlkiO3M6MToiWSI7czoxNjoiREVMSVZFUllfTk9fQUpBWCI7czoxOiJOIjtzOjE3OiJURU1QTEFURV9MT0NBVElPTiI7czo1OiJwb3B1cCI7czo2OiJQUk9QXzEiO2E6MDp7fXM6MTQ6IlBBVEhfVE9fQkFTS0VUIjtzOjE1OiIvcGVyc29uYWwvY2FydC8iO3M6MTY6IlBBVEhfVE9fUEVSU09OQUwiO3M6MTY6Ii9wZXJzb25hbC9vcmRlci8iO3M6MTU6IlBBVEhfVE9fUEFZTUVOVCI7czoyNDoiL3BlcnNvbmFsL29yZGVyL3BheW1lbnQvIjtzOjEzOiJQQVRIX1RPX09SREVSIjtzOjIxOiIvcGVyc29uYWwvb3JkZXIvbWFrZS8iO3M6OToiU0VUX1RJVExFIjtzOjE6IlkiO3M6MTk6IlNIT1dfQUNDT1VOVF9OVU1CRVIiO3M6MToiWSI7czoxOToiREVMSVZFUllfTk9fU0VTU0lPTiI7czoxOiJZIjtzOjE1OiJDT01QQVRJQkxFX01PREUiO3M6MToiTiI7czoxNToiQkFTS0VUX1BPU0lUSU9OIjtzOjY6ImJlZm9yZSI7czoyMToiQkFTS0VUX0lNQUdFU19TQ0FMSU5HIjtzOjg6ImFkYXB0aXZlIjtzOjIzOiJTRVJWSUNFU19JTUFHRVNfU0NBTElORyI7czo4OiJhZGFwdGl2ZSI7czoxMDoiQ0FDSEVfVFlQRSI7czoxOiJBIjtzOjExOiJVU0VfUFJFTE9BRCI7czoxOiJZIjtzOjE1OiJBQ1RJT05fVkFSSUFCTEUiO3M6NjoiYWN0aW9uIjtzOjEyOiJQQVRIX1RPX0FVVEgiO3M6NjoiL2F1dGgvIjtzOjE0OiJVU0VfUFJFUEFZTUVOVCI7czoxOiJOIjtzOjE4OiJESVNQTEFZX0lNR19IRUlHSFQiO2k6OTA7czoyMToiREVMSVZFUllfVE9fUEFZU1lTVEVNIjtzOjM6ImQycCI7czoyMzoiRElTQUJMRV9CQVNLRVRfUkVESVJFQ1QiO3M6MToiTiI7czoxMjoiQ1VSUkVOVF9QQUdFIjtzOjIxOiIvcGVyc29uYWwvb3JkZXIvbWFrZS8iO3M6MTc6IkFMTE9XX05FV19QUk9GSUxFIjtzOjE6IlkiO3M6MzA6IlNIT1dfTk9UX0NBTENVTEFURURfREVMSVZFUklFUyI7czoxOiJMIjtzOjE1OiJQUk9EVUNUX0NPTFVNTlMiO2E6NTp7czo0OiJOQU1FIjtzOjE2OiLQndCw0LfQstCw0L3QuNC1IjtzOjE1OiJQUkVWSUVXX1BJQ1RVUkUiO3M6MjI6ItCY0LfQvtCx0YDQsNC20LXQvdC40LUiO3M6NToiUFJPUFMiO3M6MTY6ItCh0LLQvtC50YHRgtCy0LAiO3M6ODoiUVVBTlRJVFkiO3M6MjA6ItCa0L7Qu9C40YfQtdGB0YLQstC+IjtzOjM6IlNVTSI7czoxMDoi0KHRg9C80LzQsCI7fXM6MjM6IlBST0RVQ1RfQ09MVU1OU19WSVNJQkxFIjthOjI6e2k6MDtzOjE1OiJQUkVWSUVXX1BJQ1RVUkUiO2k6MTtzOjU6IlBST1BTIjt9czoxNzoiflBBWV9GUk9NX0FDQ09VTlQiO3M6MToiWSI7czoxOToifkNPVU5UX0RFTElWRVJZX1RBWCI7czoxOiJOIjtzOjMwOiJ+Q09VTlRfRElTQ09VTlRfNF9BTExfUVVBTlRJVFkiO3M6MToiTiI7czoyNzoifk9OTFlfRlVMTF9QQVlfRlJPTV9BQ0NPVU5UIjtzOjE6Ik4iO3M6MjA6In5BTExPV19BVVRPX1JFR0lTVEVSIjtzOjE6IlkiO3M6MjE6In5TRU5EX05FV19VU0VSX05PVElGWSI7czoxOiJZIjtzOjE3OiJ+REVMSVZFUllfTk9fQUpBWCI7czoxOiJOIjtzOjE4OiJ+VEVNUExBVEVfTE9DQVRJT04iO3M6NToicG9wdXAiO3M6NzoiflBST1BfMSI7YTowOnt9czoxNToiflBBVEhfVE9fQkFTS0VUIjtzOjE1OiIvcGVyc29uYWwvY2FydC8iO3M6MTc6In5QQVRIX1RPX1BFUlNPTkFMIjtzOjE2OiIvcGVyc29uYWwvb3JkZXIvIjtzOjE2OiJ+UEFUSF9UT19QQVlNRU5UIjtzOjI0OiIvcGVyc29uYWwvb3JkZXIvcGF5bWVudC8iO3M6MTQ6In5QQVRIX1RPX09SREVSIjtzOjIxOiIvcGVyc29uYWwvb3JkZXIvbWFrZS8iO3M6MTA6In5TRVRfVElUTEUiO3M6MToiWSI7czoyMDoiflNIT1dfQUNDT1VOVF9OVU1CRVIiO3M6MToiWSI7czoyMDoifkRFTElWRVJZX05PX1NFU1NJT04iO3M6MToiWSI7czoxNjoifkNPTVBBVElCTEVfTU9ERSI7czoxOiJOIjtzOjE2OiJ+QkFTS0VUX1BPU0lUSU9OIjtzOjY6ImJlZm9yZSI7czoyMjoifkJBU0tFVF9JTUFHRVNfU0NBTElORyI7czo4OiJhZGFwdGl2ZSI7czoyNDoiflNFUlZJQ0VTX0lNQUdFU19TQ0FMSU5HIjtzOjg6ImFkYXB0aXZlIjtzOjExOiJ+Q0FDSEVfVFlQRSI7czoxOiJBIjtzOjEyOiJ+VVNFX1BSRUxPQUQiO3M6MToiWSI7czoxNjoifkFDVElPTl9WQVJJQUJMRSI7czo2OiJhY3Rpb24iO3M6MTM6In5QQVRIX1RPX0FVVEgiO3M6NjoiL2F1dGgvIjtzOjE1OiJ+VVNFX1BSRVBBWU1FTlQiO3M6MToiTiI7czoxOToifkRJU1BMQVlfSU1HX0hFSUdIVCI7aTo5MDtzOjIyOiJ+REVMSVZFUllfVE9fUEFZU1lTVEVNIjtzOjM6ImQycCI7czoyNDoifkRJU0FCTEVfQkFTS0VUX1JFRElSRUNUIjtzOjE6Ik4iO3M6MTM6In5DVVJSRU5UX1BBR0UiO3M6MjE6Ii9wZXJzb25hbC9vcmRlci9tYWtlLyI7czoxODoifkFMTE9XX05FV19QUk9GSUxFIjtzOjE6IlkiO3M6MzE6In5TSE9XX05PVF9DQUxDVUxBVEVEX0RFTElWRVJJRVMiO3M6MToiTCI7czoxNjoiflBST0RVQ1RfQ09MVU1OUyI7YTo1OntzOjQ6Ik5BTUUiO3M6MTY6ItCd0LDQt9Cy0LDQvdC40LUiO3M6MTU6IlBSRVZJRVdfUElDVFVSRSI7czoyMjoi0JjQt9C+0LHRgNCw0LbQtdC90LjQtSI7czo1OiJQUk9QUyI7czoxNjoi0KHQstC+0LnRgdGC0LLQsCI7czo4OiJRVUFOVElUWSI7czoyMDoi0JrQvtC70LjRh9C10YHRgtCy0L4iO3M6MzoiU1VNIjtzOjEwOiLQodGD0LzQvNCwIjt9czoyNDoiflBST0RVQ1RfQ09MVU1OU19WSVNJQkxFIjthOjI6e2k6MDtzOjE1OiJQUkVWSUVXX1BJQ1RVUkUiO2k6MTtzOjU6IlBST1BTIjt9czoxNDoiVEVNUExBVEVfVEhFTUUiO3M6NToiZ3JlZW4iO3M6MTk6IkFMTE9XX1VTRVJfUFJPRklMRVMiO3M6MToiTiI7czoxODoiU0tJUF9VU0VMRVNTX0JMT0NLIjtzOjE6IlkiO3M6MTc6IlNIT1dfT1JERVJfQlVUVE9OIjtzOjEwOiJmaW5hbF9zdGVwIjtzOjIzOiJTSE9XX1RPVEFMX09SREVSX0JVVFRPTiI7czoxOiJOIjtzOjI2OiJTSE9XX1BBWV9TWVNURU1fTElTVF9OQU1FUyI7czoxOiJZIjtzOjI1OiJTSE9XX1BBWV9TWVNURU1fSU5GT19OQU1FIjtzOjE6IlkiO3M6MjQ6IlNIT1dfREVMSVZFUllfTElTVF9OQU1FUyI7czoxOiJZIjtzOjIzOiJTSE9XX0RFTElWRVJZX0lORk9fTkFNRSI7czoxOiJZIjtzOjI2OiJTSE9XX0RFTElWRVJZX1BBUkVOVF9OQU1FUyI7czoxOiJZIjtzOjE4OiJTSE9XX1NUT1JFU19JTUFHRVMiO3M6MToiWSI7czoxOToiU0hPV19CQVNLRVRfSEVBREVSUyI7czoxOiJOIjtzOjI4OiJERUxJVkVSWV9GQURFX0VYVFJBX1NFUlZJQ0VTIjtzOjE6Ik4iO3M6MTk6IlNIT1dfQ09VUE9OU19CQVNLRVQiO3M6MToiWSI7czoyMToiU0hPV19DT1VQT05TX0RFTElWRVJZIjtzOjE6IlkiO3M6MjM6IlNIT1dfQ09VUE9OU19QQVlfU1lTVEVNIjtzOjE6Ik4iO3M6MTk6IlNIT1dfTkVBUkVTVF9QSUNLVVAiO3M6MToiTiI7czoxOToiREVMSVZFUklFU19QRVJfUEFHRSI7aTo4O3M6MjA6IlBBWV9TWVNURU1TX1BFUl9QQUdFIjtpOjg7czoxNjoiUElDS1VQU19QRVJfUEFHRSI7aTo1O3M6MTc6IlNIT1dfTUFQX0lOX1BST1BTIjtzOjE6Ik4iO3M6MTI6IlVTRV9ZTV9HT0FMUyI7czoxOiJOIjtzOjIyOiJVU0VfRU5IQU5DRURfRUNPTU1FUkNFIjtzOjE6Ik4iO3M6MTU6IkRBVEFfTEFZRVJfTkFNRSI7czo5OiJkYXRhTGF5ZXIiO3M6MTQ6IkJSQU5EX1BST1BFUlRZIjtzOjA6IiI7czoyMDoiTUVTU19BVVRIX0JMT0NLX05BTUUiO3M6MjI6ItCQ0LLRgtC+0YDQuNC30LDRhtC40Y8iO3M6MTk6Ik1FU1NfUkVHX0JMT0NLX05BTUUiO3M6MjI6ItCg0LXQs9C40YHRgtGA0LDRhtC40Y8iO3M6MjI6Ik1FU1NfQkFTS0VUX0JMT0NLX05BTUUiO3M6Mjg6ItCi0L7QstCw0YDRiyDQsiDQt9Cw0LrQsNC30LUiO3M6MjI6Ik1FU1NfUkVHSU9OX0JMT0NLX05BTUUiO3M6Mjk6ItCg0LXQs9C40L7QvSDQtNC+0YHRgtCw0LLQutC4IjtzOjIzOiJNRVNTX1BBWU1FTlRfQkxPQ0tfTkFNRSI7czoxMjoi0J7Qv9C70LDRgtCwIjtzOjI0OiJNRVNTX0RFTElWRVJZX0JMT0NLX05BTUUiO3M6MTY6ItCU0L7RgdGC0LDQstC60LAiO3M6MjE6Ik1FU1NfQlVZRVJfQkxPQ0tfTkFNRSI7czoyMDoi0J/QvtC60YPQv9Cw0YLQtdC70YwiO3M6OToiTUVTU19CQUNLIjtzOjEwOiLQndCw0LfQsNC0IjtzOjEyOiJNRVNTX0ZVUlRIRVIiO3M6MTA6ItCU0LDQu9C10LUiO3M6OToiTUVTU19FRElUIjtzOjE2OiLQuNC30LzQtdC90LjRgtGMIjtzOjEwOiJNRVNTX09SREVSIjtzOjI3OiLQntGE0L7RgNC80LjRgtGMINC30LDQutCw0LciO3M6MTA6Ik1FU1NfUFJJQ0UiO3M6MTg6ItCh0YLQvtC40LzQvtGB0YLRjCI7czoxMToiTUVTU19QRVJJT0QiO3M6MjU6ItCh0YDQvtC6INC00L7RgdGC0LDQstC60LgiO3M6MTM6Ik1FU1NfTkFWX0JBQ0siO3M6MTA6ItCd0LDQt9Cw0LQiO3M6MTY6Ik1FU1NfTkFWX0ZPUldBUkQiO3M6MTI6ItCS0L/QtdGA0LXQtCI7czoyNzoiTUVTU19SRUdJU1RSQVRJT05fUkVGRVJFTkNFIjtzOjIxODoi0JXRgdC70Lgg0LLRiyDQstC/0LXRgNCy0YvQtSDQvdCwINGB0LDQudGC0LUsINC4INGF0L7RgtC40YLQtSDRh9GC0L4g0LHRiyDQvNGLINCy0LDRgSDQv9C+0LzQvdC40LvQuCDQuCDQstGB0LUg0LLQsNGI0Lgg0LfQsNC60LDQt9GLINGB0L7RhdGA0LDQvdGP0LvQuNGB0YwsINC30LDQv9C+0LvQvdC40YLQtSDRgNC10LPQuNGB0YLRgNCw0YbQuNC+0L3QvdGD0Y4g0YTQvtGA0LzRgy4iO3M6MjE6Ik1FU1NfQVVUSF9SRUZFUkVOQ0VfMSI7czoxMjE6ItCh0LjQvNCy0L7Qu9C+0LwgItC30LLQtdC30LTQvtGH0LrQsCIgKCopINC+0YLQvNC10YfQtdC90Ysg0L7QsdGP0LfQsNGC0LXQu9GM0L3Ri9C1INC00LvRjyDQt9Cw0L/QvtC70L3QtdC90LjRjyDQv9C+0LvRjy4iO3M6MjE6Ik1FU1NfQVVUSF9SRUZFUkVOQ0VfMiI7czo5ODoi0J/QvtGB0LvQtSDRgNC10LPQuNGB0YLRgNCw0YbQuNC4INCy0Ysg0L/QvtC70YPRh9C40YLQtSDQuNC90YTQvtGA0LzQsNGG0LjQvtC90L3QvtC1INC/0LjRgdGM0LzQvi4iO3M6MjE6Ik1FU1NfQVVUSF9SRUZFUkVOQ0VfMyI7czo0Nzk6ItCb0LjRh9C90YvQtSDRgdCy0LXQtNC10L3QuNGPLCDQv9C+0LvRg9GH0LXQvdC90YvQtSDQsiDRgNCw0YHQv9C+0YDRj9C20LXQvdC40LUg0LjQvdGC0LXRgNC90LXRgi3QvNCw0LPQsNC30LjQvdCwINC/0YDQuCDRgNC10LPQuNGB0YLRgNCw0YbQuNC4INC40LvQuCDQutCw0LrQuNC8LdC70LjQsdC+INC40L3Ri9C8INC+0LHRgNCw0LfQvtC8LCDQvdC1INCx0YPQtNGD0YIg0LHQtdC3INGA0LDQt9GA0LXRiNC10L3QuNGPINC/0L7Qu9GM0LfQvtCy0LDRgtC10LvQtdC5INC/0LXRgNC10LTQsNCy0LDRgtGM0YHRjyDRgtGA0LXRgtGM0LjQvCDQvtGA0LPQsNC90LjQt9Cw0YbQuNGP0Lwg0Lgg0LvQuNGG0LDQvCDQt9CwINC40YHQutC70Y7Rh9C10L3QuNC10Lwg0YHQuNGC0YPQsNGG0LjQuSwg0LrQvtCz0LTQsCDRjdGC0L7Qs9C+INGC0YDQtdCx0YPQtdGCINC30LDQutC+0L0g0LjQu9C4INGB0YPQtNC10LHQvdC+0LUg0YDQtdGI0LXQvdC40LUuIjtzOjIxOiJNRVNTX0FERElUSU9OQUxfUFJPUFMiO3M6NDU6ItCU0L7Qv9C+0LvQvdC40YLQtdC70YzQvdGL0LUg0YHQstC+0LnRgdGC0LLQsCI7czoxNToiTUVTU19VU0VfQ09VUE9OIjtzOjI5OiLQn9GA0LjQvNC10L3QuNGC0Ywg0LrRg9C/0L7QvSI7czoxMToiTUVTU19DT1VQT04iO3M6MTA6ItCa0YPQv9C+0L0iO3M6MTY6Ik1FU1NfUEVSU09OX1RZUEUiO3M6Mjk6ItCi0LjQvyDQv9C70LDRgtC10LvRjNGJ0LjQutCwIjtzOjE5OiJNRVNTX1NFTEVDVF9QUk9GSUxFIjtzOjMxOiLQktGL0LHQtdGA0LjRgtC1INC/0YDQvtGE0LjQu9GMIjtzOjIxOiJNRVNTX1JFR0lPTl9SRUZFUkVOQ0UiO3M6MjIwOiLQktGL0LHQtdGA0LjRgtC1INGB0LLQvtC5INCz0L7RgNC+0LQg0LIg0YHQv9C40YHQutC1LiDQldGB0LvQuCDQstGLINC90LUg0L3QsNGI0LvQuCDRgdCy0L7QuSDQs9C+0YDQvtC0LCDQstGL0LHQtdGA0LjRgtC1ICLQtNGA0YPQs9C+0LUg0LzQtdGB0YLQvtC/0L7Qu9C+0LbQtdC90LjQtSIsINCwINCz0L7RgNC+0LQg0LLQv9C40YjQuNGC0LUg0LIg0L/QvtC70LUgItCT0L7RgNC+0LQiIjtzOjE2OiJNRVNTX1BJQ0tVUF9MSVNUIjtzOjM0OiLQn9GD0L3QutGC0Ysg0YHQsNC80L7QstGL0LLQvtC30LA6IjtzOjI0OiJNRVNTX05FQVJFU1RfUElDS1VQX0xJU1QiO3M6MzI6ItCR0LvQuNC20LDQudGI0LjQtSDQv9GD0L3QutGC0Ys6IjtzOjE4OiJNRVNTX1NFTEVDVF9QSUNLVVAiO3M6MTQ6ItCS0YvQsdGA0LDRgtGMIjtzOjIxOiJNRVNTX0lOTkVSX1BTX0JBTEFOQ0UiO3M6NjA6ItCd0LAg0LLQsNGI0LXQvCDQv9C+0LvRjNC30L7QstCw0YLQtdC70YzRgdC60L7QvCDRgdGH0LXRgtC1OiI7czoxNToiTUVTU19PUkRFUl9ERVNDIjtzOjM5OiLQmtC+0LzQvNC10L3RgtCw0YDQuNC4INC6INC30LDQutCw0LfRgzoiO3M6MjQ6Ik1FU1NfUFJFTE9BRF9PUkRFUl9USVRMRSI7TjtzOjI1OiJNRVNTX1NVQ0NFU1NfUFJFTE9BRF9URVhUIjtzOjI2MToi0JLRiyDQt9Cw0LrQsNC30YvQstCw0LvQuCDQsiDQvdCw0YjQtdC8INC40L3RgtC10YDQvdC10YIt0LzQsNCz0LDQt9C40L3QtSwg0L/QvtGN0YLQvtC80YMg0LzRiyDQt9Cw0L/QvtC70L3QuNC70Lgg0LLRgdC1INC00LDQvdC90YvQtSDQsNCy0YLQvtC80LDRgtC40YfQtdGB0LrQuC48YnIgLz4K0JXRgdC70Lgg0LLRgdC1INC30LDQv9C+0LvQvdC10L3QviDQstC10YDQvdC+LCDQvdCw0LbQvNC40YLQtSDQutC90L7Qv9C60YMgIiNPUkRFUl9CVVRUT04jIi4KIjtzOjIyOiJNRVNTX0ZBSUxfUFJFTE9BRF9URVhUIjtzOjQ1NDoi0JLRiyDQt9Cw0LrQsNC30YvQstCw0LvQuCDQsiDQvdCw0YjQtdC8INC40L3RgtC10YDQvdC10YIt0LzQsNCz0LDQt9C40L3QtSwg0L/QvtGN0YLQvtC80YMg0LzRiyDQt9Cw0L/QvtC70L3QuNC70Lgg0LLRgdC1INC00LDQvdC90YvQtSDQsNCy0YLQvtC80LDRgtC40YfQtdGB0LrQuC48YnIgLz4K0J7QsdGA0LDRgtC40YLQtSDQstC90LjQvNCw0L3QuNC1INC90LAg0YDQsNC30LLQtdGA0L3Rg9GC0YvQuSDQsdC70L7QuiDRgSDQuNC90YTQvtGA0LzQsNGG0LjQtdC5INC+INC30LDQutCw0LfQtS4g0JfQtNC10YHRjCDQstGLINC80L7QttC10YLQtSDQstC90LXRgdGC0Lgg0L3QtdC+0LHRhdC+0LTQuNC80YvQtSDQuNC30LzQtdC90LXQvdC40Y8g0LjQu9C4IArQvtGB0YLQsNCy0LjRgtGMINC60LDQuiDQtdGB0YLRjCDQuCDQvdCw0LbQsNGC0Ywg0LrQvdC+0L/QutGDICIjT1JERVJfQlVUVE9OIyIuCiI7czozMDoiTUVTU19ERUxJVkVSWV9DQUxDX0VSUk9SX1RJVExFIjtzOjc3OiLQndC1INGD0LTQsNC70L7RgdGMINGA0LDRgdGB0YfQuNGC0LDRgtGMINGB0YLQvtC40LzQvtGB0YLRjCDQtNC+0YHRgtCw0LLQutC4LiI7czoyOToiTUVTU19ERUxJVkVSWV9DQUxDX0VSUk9SX1RFWFQiO3M6MjIxOiLQktGLINC80L7QttC10YLQtSDQv9GA0L7QtNC+0LvQttC40YLRjCDQvtGE0L7RgNC80LvQtdC90LjQtSDQt9Cw0LrQsNC30LAsINCwINGH0YPRgtGMINC/0L7Qt9C20LUg0LzQtdC90LXQtNC20LXRgCDQvNCw0LPQsNC30LjQvdCwINGB0LLRj9C20LXRgtGB0Y8g0YEg0LLQsNC80Lgg0Lgg0YPRgtC+0YfQvdC40YIg0LjQvdGE0L7RgNC80LDRhtC40Y4g0L/QviDQtNC+0YHRgtCw0LLQutC1LiI7czoyOToiTUVTU19QQVlfU1lTVEVNX1BBWUFCTEVfRVJST1IiO3M6NDE4OiLQktGLINGB0LzQvtC20LXRgtC1INC+0L/Qu9Cw0YLQuNGC0Ywg0LfQsNC60LDQtyDQv9C+0YHQu9C1INGC0L7Qs9C+LCDQutCw0Log0LzQtdC90LXQtNC20LXRgCDQv9GA0L7QstC10YDQuNGCINC90LDQu9C40YfQuNC1INC/0L7Qu9C90L7Qs9C+INC60L7QvNC/0LvQtdC60YLQsCDRgtC+0LLQsNGA0L7QsiDQvdCwINGB0LrQu9Cw0LTQtS4g0KHRgNCw0LfRgyDQv9C+0YHQu9C1INC/0YDQvtCy0LXRgNC60Lgg0LLRiyDQv9C+0LvRg9GH0LjRgtC1INC/0LjRgdGM0LzQviDRgSDQuNC90YHRgtGA0YPQutGG0LjRj9C80Lgg0L/QviDQvtC/0LvQsNGC0LUuINCe0L/Qu9Cw0YLQuNGC0Ywg0LfQsNC60LDQtyDQvNC+0LbQvdC+INCx0YPQtNC10YIg0LIg0L/QtdGA0YHQvtC90LDQu9GM0L3QvtC8INGA0LDQt9C00LXQu9C1INGB0LDQudGC0LAuIjt9.8a0027732ca9144ee4e9a722ae52579876989b44f6d6f4dd390a93ee3be3888a',
+			siteID: 's1',
+			ajaxUrl: '/bitrix/components/bitrix/sale.order.ajax/ajax.php',
+			templateFolder: '/bitrix/components/bitrix/sale.order.ajax/templates/.default',
+			propertyValidation: true,
+			showWarnings: true,
+			pickUpMap: {
+				defaultMapPosition: {
+					lat: 55.76,
+					lon: 37.64,
+					zoom: 7
+				},
+				secureGeoLocation: false,
+				geoLocationMaxTime: 5000,
+				minToShowNearestBlock: 3,
+				nearestPickUpsToShow: 3
+			},
+			propertyMap: {
+				defaultMapPosition: {
+					lat: 55.76,
+					lon: 37.64,
+					zoom: 7
+				}
+			},
+			orderBlockId: 'bx-soa-order',
+			authBlockId: 'bx-soa-auth',
+			basketBlockId: 'bx-soa-basket',
+			regionBlockId: 'bx-soa-region',
+			paySystemBlockId: 'bx-soa-paysystem',
+			deliveryBlockId: 'bx-soa-delivery',
+			pickUpBlockId: 'bx-soa-pickup',
+			propsBlockId: 'bx-soa-properties',
+			totalBlockId: 'bx-soa-total'
+		});
+	</script>
+
+	<script type="text/javascript">
+				BX.saleOrderAjax.init({'source':'/bitrix/components/bitrix/sale.order.ajax/get.php','cityTypeId':'5','messages':{'otherLocation':'--- Другое местоположение','moreInfoLocation':'--- При необходимости уточнить местоположение','notFoundPrompt':'<div class=\"-bx-popup-special-prompt\">Местоположение не найдено.<br />Нажмите <a href=\"javascript:void(0)\" class=\"-bx-popup-set-mode-add-loc\">добавить местоположение<\/a>, чтобы мы узнали, куда нам доставить ваш заказ<\/div>'}});
+	</script>
+	<script>
+		(function bx_ymaps_waiter(){
+			if (typeof ymaps !== 'undefined')
+				ymaps.ready(BX.proxy(BX.Sale.OrderAjaxComponent.initMaps, BX.Sale.OrderAjaxComponent));
+			else
+				setTimeout(bx_ymaps_waiter, 100);
+		})();
+			</script>
+						</div>
+
+                        </div>
+                    </div>
+                    <!-- content END -->
+
+                </div>
+                <!-- container END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="footer-social">
+                <a href="#" class="footer-social-1"></a>
+                <a href="#" class="footer-social-2 no-mobile"></a>
+                <a href="#" class="footer-social-3"></a>
+                <a href="#" class="footer-social-4 no-mobile"></a>
+                <a href="#" class="footer-social-5 no-mobile"></a>
+            </div>
+
+            <div class="footer-inner">
+
+                <div class="footer-contacts">
+                    <div class="footer-logo">Cool image</div>
+                    <div class="footer-phone">+7 (495) <span>502-42-68</span></div>
+                    <div class="footer-schedule">Время работы: круглосуточно</div>
+                    <div class="footer-copyrights">© Интернет-магазин Cool Image, 2016</div>
+                </div>
+
+                <div class="footer-menu">
+                    <div class="footer-menu-title"><a href="#">Каталог товаров</a></div>
+                    <ul>
+                        <li><a href="#">Бренды</a></li>
+                        <li><a href="#">Платья</a></li>
+                        <li><a href="#">Штаны</a></li>
+                        <li><a href="#">Нижнее белье</a></li>
+                        <li><a href="#">Футболки</a></li>
+                        <li><a href="#">Спортивная Одежда</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu">
+                    <div class="footer-menu-title"><a href="#">О магазине</a></div>
+                    <ul>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Как купить</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">О магазине</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contacts-mobile">
+                    <div class="footer-logo">Cool image</div>
+                    <div class="footer-phone">+7 (495) <span>502-42-68</span></div>
+                    <div class="footer-schedule">Время работы: круглосуточно</div>
+                    <div class="footer-copyrights">© Интернет-магазин Cool Image, 2016</div>
+                </div>
+
+                <div class="footer-subscribe">
+                    <div class="footer-menu-title">Рассылка</div>
+                    <form action="#" method="post">
+                        <div class="form-input"><input type="text" name="email" value="" placeholder="Ваш email" class="required email" /></div>
+                        <div class="form-submit"><input type="submit" value="OK" class="btn-1" /></div>
+                    </form>
+                </div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>
