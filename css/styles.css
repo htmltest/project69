@@ -916,6 +916,35 @@ nav > ul > li > ul > li > a:hover {text-decoration:none; color:#fff}
     .main-brands-links {line-height:40px; padding-left:55px; padding-right:55px}
 }
 
+.basket-row {display:table; border:1px solid #e6e6e6; margin:1px 0; box-sizing:border-box; width:100%}
+.basket-row:hover {border-color:#000}
+.basket-photo {display:table-cell; vertical-align:middle; padding:19px; width:70px; line-height:0; text-align:center}
+.basket-photo img {width:60px; height:60px; padding:4px; border:1px solid #e5e5e5}
+.basket-text {display:table-cell; vertical-align:middle; padding:19px 30px 19px 0}
+.basket-title {text-transform:uppercase; font-family:Mirta, serif}
+.basket-title a {text-decoration:none; color:#151414}
+.basket-title a:hover {text-decoration:underline}
+.basket-art {padding:3px 0 0 0}
+.basket-row-count {display:table-cell; vertical-align:middle; width:90px; padding:19px 0}
+.basket-row-count .form-input input {text-align:center; color:#151414; font-family:Mirta, serif; border-color:#e5e5e5}
+.basket-row-price {display:table-cell; vertical-align:middle; width:82px; text-align:right; color:#151414; font-family:Mirta, serif; padding:19px 0; white-space:nowrap}
+.basket-row-price i {font-style:normal; font-family:"PT Serif", serif}
+.basket-delete {display:table-cell; vertical-align:middle; width:32px; padding:19px 0 19px 24px}
+.basket-delete a {display:block; width:17px; height:17px; background:url(../images/basket-delete.png) left -17px}
+.basket-delete a:hover {background-position:left top}
+
+@media screen and (max-width:1199px) {
+    .checkout-cart {float:none; width:auto; padding:0}
+    .basket-row {display:block; position:relative; padding:0 0 9px 0}
+    .basket-row:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+    .basket-photo {display:block; float:left; width:110px}
+    .basket-photo img {width:90px; height:auto}
+    .basket-text {display:block; margin:0 0 0 150px; padding-right:0}
+    .basket-row-count {display:block; margin:0 0 0 150px; padding:9px 0 18px 0}
+    .basket-row-price {display:block; position:absolute; right:30px; bottom:28px; font-size:20px; line-height:40px; padding:0}
+    .basket-delete {display:none}
+}
+
 .info-block {position:relative; display:inline-block; vertical-align:middle; margin:-2px 0 0 6px}
 .info-link {display:block; width:21px; height:21px; background:#292828 url(../images/info-link.png) no-repeat center; border-radius:11px}
 .info-block-content {display:none; position:absolute; left:32px; top:-10px; width:210px; background:#fff; z-index:999; padding:20px 30px 22px 30px; box-shadow:0 1px 12px rgba(0, 0, 0, .3)}
@@ -932,7 +961,8 @@ nav > ul > li > ul > li > a:hover {text-decoration:none; color:#fff}
 
 .brands-header {height:20px; position:relative; overflow:hidden; text-align:justify; text-transform:uppercase; color:#ccc; padding:12px 0 21px 0; border-bottom:1px solid #e6e6e6}
 .brands-header:after {content:""; display:inline-block; width:100%}
-.brands-header a {color:#292828}
+.brands-header a {color:#292828; text-decoration:none}
+.brands-header a:hover {text-decoration:underline}
 
 @media screen and (max-width:1199px) {
     .brands-header {height:auto; text-align:center; line-height:40px}
@@ -948,8 +978,8 @@ nav > ul > li > ul > li > a:hover {text-decoration:none; color:#fff}
 .brands-item-content {margin:0 0 0 70px}
 .brands-item-col {float:left; width:170px; padding:0 0 0 30px}
 .brands-item-link {padding:10px 0 0 0}
-.brands-item-link a {color:#808080}
-.brands-item-link a:hover {color:#292828}
+.brands-item-link a {color:#808080; text-decoration:none}
+.brands-item-link a:hover {color:#292828; text-decoration:underline}
 
 @media screen and (max-width:1199px) {
     .brands-item-title {width:60px}
